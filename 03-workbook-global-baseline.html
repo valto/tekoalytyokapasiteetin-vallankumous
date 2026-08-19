@@ -1,0 +1,1692 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Globaali perustaso
+-työkirja — Miksi tekoälyyn investoidaan biljoonia?</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header>
+  <h1 style="font-size:1.5rem;"><a href="index.html" style="color:#fff; text-decoration:none;">Miksi tekoälyyn investoidaan biljoonia?</a></h1>
+  <p class="meta">Tutkimuspohja ja elävä viitekehys &nbsp;·&nbsp; CC BY 4.0</p>
+</header>
+<main>
+<nav class="crumbs"><a href="index.html">Etusivu</a> / Globaali perustaso -työkirja</nav>
+<article class="doc-body">
+<h1
+id="julkaisuresurssi-7-globaali-perustaso--työkirja">Julkaisuresurssi #7
+— Globaali perustaso -työkirja</h1>
+<h2
+id="energiasta-tokeneihin-tuotantokustannuskäyrät-kotitalous-osuustoiminnallinen-ammattimainen-hyperskaala">Energiasta
+tokeneihin: tuotantokustannuskäyrät — Kotitalous, Osuustoiminnallinen,
+Ammattimainen, Hyperskaala</h2>
+<p><strong>Osa julkaisua:</strong> “Miksi tekoälyyn investoidaan
+biljoonia?” — Valto Loikkanen, CC BY 4.0 <strong>Mallin tila:</strong>
+Luonnos v0.1, muokattava perustaso <strong>Valuuttaperustaso:</strong>
+Globaali USD (ks. paikallistamishuomautus alla) <strong>Tässä
+käytettyjen syötteiden lähdeaikarajaus:</strong> 2026-08-13 <strong>Ei
+sijoitus-, oikeudellista, vero-, hankinta- tai
+politiikkaneuvontaa.</strong> Jokainen alla oleva skenaario on
+muokattava havainnollistus, rakennettu ilmoitetuille oletuksille — ei
+ennuste tai suositus.</p>
+<hr />
+<h2 id="näyttöluokkien-selite-käytössä-joka-taulukossa">Näyttöluokkien
+selite (käytössä joka taulukossa)</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Tunniste</th>
+<th>Merkitys</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>FAKTA</strong></td>
+<td>Ensisijainen dokumentaatio, virallinen tekninen tietolomake tai
+suoraan haettu ensisijainen lähde, tarkistettu 2026-08-12 tai
+välittömästi sitä ennen.</td>
+</tr>
+<tr>
+<td><strong>LÄHDE</strong></td>
+<td>Nimetyn henkilön/organisaation julkinen, tallenteella oleva
+lausunto. Ei itsenäisesti todistettu vain siksi, että se on
+sanottu.</td>
+</tr>
+<tr>
+<td><strong>LASKELMA</strong></td>
+<td>Läpinäkyvä aritmetiikka siteeratuista FAKTA-/LÄHDE-syötteistä. Kaava
+aina esitetty.</td>
+</tr>
+<tr>
+<td><strong>OLETUS</strong></td>
+<td>Näkyvä, muokattava skenaarioparametri — ei markkinafakta. Se, mitä
+se hallitsee, on ilmoitettu.</td>
+</tr>
+<tr>
+<td><strong>TULKINTA</strong></td>
+<td>Merkitty selitys siitä, miten yllä olevat voivat liittyä toisiinsa.
+Ei koskaan fakta.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="miten-mukauttaa-tätä-työkirjaa-omiin-lukuihin">Miten mukauttaa
+tätä työkirjaa omiin lukuihin</h2>
+<p>Tämä työkirja on rakennettu erotettujen taloudellisten kerrosten
+ketjuna, jota ei koskaan tiivistetä yhdeksi luvuksi:</p>
+<pre><code>raaka sähkökustannus → laitteiston poistettu tuotantokustannus → rahoitettu omaisuuskustannus → täysi toimintakustannus
+→ kapasiteetti-/käyttöastekustannus → tokenin tuotantokustannus → työkuorman/työkapasiteetin kustannus
+→ tulos ja arvo (EI yllä olevien kerrosten mekaanisesti määräämä)</code></pre>
+<p>Ajaaksesi minkä tahansa tason uudelleen omilla luvuillasi, korvaa
+vain merkityt <strong>OLETUS</strong>-solut — jokainen
+<strong>FAKTA</strong>-solu on vahvistettu tekninen tieto/hinta, ja sitä
+pitäisi muuttaa vain, jos sinulla on uudempi ensisijainen lähde:</p>
+<ol type="1">
+<li><strong>Pääomakustannus</strong> — vaihda tilalle todellinen
+ostohintasi/tarjouksesi (vero, toimitus, tuontitulli poissuljettu, ellet
+lisää niitä).</li>
+<li><strong>Rahoitusehdot</strong> — käsiraha-%, korkokanta ja
+rahoitusaika (vuosina) ovat kaikki muokattavia; kaava on standardi
+tasaerälaina, esitetty kertaalleen alla, jotta voit käyttää sitä
+uudelleen missä tahansa.</li>
+<li><strong>Sähkön hinta ($/kWh)</strong> — korvaa
+matala/keski/korkea-skenaario omalla paikallisella teollisuus-,
+kaupallisella tai kotitaloustariffillasi. Tämä on koko mallin
+yksittäisenä syötteenä paikallisesti kaikkein vaihtelevin (hinnat noin
+0,03 $/kWh:sta noin 0,40 $/kWh:iin ovat olemassa todellisilla
+globaaleilla markkinoilla).</li>
+<li><strong>Käyttöaste (%)</strong> — osuus vuoden 8 760 tunnista, jonka
+laitteisto todella tuottaa tokeneita jouten olon sijaan. Tämä on
+tavallisesti koko mallin yksittäisenä muuttujana suurin vipu
+$/miljoona-tokenia-kustannukseen — esitetty aina
+matala/keski/korkea-tasoina, ei koskaan yhtenä pistearviona.</li>
+<li><strong>Läpimenoteho (tokenia/sek)</strong> — vaihda tilalle omaa
+mallia/kvantisointia/kehystä koskeva oma vertailuarvosi. Älä käytä
+uudelleen NVIDIA:n tai muun toimittajan vertailulukua eri mallille,
+tarkkuudelle tai vuorovaikutteisuusasetukselle — läpimenoteho on
+työkuormakohtainen ja voi vaihdella 10–50-kertaisesti tavoiteltavasta
+viiveestä riippuen (ks. Hyperskaalatason huomautukset).</li>
+<li><strong>Käyttömenot/hallinnolliset yleiskustannukset</strong> —
+lisää omat tila-, henkilöstö-, vakuutus-, jäähdytys- ja
+verkkokustannuksesi; tässä esitetyt havainnollistavat kaistat ovat
+paikkamerkkejä, nimenomaisesti merkitty OLETUKSEKSI.</li>
+<li><strong>Valuutta</strong> — jokainen alla oleva luku on USD:ssä.
+FX-rivi näytetään vain silloin, kun se on tarpeen täsmäyttämään
+EUR-määräistä aiempaa lukua vasten; vaihda tilalle omaa valuuttaasi
+vastaava kurssi ja päivämäärä muille valuutoille.</li>
+</ol>
+<p><strong>Kaava, jota käytetään joka “pääoma + rahoitus vuodessa”
+-rivillä (LASKELMA, standardi tasaerälainan kaava):</strong></p>
+<pre><code>down_payment = price × down_payment_%
+financed_amount = price − down_payment
+annual_loan_payment = financed_amount × rate / (1 − (1 + rate)^(−term_years))
+capital_and_financing_per_year = annual_loan_payment + (down_payment / term_years)</code></pre>
+<p>Jälkimmäinen termi jakaa käsirahan tasaisesti rahoitusajan yli
+puhtaasti vuositasoisen vertailukelpoisuuden vuoksi — voit halutessasi
+käsitellä käsirahan sen sijaan yhden kerran vuonna 0 syntyvänä
+kustannuksena; molemmat ovat perusteltuja, ja ne on merkitty tässä
+mallinnusvalinnaksi, ei faktaksi.</p>
+<p><strong>Kaava, jota käytetään joka “$/miljoona tokenia” -rivillä
+(LASKELMA):</strong></p>
+<pre><code>annual_tokens = throughput_tokens_per_sec × 3600 × 8760 × utilization_%
+cost_per_million_tokens = (capital_and_financing_per_year + electricity_cost_per_year + opex_per_year)
+                            / (annual_tokens / 1 000 000)</code></pre>
+<p><strong>Kaava, jota käytetään joka “$/tekoäly-työtunti” -rivillä
+(LASKELMA):</strong></p>
+<pre><code>cost_per_working_hour = cost_per_million_tokens × (tokens_per_working_hour_for_usage_mode / 1 000 000)</code></pre>
+<p>jossa <code>tokens_per_working_hour_for_usage_mode</code> tulee
+luvussa 6 määritellyistä käyttöintensiteettivyöhykkeistä.</p>
+<hr />
+<h2 id="kriittinen-menetelmäsääntö-tätä-ei-saa-ohittaa">1. Kriittinen
+menetelmäsääntö — tätä ei saa ohittaa</h2>
+<p><strong>Omistettu tuotantokustannus ja vähittäis-API-hinta ovat kaksi
+eri taloudellista kerrosta, ja niitä ei koskaan saa yhdistää yhdeksi
+luvuksi.</strong></p>
+<ul>
+<li>Alla olevat taulukot hinnoittelevat <em>tokenien tuottamisen
+kustannuksen laitteistolla, jonka omistat tai osaomistat</em>, ajaen
+<strong>avoimen painotuksen malleja</strong> (esim. Qwen, DeepSeek,
+Kimi-luokan mallit) — riippumatta siitä, mitä OpenAI, Anthropic tai
+Google veloittavat omista patentoiduista, suljetuista malleistaan.</li>
+<li>Vähittäis-API-hinnat (luku 7) ovat erillinen vertailukohta — “osta
+sähköä verkosta” -vastine “tuota omaa aurinkosähköä” -vaihtoehdolle. Ne
+kertovat, mitä maksaa vuokrata jonkun toisen valmis
+tokenintuotantokapasiteetti; ne eivät kerro, mitä maksaa rakentaa ja
+ajaa omaa.</li>
+<li>Aiempi vaihe tässä tutkimuksessa yhdisti virheellisesti laboratorion
+vähittäishinnoittelun omistetun laitteiston kustannuskäyrään, ja se oli
+itsekorjattava kesken istunnon. Tämä korjaus on säilytetty tässä
+tarkoituksella, työstettynä “miten tätä ei kannata mallintaa”
+-opetuksena, ei siloteltuna pois.</li>
+</ul>
+<hr />
+<h2 id="kotitaloustaso-yksi-nvidia-dgx-spark">2. KOTITALOUSTASO — yksi
+NVIDIA DGX Spark</h2>
+<h3 id="pääoma-ja-rahoitus">2.1 Pääoma ja rahoitus</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Syöte</th>
+<th>Arvo</th>
+<th>Luokka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DGX Spark, Founders Edition, nykyinen suositushinta</td>
+<td>4 699 $</td>
+<td><strong>FAKTA</strong> — NVIDIA Developer Forumsin virallinen
+hinnanmuutosilmoitus, voimaan viikolla 2026-02-23 (nostettu
+alkuperäisestä lanseeraushinnasta 3 999 $). URL:
+forums.developer.nvidia.com/t/2-23-2026-price-change-announcement/361713</td>
+</tr>
+<tr>
+<td>Käsiraha</td>
+<td>20% (939,80 $)</td>
+<td><strong>OLETUS</strong> — hallitsee, kuinka paljon rahoitetaan
+vs. maksetaan etukäteen</td>
+</tr>
+<tr>
+<td>Rahoituskorko</td>
+<td>8%/vuosi</td>
+<td><strong>OLETUS</strong> — havainnollistava
+kuluttaja-/pienyritysluoton korko</td>
+</tr>
+<tr>
+<td>Rahoitusaika</td>
+<td>5 vuotta</td>
+<td><strong>OLETUS</strong> — hallitsee annuiteetin kokoa; esitetty
+3/4/5/7 vuoden herkkyystarkastelulla alla</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Kaava</th>
+<th>Tulos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>financed_amount = 4 699 $ − 939,80 $ = 3 759,20 $</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>annual_loan_payment = 3 759,20 $ × 0.08 / (1 − 1.08^−5) = 941,52 $</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>capital_and_financing_per_year = 941,52 $ + (939,80 $/5) = 941,52 $ + 187,96 $</code></td>
+<td><strong>1 129,48 $/yr</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Suoraviivainen käteisostovertailu (ei rahoitusta):
+<code>4 699 $ / 5 = 939,80 $/yr</code> (<strong>LASKELMA</strong>) —
+esitetty, jotta voit verrata “maksa käteisellä” vs. “rahoita”
+-kehystä.</p>
+<p><strong>Rahoitusajan herkkyys (LASKELMA, sama 8% korko, 20%
+käsiraha):</strong></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Aika</th>
+<th>Annuiteettimaksu/vuosi</th>
+<th>Pääoma+rahoitus/vuosi (sis. jaettu käsiraha)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3 vuotta</td>
+<td>1 447,79 $</td>
+<td>1 635,72 $</td>
+</tr>
+<tr>
+<td>4 vuotta</td>
+<td>1 135,02 $</td>
+<td>1 322,95 $</td>
+</tr>
+<tr>
+<td>5 vuotta</td>
+<td>941,52 $</td>
+<td>1 129,48 $</td>
+</tr>
+<tr>
+<td>7 vuotta</td>
+<td>702,35 $</td>
+<td>890,31 $</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sähkö">2.2 Sähkö</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Syöte</th>
+<th>Arvo</th>
+<th>Luokka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Suurin jatkuva tehonotto</td>
+<td>240W (virtalähteen luokitus); GB10-SoC:n TDP 140W</td>
+<td><strong>FAKTA</strong> — NVIDIA:n virallinen DGX Spark
+-tuotesivu</td>
+</tr>
+<tr>
+<td>Sähkön hintaskenaariot</td>
+<td>Matala 0,06 $/kWh · Keski 0,12 $/kWh · Korkea 0,25 $/kWh</td>
+<td><strong>OLETUS</strong> — korvaa omalla paikallisella
+kotitalous-/kaupallisella tariffillasi</td>
+</tr>
+</tbody>
+</table>
+<h3 id="läpimenoteho-tokeniasek-vertailuarvon-perusta">2.3 Läpimenoteho
+(tokenia/sek) — vertailuarvon perusta</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Skenaario</th>
+<th>tok/s</th>
+<th>Luokka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Matala (INT4-perustaso, vLLM+AutoRound+FlashInfer)</td>
+<td>28.3</td>
+<td><strong>FAKTA</strong> — NVIDIA Developer Forumsin ketju,
+kirjoittaja “Albond,” Qwen3.5-122B-A10B yhdellä DGX Sparkilla, suoraan
+näkyvä viestin sisältö</td>
+</tr>
+<tr>
+<td>Keski (hybridi INT4+FP8-kvantisointi)</td>
+<td>30.8</td>
+<td><strong>FAKTA</strong> — sama ketju, +8,8 % perustasoon nähden</td>
+</tr>
+<tr>
+<td>Korkea (+ MTP-1-spekulatiivinen dekoodaus, “todennäköisesti
+muistikaistanleveyden katto” viestin kirjoittajan mukaan)</td>
+<td>38.4</td>
+<td><strong>FAKTA</strong> — sama ketju, +25% perustasoon nähden</td>
+</tr>
+<tr>
+<td>Otsikkotason väite (vahvistamaton)</td>
+<td>jopa 51</td>
+<td><strong>LÄHDE</strong> — saman ketjun omassa yhteenvetorivissä
+viitataan myöhempään viestiin (#71), jota ei ole itsenäisesti nähty
+tässä tarkistuksessa; käsittele vahvistamattomana</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tokenia/kWh 240W:llä (LASKELMA):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Läpimenoteho</th>
+<th>Tokenia/tunti</th>
+<th>Tokenia/kWh</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>28.3 tok/s</td>
+<td>101 880</td>
+<td>424 500</td>
+</tr>
+<tr>
+<td>30.8 tok/s</td>
+<td>110 880</td>
+<td>462 000</td>
+</tr>
+<tr>
+<td>38.4 tok/s</td>
+<td>138 240</td>
+<td>576 000</td>
+</tr>
+<tr>
+<td>51 tok/s (vahvistamaton)</td>
+<td>183 600</td>
+<td>765 000</td>
+</tr>
+</tbody>
+</table>
+<p><code>tokens_per_kWh = tok/s × 3600 / kW_draw</code> — esim.
+<code>30.8 × 3600 / 0.240 = 462 000</code>.</p>
+<h3
+id="kotitaloustaso-täysi-tuotantokustannuskäyrä-miljoona-tokenia">2.4
+Kotitaloustaso — täysi tuotantokustannuskäyrä ($/miljoona tokenia)</h3>
+<p>Käyttöaste = osuus vuoden 8 760 tunnista, jonka kone todella tuottaa
+tokeneita jouten olon sijaan. <strong>OLETUS</strong>, esitetty
+matala/keski/korkea-tasoina.</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>Läpimenoteho</th>
+<th>Käyttöaste</th>
+<th>Sähkön hinta</th>
+<th>Vuotuiset tokenit (LASKELMA)</th>
+<th>Sähkökustannus/vuosi (LASKELMA)</th>
+<th><strong>$/miljoona tokenia (LASKELMA)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>30.8 tok/s</td>
+<td>Matala 10%</td>
+<td>0,12 $</td>
+<td>97.1M</td>
+<td>25 $</td>
+<td><strong>11,89 $</strong></td>
+</tr>
+<tr>
+<td>30.8 tok/s</td>
+<td>Keski 40%</td>
+<td>0,12 $</td>
+<td>388.5M</td>
+<td>101 $</td>
+<td><strong>3,17 $</strong></td>
+</tr>
+<tr>
+<td>30.8 tok/s</td>
+<td>Korkea 80%</td>
+<td>0,12 $</td>
+<td>777.0M</td>
+<td>202 $</td>
+<td><strong>1,71 $</strong></td>
+</tr>
+<tr>
+<td>38.4 tok/s</td>
+<td>Matala 10%</td>
+<td>0,12 $</td>
+<td>121.1M</td>
+<td>25 $</td>
+<td><strong>9,53 $</strong></td>
+</tr>
+<tr>
+<td>38.4 tok/s</td>
+<td>Keski 40%</td>
+<td>0,12 $</td>
+<td>484.4M</td>
+<td>101 $</td>
+<td><strong>2,54 $</strong></td>
+</tr>
+<tr>
+<td>38.4 tok/s</td>
+<td>Korkea 80%</td>
+<td>0,12 $</td>
+<td>968.8M</td>
+<td>202 $</td>
+<td><strong>1,37 $</strong></td>
+</tr>
+<tr>
+<td>30.8 tok/s</td>
+<td>Keski 40%</td>
+<td>Matala 0,06 $</td>
+<td>388.5M</td>
+<td>50 $</td>
+<td><strong>3,04 $</strong></td>
+</tr>
+<tr>
+<td>30.8 tok/s</td>
+<td>Keski 40%</td>
+<td>Korkea 0,25 $</td>
+<td>388.5M</td>
+<td>210 $</td>
+<td><strong>3,45 $</strong></td>
+</tr>
+</tbody>
+</table>
+<p><code>cost_per_million_tokens = (1 129,48 $ + electricity_cost) / (annual_tokens/1 000 000)</code>.</p>
+<p><strong>Näin tätä luetaan:</strong> kotitalousmittakaavassa
+pääoma+rahoitus hallitsee kustannuskäyrää — sähkö on pyöristysvirhe
+(~13–420 $/vuosi vs. ~1 130 $/vuosi rahoitusta). Käyttöaste on selvästi
+suurin vipu: siirtyminen 10%:sta 80%:iin käyttöasteessa samalla
+läpimenoteholla leikkaa $/M-tokenia-lukua noin 7-kertaisesti, koska
+kiinteä rahoituskustannus jakautuu paljon useammalle tokenille.</p>
+<h3
+id="kotitaloustaso-tekoäly-työtunti-keskiskenaario-30.8-toks-40-käyttöaste-012-kwh-317-m-tokenia">2.5
+Kotitaloustaso — $/tekoäly-työtunti (keskiskenaario: 30.8 tok/s, 40%
+käyttöaste, 0,12 $/kWh → 3,17 $/M tokenia)</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Käyttöintensiteettivyöhyke (ks. luku 6)</th>
+<th>Tokenia/tunti</th>
+<th><strong>$/tekoäly-työtunti (LASKELMA)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chat/neuvonantaja</td>
+<td>10 000-30 000</td>
+<td>0,032–0,095 $</td>
+</tr>
+<tr>
+<td>Aktiivinen tekoälytyötoveri/kopilotti</td>
+<td>60 000-120 000</td>
+<td>0,190–0,380 $</td>
+</tr>
+<tr>
+<td>Delegoitu yksittäisagentti</td>
+<td>200 000-600 000</td>
+<td>0,633–1,900 $</td>
+</tr>
+<tr>
+<td>Raskas moniagenttiorkestrointi</td>
+<td>1 000 000-12 000 000</td>
+<td>3,17–38,00 $</td>
+</tr>
+</tbody>
+</table>
+<p>Korkean käyttöasteen skenaariossa (1,71 $/M tokenia) samat kaistat
+ovat noin 46% matalammat; matalan käyttöasteen skenaariossa (11,89 $/M
+tokenia) noin 3.75x korkeammat. Ilmoita aina, mitä käyttöastesenaariota
+jokin $/työtunti-luku olettaa.</p>
+<hr />
+<h2 id="osuustoiminnallinen-taso-50-jäsentä-10-dgx-sparkia">3.
+OSUUSTOIMINNALLINEN TASO — 50 jäsentä, 10 DGX Sparkia</h2>
+<h3 id="pääoma-ja-rahoitus-10-konetta">3.1 Pääoma ja rahoitus (10
+konetta)</h3>
+<p>Samat yksikkökohtaiset hinta-/rahoitusehdot kuin luvussa 2.1,
+skaalattuna ×10 (<strong>LASKELMA</strong>):</p>
+<table>
+<thead>
+<tr>
+<th>Erä</th>
+<th>Per kone</th>
+<th>×10 konetta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pääoma+rahoitus/vuosi</td>
+<td>1 129,48 $</td>
+<td><strong>11 294,76 $/yr</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="sähkö-10-konetta">3.2 Sähkö (10 konetta)</h3>
+<p>Yhteenlaskettu suurin jatkuva tehonotto:
+<code>0.240kW × 10 = 2.4kW</code> (<strong>LASKELMA</strong>, johdettu
+FAKTA-yksikkökohtaisesta spesifikaatiosta).</p>
+<h3
+id="hallintoyleiskustannukset-osuustoiminnallisen-tason-omat-kustannuskerros">3.3
+Hallinto/yleiskustannukset — osuustoiminnallisen tason omat
+kustannuskerros</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Skenaario</th>
+<th>$/vuosi</th>
+<th>Luokka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Matala</td>
+<td>1 000 $</td>
+<td><strong>OLETUS</strong> — kevyt itsehallinnoitu koordinaatio</td>
+</tr>
+<tr>
+<td>Keski</td>
+<td>3 000 $</td>
+<td><strong>OLETUS</strong> — osa-aikainen hallinto,
+perusverkkolaitteisto</td>
+</tr>
+<tr>
+<td>Korkea</td>
+<td>6 000 $</td>
+<td><strong>OLETUS</strong> — omistettu koordinaattoriaika, redundantti
+verkko</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="osuustoiminnallinen-taso-tuotantokustannuskäyrä-miljoona-tokenia-yhteenlaskettu-läpimenoteho-1030.8-toks-308-toks">3.4
+Osuustoiminnallinen taso — tuotantokustannuskäyrä ($/miljoona tokenia),
+yhteenlaskettu läpimenoteho 10×30.8 tok/s = 308 tok/s</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Käyttöaste</th>
+<th>Vuotuiset tokenit (LASKELMA)</th>
+<th>Sähkö/vuosi (0,12 $/kWh, LASKELMA)</th>
+<th>Yhteensä/vuosi (sis. 3 000 $ hallinto)</th>
+<th><strong>$/miljoona tokenia (LASKELMA)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Matala 20%</td>
+<td>1.94B</td>
+<td>505 $</td>
+<td>14 799 $</td>
+<td><strong>7,62 $</strong></td>
+</tr>
+<tr>
+<td>Keski 50%</td>
+<td>4.86B</td>
+<td>1 261 $</td>
+<td>15 556 $</td>
+<td><strong>3,20 $</strong></td>
+</tr>
+<tr>
+<td>Korkea 85%</td>
+<td>8.26B</td>
+<td>2 144 $</td>
+<td>16 439 $</td>
+<td><strong>1,99 $</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="osuustoiminnallinen-taso-jäsenkk-laskelma">3.5
+Osuustoiminnallinen taso — $/jäsen/kk (LASKELMA)</h3>
+<p><code>total_cost_per_year / 50 members / 12 months</code>:</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Käyttöaste</th>
+<th>Yhteensä/vuosi</th>
+<th><strong>$/jäsen/kk</strong></th>
+<th>€/jäsen/kk (FX-OLETUS: 1 USD = 0.92 EUR)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Matala 20%</td>
+<td>14 799 $</td>
+<td><strong>24,67 $</strong></td>
+<td>22,69 €</td>
+</tr>
+<tr>
+<td>Keski 50%</td>
+<td>15 556 $</td>
+<td><strong>25,93 $</strong></td>
+<td>23,85 €</td>
+</tr>
+<tr>
+<td>Korkea 85%</td>
+<td>16 439 $</td>
+<td><strong>27,40 $</strong></td>
+<td>25,21 €</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="osuustoiminnallinen-taso-tekoäly-työtunti-keskiskenaario-320-m-tokenia">3.6
+Osuustoiminnallinen taso — $/tekoäly-työtunti (keskiskenaario, 3,20 $/M
+tokenia)</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Käyttöintensiteettivyöhyke</th>
+<th>Tokenia/tunti</th>
+<th><strong>$/tekoäly-työtunti</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chat/neuvonantaja</td>
+<td>10 000-30 000</td>
+<td>0,032–0,096 $</td>
+</tr>
+<tr>
+<td>Aktiivinen tekoälytyötoveri/kopilotti</td>
+<td>60 000-120 000</td>
+<td>0,192–0,384 $</td>
+</tr>
+<tr>
+<td>Delegoitu yksittäisagentti</td>
+<td>200 000-600 000</td>
+<td>0,641–1,922 $</td>
+</tr>
+<tr>
+<td>Raskas moniagenttiorkestrointi</td>
+<td>1 000 000-12 000 000</td>
+<td>3,20–38,44 $</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="jäsenkk-luku-ratkaistu-ks.-tokenitehtaan-skenaariotyökirja-1">3.7 42
+€/jäsen/kk-luku — ratkaistu, ks. Tokenitehtaan skenaariotyökirja §1</h3>
+<p><strong>Korjattu 2026-08-13:</strong> tämän luvun aiempi versio
+käsitteli kirjoittajan julkaistua ~42 €/jäsen/kk-lukua ja tämän
+työkirjan ~23–25 €/jäsen/kk DGX Spark -uudelleenlaskelmaa
+ratkaisemattomana erimielisyytenä, joka vaatisi käänteismallintamista
+(tämän luvun aiempi sisältö yritti juuri tätä, onnistumatta).
+Kirjoittaja on sen jälkeen selventänyt, että 42 €/jäsen/kk ei ollut
+koskaan perustunut DGX Spark -hinnoitteluun — se rakennettiin hänen
+omalle havainnollistavalle 100 000 €-excluding-VAT -pääomaoletukselleen
+jaetulle työasemaluokan koneelle (esim. NVIDIA DGX Station -tyyppinen
+järjestelmä), jolle NVIDIA julkaisee spesifikaatiot mutta ei
+vähittäishintaa. Kaksi lukua kuvaavat kahta eri laitteistotasoa, ei yhtä
+mittausta epävarmalla lähteellä.</p>
+<p><strong>Ks. Tokenitehtaan skenaariotyökirja (Julkaisuresurssi #10),
+§1/§1a/§1b, täydelle korjatulle selitykselle, 100 000 €-pääomaperustan
+aritmetiikalle ja molempien laitteistotasojen
+rinnakkaisvertailulle.</strong> Tämän työkirjan oma ~23–25
+€/jäsen/kk-luku (§3.5-3.6 yllä) pysyy pätevänä ja muuttumattomana DGX
+Spark -tason skenaariona.</p>
+<hr />
+<h2 id="ammattimainen-taso-yksi-nvidia-hgx-b300-8-gpu--solmu">4.
+AMMATTIMAINEN TASO — yksi NVIDIA HGX B300 (8-GPU) -solmu</h2>
+<p><strong>Tärkeä varaus alkuun:</strong> NVIDIA:n virallinen HGX B300
+-tuotesivu (FAKTA-spesifikaatiot alla) <strong>ei</strong> julkaista
+tehonkulutuslukua eikä hintaa tälle SKU:lle. Molemmat ovat siis
+<strong>OLETUS</strong>, ei FAKTA, tällä tasolla — huomattavasti alempi
+luottamustaso kuin Kotitalous- ja Hyperskaalatasoilla, joissa
+laitteiston hinta ja/tai teho on suoraan lähdetettyä.</p>
+<h3 id="spesifikaatiot-fakta-vs.-kustannussyötteet-oletus">4.1
+Spesifikaatiot (FAKTA) vs. kustannussyötteet (OLETUS)</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Erä</th>
+<th>Arvo</th>
+<th>Luokka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPU:t</td>
+<td>8× NVIDIA Blackwell Ultra (SXM)</td>
+<td><strong>FAKTA</strong> — nvidia.com/en-us/data-center/hgx/</td>
+</tr>
+<tr>
+<td>Kokonaismuisti</td>
+<td>2.1 TB</td>
+<td><strong>FAKTA</strong></td>
+</tr>
+<tr>
+<td>NVFP4-päättely</td>
+<td>144 PFLOPS harva / 108 PFLOPS tiivis</td>
+<td><strong>FAKTA</strong></td>
+</tr>
+<tr>
+<td>NVLink5-kaistanleveys</td>
+<td>1.8 TB/s per GPU-linkki, 14.4 TB/s yhteensä</td>
+<td><strong>FAKTA</strong></td>
+</tr>
+<tr>
+<td>Verkotus</td>
+<td>1.6 TB/s</td>
+<td><strong>FAKTA</strong></td>
+</tr>
+<tr>
+<td>Tehonkulutus</td>
+<td>Matala 8kW · Keski 11kW · Korkea 15kW</td>
+<td><strong>OLETUS</strong> — ei ensisijaista lähdettä; skaalattu
+havainnollisesti GB300 NVL72:n 135kW/72-GPU-räkkisuhteesta plus
+isäntälaitteiston yleiskustannusmarginaali</td>
+</tr>
+<tr>
+<td>Pääomakustannus</td>
+<td>Matala 250 000 $ · Keski 350 000 $ · Korkea 500 000 $</td>
+<td><strong>OLETUS</strong> — julkista hintaa tälle SKU:lle ei löytynyt;
+vain paikkamerkkivaihteluväli</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="läpimenoteho-johdettu-lineaarisella-gpu-määrän-skaalauksella-fakta-per-gpu-mlperf-luvuista">4.2
+Läpimenoteho — johdettu lineaarisella GPU-määrän skaalauksella
+FAKTA-per-GPU MLPerf-luvuista</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Perusta</th>
+<th>Per-GPU tok/s (FAKTA, MLPerf v6.0 DeepSeek-R1)</th>
+<th>×8 GPU:ta (LASKELMA)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Offline-skenaario</td>
+<td>9 821</td>
+<td>78 568 tok/s</td>
+</tr>
+<tr>
+<td>Server-skenaario (vuorovaikutteinen)</td>
+<td>8 064</td>
+<td>64 512 tok/s</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Varaus (kannettu lähderekisteristä):</strong> 9 821/8
+064-per-GPU-luvut mitattiin 72-GPU:n NVL72-NVLink-domainin sisällä
+Grace-suorittimilla ja räkkitason muistikoherenssilla — 8-GPU
+HGX-laatikko (ei NVL72-räkkitason kytkentää, ei Grace-suoritintasoa)
+tuskin toistaa tätä per-GPU-nopeutta samalla tarkkuudella/mallilla.
+Käsittele tätä LASKELMA-lukua optimistisena ylärajana, ei vahvistettuna
+HGX B300 -vertailutuloksena.</p>
+<h3
+id="ammattimainen-taso-tuotantokustannuskäyrä-miljoona-tokenia-keskipääoma-350-000-keskiteho-11kw-offline-johdettu-läpimenoteho-78-568-toks-010-kwh-sähkö">4.3
+Ammattimainen taso — tuotantokustannuskäyrä ($/miljoona tokenia),
+keskipääoma 350 000 $, keskiteho 11kW, offline-johdettu läpimenoteho 78
+568 tok/s, 0,10 $/kWh sähkö</h3>
+<p><strong>Soveltamisalan korjaus, lisätty 2026-08-13: tämän taulukon
+luvut ovat VAIN pääoma + rahoitus + sähkö — mitään
+käyttömeno-/yleiskustannuskerrosta ei ole sisällytetty.</strong> Tämä
+tekee niistä rakenteellisesti vertailukelvottomia Hyperskaalatason
+kanonisen luvun (§5.6) kanssa, joka nimenomaisesti sisältää 200 000 $–1
+000 000 $/räkki/vuosi käyttömenoja (tila, jäähdytys raaka sähkön
+ylittävältä osin, henkilöstö, verkko, korvausvaraus). Tämän työkirjan
+aiempi versio ja emo-whitepaper vertasivat Ammattimaisen tason
+0,044–0,146 $/M-lukua suoraan Hyperskaalatason 0,091–0,312 $/M-lukuun
+ikään kuin molemmat olisivat koko kerroksen lukuja, mikä sai
+Ammattimaisen tason näyttämään keinotekoisesti halvemmalta. Sitä ei
+esitetä tässä halvempana kuin Hyperskaala — ks. havainnollistava
+käyttömenoherkkyys välittömästi alla.</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Käyttöaste</th>
+<th>Vuotuiset tokenit (LASKELMA)</th>
+<th>Sähkö/vuosi (LASKELMA)</th>
+<th>Pääoma+rahoitus/vuosi (5v@8%, LASKELMA)</th>
+<th><strong>$/miljoona tokenia, EI KÄYTTÖMENOJA (LASKELMA)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Matala 25%</td>
+<td>619.4B</td>
+<td>2 409 $</td>
+<td>87 660 $</td>
+<td><strong>0,146 $</strong></td>
+</tr>
+<tr>
+<td>Keski 60%</td>
+<td>1 486,6B</td>
+<td>5 782 $</td>
+<td>87 660 $</td>
+<td><strong>0,064 $</strong></td>
+</tr>
+<tr>
+<td>Korkea 90%</td>
+<td>2 229,9B</td>
+<td>8 672 $</td>
+<td>87 660 $</td>
+<td><strong>0,044 $</strong></td>
+</tr>
+</tbody>
+</table>
+<p><code>annuity_payment(350 000 $, 8%, 5v) = 87 660 $/yr</code> samalla
+kaavalla kuin luvussa 1.</p>
+<p><strong>Havainnollistava käyttömenoherkkyys (OLETUS, lisätty
+2026-08-13 — ei johdettu mistään vahvistetusta yksittäisen solmun
+käyttömenoluvusta, koska sellaista ei ole olemassa tämän hankkeen
+lähderekisterissä):</strong> yksittäinen 8-GPU-solmu tarvitsee
+todennäköisesti huomattavasti vähemmän
+tila-/henkilöstö-/verkkoyleiskustannuksia kuin täysi räkki, mutta on
+erittäin epätodennäköistä, että se tarvitsisi nollaa. Käyttäen
+havainnollistavaa 10 000 $/25 000 $/50 000 $-vuosittaista
+matala/keski/korkea-käyttömenokaistaa — nimenomaan skaalaamatta sitä
+suhteessa Hyperskaalatason räkkikohtaisiin käyttömenoihin, koska
+henkilöstö- ja verkkokustannukset eivät skaalaudu lineaarisesti
+solmumäärän mukaan — keskimmäisen käyttöasteen (60%) kustannus muuttuu
+seuraavasti:</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Käyttömenoskenaario</th>
+<th>Käyttömenot/vuosi</th>
+<th>Vuotuinen kokonaiskustannus (pääoma+rahoitus+sähkö+käyttömenot)</th>
+<th><strong>$/miljoona tokenia, KÄYTTÖMENOT MUKANA</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Matala</td>
+<td>10 000 $</td>
+<td>103 442 $</td>
+<td><strong>0,070 $</strong></td>
+</tr>
+<tr>
+<td>Keski</td>
+<td>25 000 $</td>
+<td>118 442 $</td>
+<td><strong>0,080 $</strong></td>
+</tr>
+<tr>
+<td>Korkea</td>
+<td>50 000 $</td>
+<td>143 442 $</td>
+<td><strong>0,096 $</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Tämä pysyy <strong>OLETUKSENA</strong>, ei vahvistettuna lukuna —
+pointtina ei ole, että 0,070–0,096 $/M on “se” oikea Ammattimaisen tason
+kustannus, vaan että minkä tahansa uskottavan käyttömenovarauksen
+lisääminen kaventaa näennäistä kuilua Hyperskaalatason kanoniseen 0,133
+$/M keskitapaukseen huomattavasti, ja yllä olevia käyttömenottomia
+lukuja ei koskaan pitäisi siteerata täydellisenä kustannuksena.</p>
+<h3
+id="ammattimainen-taso-tekoäly-työtunti-keskiskenaario-0064-m-tokenia-ei-käyttömenoja-ks.-soveltamisalan-korjaus-yllä">4.4
+Ammattimainen taso — $/tekoäly-työtunti (keskiskenaario, 0,064 $/M
+tokenia, EI KÄYTTÖMENOJA — ks. soveltamisalan korjaus yllä)</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Käyttöintensiteettivyöhyke</th>
+<th>Tokenia/tunti</th>
+<th><strong>$/tekoäly-työtunti</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chat/neuvonantaja</td>
+<td>10 000-30 000</td>
+<td>0,0006–0,0019 $</td>
+</tr>
+<tr>
+<td>Aktiivinen tekoälytyötoveri/kopilotti</td>
+<td>60 000-120 000</td>
+<td>0,0038–0,0076 $</td>
+</tr>
+<tr>
+<td>Delegoitu yksittäisagentti</td>
+<td>200 000-600 000</td>
+<td>0,0127–0,0382 $</td>
+</tr>
+<tr>
+<td>Raskas moniagenttiorkestrointi</td>
+<td>1 000 000-12 000 000</td>
+<td>0,064–0,764 $</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Näin tätä luetaan, korjattu 2026-08-13:</strong>
+ammattimaisen tason käyttömenoton $/M-tokenia-luku on noin 25-70-kertaa
+matalampi kuin Kotitaloustason luku vastaavalla käyttöasteella — mutta
+tämä vertailu ei ole tasavertaisella pohjalla, koska Kotitalouden luku
+sisältää jo täyden (vaikkakin vaatimattoman) kustannusrakenteensa, kun
+Ammattimainen sulkee käyttömenot kokonaan pois (ks. soveltamisalan
+korjaus yllä). Myös havainnollistavan käyttömenoherkkyyden lisäämisen
+jälkeen Ammattimainen jää selvästi Kotitalouden alapuolelle, yhtenevästi
+GPU-sukupolven tehokkuuden (Blackwell Ultra vs. GB10) ja kiinteän
+kustannuksen paremman jakautumisen kanssa huomattavasti korkeamman
+läpimenotehon yli — mutta tarkkaa 25-70-kertaista kerrointa ei pitäisi
+käsitellä siistinä, vertailukelpoisena tehokkuussuhteena, eikä sitä pidä
+ylitulkita vahvistamattomien capex-/tehonkulutussyötteiden vuoksi. Se on
+suuntaa antava, ei vahvistettu markkinahintapiste.</p>
+<hr />
+<h2 id="hyperskaala-teollisuustaso-gb300-nvl72-räkkimittakaava">5.
+HYPERSKAALA-/TEOLLISUUSTASO — GB300 NVL72 räkkimittakaava</h2>
+<h3 id="räkin-spesifikaatiot-fakta">5.1 Räkin spesifikaatiot
+(FAKTA)</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Erä</th>
+<th>Arvo</th>
+<th>Lähde</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPU:ta/räkki</td>
+<td>72× Blackwell Ultra</td>
+<td>NVIDIA:n virallinen GB300 NVL72 -sivu</td>
+</tr>
+<tr>
+<td>CPU:ta/räkki</td>
+<td>36× Grace (2 592 Arm Neoverse V2 -ydintä)</td>
+<td>NVIDIA:n virallinen sivu</td>
+</tr>
+<tr>
+<td>GPU-muisti</td>
+<td>20 TB HBM3e, jopa 576 TB/s</td>
+<td>NVIDIA:n virallinen sivu</td>
+</tr>
+<tr>
+<td>NVLink5-kaistanleveys</td>
+<td>130 TB/s</td>
+<td>NVIDIA:n virallinen sivu</td>
+</tr>
+<tr>
+<td>FP4 tiivis</td>
+<td>1 440 PFLOPS (10 800 PFLOPS harvuudella)</td>
+<td>NVIDIA:n virallinen sivu</td>
+</tr>
+<tr>
+<td>Räkin teho (TDP)</td>
+<td>135 kW</td>
+<td><strong>FAKTA</strong>, Lenovo Press LP2357 OEM-viitespesifikaatio
+(NVIDIA:n oma sivu ei julkaista tehonlukua)</td>
+</tr>
+<tr>
+<td>Räkin teho (huippu)</td>
+<td>jopa 155 kW</td>
+<td>Lenovo Press LP2357</td>
+</tr>
+</tbody>
+</table>
+<h3 id="vertailuarvon-läpimenoteho-kriittinen-skaalausvaraus">5.2
+Vertailuarvon läpimenoteho — kriittinen skaalausvaraus</h3>
+<p>NVIDIA:n oma MLPerf Inference v6.0 -lähetys raportoi <strong>2 494
+310 tokenia/sek</strong> (pyöristettynä “2,5M tok/s”:ksi NVIDIA:n omassa
+kuvatekstissä) DeepSeek-R1:lle — mutta tämä on <strong>aggregaatti
+neljän toisiinsa kytketyn GB300 NVL72 -räkin yli (288 GPU:ta)</strong>,
+ei yhden räkin. Jakaen tasan (<strong>LASKELMA</strong>):</p>
+<pre><code>per_rack_offline_tokps = 2 494 310 / 4 racks = 623 578 tok/s (johdettu, tasajaon oletus)</code></pre>
+<p>Ristiintarkistus NVIDIA:n suoraan julkaisemia per-GPU-lukuja vasten
+(<strong>FAKTA</strong>, tarkempi ja väitetysti luotettavampi kuin yllä
+oleva tasajako-johdannainen):</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Skenaario</th>
+<th>Per-GPU tok/s (FAKTA)</th>
+<th>×72 GPU:ta (LASKELMA, räkki yhteensä)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Offline</td>
+<td>9 821</td>
+<td>707 112</td>
+</tr>
+<tr>
+<td>Server (vuorovaikutteinen)</td>
+<td>8 064</td>
+<td>580 608</td>
+</tr>
+</tbody>
+</table>
+<p>Nämä kolme per-räkki-arviota (623 578 / 707 112 / 580 608) rajaavat
+uskottavan ~580 000-710 000 tok/s per-räkki-vaihteluvälin täsmällisestä
+skenaariosta ja johtamismenetelmästä riippuen — tämä työkirja käyttää
+<strong>623 578 tok/s</strong>:ia (tasajako-luku) ensisijaisena
+työlukunaan jatkuvuuden vuoksi 4-räkin aggregaattivertailun kanssa, ja
+merkitsee ~14% eron per-GPU-johdettuihin lukuihin nimenomaisesti sen
+sijaan, että valitsisi jommankumman äänettömästi.</p>
+<h3 id="tokeniakwh-laskelma-vain-sähkökerros">5.3 Tokenia/kWh (LASKELMA)
+— vain sähkökerros</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Perusta</th>
+<th>tok/s/kW</th>
+<th>Tokenia/kWh</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>623 578 tok/s @ 135kW TDP</td>
+<td>4 619</td>
+<td>16 628 733</td>
+</tr>
+<tr>
+<td>623 578 tok/s @ 155kW huippu</td>
+<td>4 023</td>
+<td>14 483 090</td>
+</tr>
+<tr>
+<td>580 608 tok/s (server-skenaario, per-GPU-johdettu) @ 135kW</td>
+<td>4 301</td>
+<td>15 482 880</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Vain sähkön kustannus per miljoona tokenia
+(LASKELMA)</strong> — tämä on vain pohjakerros, ennen mitään
+laitteisto-/rahoitus-/käyttömenokerrosta:</p>
+<table>
+<thead>
+<tr>
+<th>Sähkön hinta</th>
+<th>$/M tokenia (16.6M tok/kWh -perustalla)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0,06 $/kWh</td>
+<td>0,0036 $</td>
+</tr>
+<tr>
+<td>0,10 $/kWh</td>
+<td>0,0060 $</td>
+</tr>
+<tr>
+<td>0,25 $/kWh</td>
+<td>0,0150 $</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tämä vahvistaa lähderekisterin löydöksen: raaka sähkö on
+pyöristysvirhe hyperskaalassa — pieni murto-osa sentistä miljoonaa
+tokenia kohti tyypillisillä sähkön hinnoilla, ja alle kaksi senttiä
+vielä esitetyn vaihteluvälin korkeassa päässä (0,015 $, eli 1,5 senttiä,
+0,25 $/kWh:lla).</strong> Kaikki merkittävä kustannus tällä tasolla
+tulee pääomasta, rahoituksesta ja toiminnan yleiskustannuksista, ei
+tehosta.</p>
+<h3
+id="räkin-pääomakustannus-kaksi-hyvin-erilaista-vertailukohtaa-pidetty-nimenomaisesti-erillään">5.4
+Räkin pääomakustannus — kaksi hyvin erilaista vertailukohtaa, pidetty
+nimenomaisesti erillään</h3>
+<p><strong>Vertailukohta A — Huangin/Finkin lähetyksessä esittämästä
+50–60 $B/GW-luvusta johdettu implisiittinen
+kaikki-mukaan-lukien-infrastruktuurikustannus (LÄHDE, CNBC,
+10.8.2026):</strong></p>
+<pre><code>rack_share_of_1GW = 135kW / 1 000 000kW = 0.000135
+implied_allin_cost_per_rack = 50–60 $B × 0.000135 = 6,75 $M-8,1 $M</code></pre>
+<p>Tämä on täyden infrastruktuurin luku — maa, kuori, sähkönjakelu,
+jäähdytys ja laskenta yhdessä, Huangin ja Finkin omaa kehystä
+CNBC-lähetyksessä noudattaen — <strong>ei</strong> vain laitteiston
+hinta.</p>
+<p><strong>Vertailukohta B — havainnollistava
+vain-laitteisto-pääomamenot (OLETUS, analyytikon arvioon ankkuroitu,
+nimenomaisesti EI virallinen NVIDIA-hinta):</strong> 4 000 000 $/räkki.
+Mitään virallista NVIDIA-räkkihintaa ei löytynyt tässä tarkistuksessa;
+tämä luku sijoittuu Vertailukohta A:n alapuolelle, koska se sulkee pois
+maa-/kuori-/sähkönjakeluinfrastruktuurin, yhtenevästi sen kanssa, että A
+on “täysi rakennushanke” -luku ja B on “vain laskentalaitteisto”.</p>
+<p><strong>Rahoitusherkkyys 4 $M vain-laitteisto-skenaariolle (LASKELMA,
+8% korko):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Aika</th>
+<th>Annuiteettimaksu/vuosi</th>
+<th>Suoraviivainen poisto/vuosi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3 vuotta</td>
+<td>1 552 134 $</td>
+<td>1 333 333 $</td>
+</tr>
+<tr>
+<td>4 vuotta</td>
+<td>1 207 683 $</td>
+<td>1 000 000 $</td>
+</tr>
+<tr>
+<td>5 vuotta</td>
+<td>1 001 826 $</td>
+<td>800 000 $</td>
+</tr>
+<tr>
+<td>7 vuotta</td>
+<td>768 290 $</td>
+<td>571 429 $</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="käyttömeno-yleiskustannuskerros-oletus-tila-jäähdytys-raaka-sähkön-ylittävältä-osin-henkilöstö-verkko-korvausvaraus">5.5
+Käyttömeno-/yleiskustannuskerros (OLETUS — tila, jäähdytys raaka sähkön
+ylittävältä osin, henkilöstö, verkko, korvausvaraus)</h3>
+<table>
+<thead>
+<tr>
+<th>Skenaario</th>
+<th>$/vuosi per räkki</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Matala</td>
+<td>200 000 $</td>
+</tr>
+<tr>
+<td>Keski</td>
+<td>500 000 $</td>
+</tr>
+<tr>
+<td>Korkea</td>
+<td>1 000 000 $</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="hyperskaalataso-täysi-tuotantokustannuskäyrä-miljoona-tokenia-5v8-rahoitus-4-m-laitteistopääomalle-keskikäyttömenot-500-000-vuosi-010-kwh">5.6
+Hyperskaalataso — täysi tuotantokustannuskäyrä ($/miljoona tokenia),
+5v@8% rahoitus 4 $M laitteistopääomalle, keskikäyttömenot 500 000
+$/vuosi, 0,10 $/kWh</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>Käyttöaste</th>
+<th>Vuotuiset tokenit (LASKELMA)</th>
+<th>Raaka sähkö/M tok</th>
+<th>Pääoma+rahoitus/M tok</th>
+<th>Käyttömenot(keski)/M tok</th>
+<th><strong>YHTEENSÄ $/miljoona tokenia (LASKELMA)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Matala 25%</td>
+<td>4.92T</td>
+<td>0,0060 $</td>
+<td>0,204 $</td>
+<td>0,102 $</td>
+<td><strong>0,312 $</strong></td>
+</tr>
+<tr>
+<td>Keski 60%</td>
+<td>11.80T</td>
+<td>0,0060 $</td>
+<td>0,085 $</td>
+<td>0,042 $</td>
+<td><strong>0,133 $</strong></td>
+</tr>
+<tr>
+<td>Korkea 90%</td>
+<td>17.70T</td>
+<td>0,0060 $</td>
+<td>0,057 $</td>
+<td>0,028 $</td>
+<td><strong>0,091 $</strong></td>
+</tr>
+</tbody>
+</table>
+<h3
+id="ristiintarkistus-nvidian-omaa-julkaistua-lukua-vasten-nyt-itsenäisesti-vahvistettu-korjauksella-sen-soveltamisalaan">5.7
+Ristiintarkistus NVIDIA:n omaa julkaistua lukua vasten — nyt
+itsenäisesti vahvistettu, korjauksella sen soveltamisalaan</h3>
+<p><strong>Korjaus (2026-08-13):</strong> tämän työkirjan aiempi versio
+merkitsi “0,123 $/M tokenia” TARKISTAMATTOMAKSI. Se on nyt itsenäisesti
+vahvistettu suoraan NVIDIA:n omalla sivustolla: NVIDIA toteaa GB300
+NVL72:n toimittavan tekoälypäättelyä hintaan <strong>0,123 $ miljoonaa
+tokenia kohti 116 tokenin/sek/käyttäjä-vuorovaikutteisuudella, käyttäen
+NVIDIA Dynamoa ja TensorRT-LLM:ää</strong>, lähteenä SemiAnalysisin
+InferenceX-vertailuarvot huhtikuulta 2026 (<strong>[FAKTA]</strong> —
+nvidia.com/en-gb/solutions/ai/inference/, tarkistettu 2026-08-13).</p>
+<p><strong>Korjaus, jolla on merkitystä, koskee soveltamisalaa, ei
+olemassaoloa.</strong> Tämä luku kuvaa <strong>72-GPU:n GB300 NVL72
+-räkkimittakaavan järjestelmää</strong>, joka ajaa tiettyä
+ohjelmistopinoa (Dynamo + TensorRT-LLM) tietyllä
+vuorovaikutteisuusasetuksella (116 tok/s/käyttäjä) — se on
+hyperskaala-/teollisuustason luku, ja se kuuluu vain tähän luvun
+vertailuun, ristiintarkistettuna tämän työkirjan omaa 0,091–0,312
+$/M-tokenia hyperskaalavaihteluväliä vasten yllä (samaa suuruusluokkaa,
+yhtenevästi todellisen, vahvistetun luvun kanssa, joka osuu eri
+capex-/käyttömeno-oletuksille rakennetun mallinnetun vaihteluvälin
+sisälle). <strong>Sitä ei koskaan saa käyttää arvioimaan yhden
+työaseman, DGX Sparkin tai DGX Stationin taloutta</strong> — ne ovat
+täysin eri laitteistotasoja (ks. luku 2 ja Tokenitehtaan
+skenaariotyökirjan §1a/1b työasematason ja pöytätason luvuille).
+72-GPU:n räkkimittakaavan vertailuarvon käyttäminen yhden koneen
+osuustoiminnallisen oston hinnoitteluun aliarvioisi kyseisen tason
+todellisen kustannuksen noin kaksi–kolme suuruusluokkaa, mikä on juuri
+sitä tasojen välistä sekoittamista, jota tämän paperin
+ydinmenetelmäsääntö varoittaa (luku 1 yllä).</p>
+<p>SemiAnalysisin omalla live-InferenceX-hallintapaneelilla näkyy
+erikseen laajempi GB300 DeepSeek-R1-kustannusvaihteluväli, karkeasti
+<strong>0,065–0,076 $/M tokenia</strong> noin 70
+tok/s/käyttäjä-vuorovaikutteisuudella aina <strong>2,3–3,3 $/M
+tokenia</strong>:iin asti noin 219 tok/s/käyttäjällä (korkeampi
+vuorovaikutteisuus = vähemmän tokeneita eräkäsiteltynä yhdessä =
+korkeampi kustannus) — nyt vahvistettu 0,123 $/M-tokenia-luku sijoittuu
+tämän saman vaihteluvälin sisään, tietyssä vuorovaikutteisuuspisteessä
+(116 tok/s/käyttäjä), joka eroaa vaihteluvälin molemmista päistä, mikä
+on odotettavaa, kun otetaan huomioon, että “tokenia wattia kohti” ei ole
+yksi kiinteä luku millekään sirulle (ks. luvun 10 keskustelu samasta
+vuorovaikutteisuuskompromissista).</p>
+<h3
+id="hyperskaalataso-tekoäly-työtunti-keskiskenaario-0133-m-tokenia">5.8
+Hyperskaalataso — $/tekoäly-työtunti (keskiskenaario, 0,133 $/M
+tokenia)</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Käyttöintensiteettivyöhyke</th>
+<th>Tokenia/tunti</th>
+<th><strong>$/tekoäly-työtunti</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chat/neuvonantaja</td>
+<td>10 000-30 000</td>
+<td>0,0013–0,0040 $</td>
+</tr>
+<tr>
+<td>Aktiivinen tekoälytyötoveri/kopilotti</td>
+<td>60 000-120 000</td>
+<td>0,0081–0,0161 $</td>
+</tr>
+<tr>
+<td>Delegoitu yksittäisagentti</td>
+<td>200 000-600 000</td>
+<td>0,0269–0,0807 $</td>
+</tr>
+<tr>
+<td>Raskas moniagenttiorkestrointi</td>
+<td>1 000 000-12 000 000</td>
+<td>0,133–1,614 $</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="vera-rubin-nvl72-tulevaisuuteen-katsova-vertailu-ei-tämän-työkirjan-perustaso-esitetty-vain-kontekstiksi">5.9
+Vera Rubin NVL72 — tulevaisuuteen katsova vertailu (ei tämän työkirjan
+perustaso; esitetty vain kontekstiksi)</h3>
+<p>NVIDIA:n omat toimittajaväitteet (<strong>LÄHDE</strong>,
+markkinointimateriaali) seuraavan sukupolven Vera Rubin NVL72:lle
+(GB300:n seuraaja) väittävät “jopa 10x enemmän tokeneita per megawatti”
+ja “yksi kymmenesosa kustannuksesta per miljoona tokenia” verrattuna
+GB200 NVL72:een. SemiAnalysisin oma itsenäinen, vertailuarvoihin
+perustuva analyysi on maltillisempi ja työkuormariippuvainen:
+<strong>~1.5-8x</strong> kustannusetu ja läpimenoteho-per-MW-kuilu, joka
+alkaa noin 2x matalalla vuorovaikutteisuudella ja saavuttaa
+<strong>~5.4x</strong> korkealla vuorovaikutteisuudella, riippuen siitä,
+mitä GB200/GB300-perustason sukupolvea käytetään. Älä käytä toimittajan
+“10x”/“yksi kymmenesosa” -lukuja vahvistettuna kertoimena missään
+tulevaisuuteen suuntautuvassa arviossa siteeraamatta rinnalle tätä
+maltillisempaa itsenäistä vaihteluväliä.</p>
+<hr />
+<h2
+id="käyttöintensiteetti-tokeniatunti-muunnoskaistat-käytössä-joka-tason-työtunti-rivillä">6.
+Käyttöintensiteetti → tokenia/tunti-muunnoskaistat (käytössä joka tason
+$/työtunti-rivillä)</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Käyttötapa</th>
+<th>Tokenia/tekoäly-työtunti</th>
+<th>Luokka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chat/neuvonantaja-tila</td>
+<td>10 000-30 000</td>
+<td><strong>OLETUS</strong> — havainnollistava kaista, tuettu yleisillä
+käyttökuvioilla, ei yksittäinen vahvistettu tilasto</td>
+</tr>
+<tr>
+<td>Aktiivinen tekoälytyötoveri/kopilotti</td>
+<td>60 000-120 000</td>
+<td><strong>OLETUS</strong></td>
+</tr>
+<tr>
+<td>Delegoitu yksittäisagentti</td>
+<td>200 000-600 000</td>
+<td><strong>OLETUS</strong></td>
+</tr>
+<tr>
+<td>Raskas moniagenttiorkestrointi</td>
+<td>1 000 000-12 000 000+</td>
+<td><strong>OLETUS</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tukeva konteksti (LÄHDE, OpenAI:n oma itse-raportoitu
+sisäinen telemetria, ei itsenäisesti auditoitu):</strong> OpenAI
+raportoi, että Codex saavutti 99,8 % sen viikoittaisesta sisäisestä
+tuotostokenimäärästä vuoden 2026 puoliväliin mennessä; toukokuuhun 2026
+mennessä 70,2 % otannassa olleista Codex-käyttäjistä oli tehnyt
+vähintään yhden pyynnön, joka arvioitiin yli 1 ihmistyötunnin
+vastaavaksi työksi, ja 25,6 % oli tehnyt vähintään yhden yli 8
+ihmistyötunnin pyynnön; kesäkuuhun 2026 mennessä 99. persentiilin
+raskaat käyttäjät tuottivat säännöllisesti 60+ tuntia Codex-agentin
+vuoroaikaa päivässä rinnakkaisten agenttien yli. Lähde: OpenAI, “How
+agents are transforming work”
+(openai.com/index/how-agents-are-transforming-work/, 25.6.2026), haettu
+Wayback Machine -arkiston kautta. Itsenäinen lehdistöuutisointi toteaa
+nimenomaisesti, että “jokainen luku tulee OpenAI:lta itseltään”, eikä
+kolmannen osapuolen auditointia ole — käsittele näitä suuntaa antavana
+kontekstina sille, miksi raskaan orkestroinnin käyttökaistat voivat olla
+suuruusluokkia korkeammalla kuin chat-tilan käyttö, ei tarkkojen
+kaistarajojen kalibrointina.</p>
+<p><strong>Väitettyä NVIDIA:n viitteellistä agenttimaista työkuormalukua
+“32K syöte + 8K tulostetokenia/vuoro” ei löytynyt missään</strong>
+laajasta hausta huolimatta (lähderekisteri, klusteri J), eikä sitä
+pitäisi siteerata NVIDIA-lukuna tässä tai missään muussa
+julkaisuresurssissa.</p>
+<hr />
+<h2
+id="vähittäis-api-hinnoittelu-vain-vertailukerros-ei-tuotantokustannussyöte">7.
+Vähittäis-API-hinnoittelu — vain vertailukerros, ei
+tuotantokustannussyöte</h2>
+<p>Ei käytettäväksi omistetun laitteiston hinnoitteluun. Esitetty vain
+“osta verkosta” -vertailukohtana (luvun 1 menetelmäsäännön mukaan).
+Kaikki vahvistettu <strong>FAKTA</strong>- tai
+<strong>LÄHDE</strong>-tasoiseksi 2026-08-12 mennessä (ks. täysi
+lähderekisteri per-mallin luottamushuomautuksille):</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Tarjoaja/taso</th>
+<th>Syöte $/M tokenia</th>
+<th>Tuloste $/M tokenia</th>
+<th>Luokka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anthropic Claude Sonnet 5</td>
+<td>2,00 $</td>
+<td>10,00 $</td>
+<td><strong>FAKTA</strong> — Anthropicin oma live-hintasivu; tämä on nyt
+pysyvä vakiohinta, ei vanheneva esittelyhinta</td>
+</tr>
+<tr>
+<td>Anthropic Claude Opus 5</td>
+<td>5,00 $</td>
+<td>25,00 $</td>
+<td><strong>FAKTA</strong></td>
+</tr>
+<tr>
+<td>Anthropic Claude Fable 5</td>
+<td>10,00 $</td>
+<td>50,00 $</td>
+<td><strong>FAKTA</strong></td>
+</tr>
+<tr>
+<td>OpenAI GPT-5.6 Luna</td>
+<td>0,20 $</td>
+<td>1,20 $</td>
+<td><strong>LÄHDE</strong> — tekoälyn tiivistämän hakutuloksen kautta,
+ei raakaa ensisijaista tekstiä; käsittele matalamman luottamuksen
+lukuna</td>
+</tr>
+<tr>
+<td>OpenAI GPT-5.6 Terra</td>
+<td>2,00 $</td>
+<td>12,00 $</td>
+<td><strong>LÄHDE</strong></td>
+</tr>
+<tr>
+<td>OpenAI GPT-5.6 Sol</td>
+<td>5,00 $</td>
+<td>30,00 $</td>
+<td><strong>LÄHDE</strong></td>
+</tr>
+<tr>
+<td>Google Gemini 3.1 Pro (≤200K tokenia)</td>
+<td>2,00 $</td>
+<td>12,00 $</td>
+<td><strong>FAKTA</strong> — Googlen oma live-hintasivu; malli on
+edelleen “Preview”-tilassa, ei GA</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tasojen luku vs. vähittäishinta, korjattu 2026-08-13 (tämän
+kappaleen aiempi versio esitti tukemattoman ja suunnaltaan väärän “14-25
+kertaa kalliimpaa” -väitteen — todellinen vertailu on vivahteikkaampi ja
+riippuu voimakkaasti sekä Kotitaloustason käyttöasteesta että siitä,
+mitä vähittäistasoa käytetään):</strong> käyttäen samaa 30% syöte / 70%
+tuloste -sekoitussopimusta, jota käytetään johdonmukaisesti muualla
+tässä paperissa (ks. Tekoälytyökapasiteetin muuntotyökirja §C.0), yllä
+olevat vähittäistasot sekoittuvat noin arvoihin 0,90 $/M (Luna), 7,60
+$/M (Sonnet 5), 9,00 $/M (Terra/Gemini), 19,00 $/M (Opus 5), 22,50 $/M
+(Sol) ja 38,00 $/M (Fable 5) <strong>[LASKELMA]</strong>.</p>
+<p>Kotitaloustason <strong>parhaan tapauksen</strong> $/M-tokenia-lukua
+vasten (~1,37 $ 38,4 tok/s:lla, 80% käyttöasteella): Kotitalous on
+<em>halvempi</em> kuin kaikki vähittäistasot paitsi Luna (jossa Luna on
+sen sijaan noin 1,5 kertaa halvempi kuin Kotitalous). Kotitaloustason
+<strong>huonoimman tapauksen</strong> $/M-tokenia-lukua vasten (~11,89 $
+10 % käyttöasteella): Kotitalous on nyt kalliimpi kuin Luna, Sonnet 5,
+Terra ja Gemini, karkeasti verrattavissa Opus 5:een, ja halvempi kuin
+Sol ja Fable 5 <strong>[LASKELMA]</strong>.</p>
+<p><strong>Rehellinen löydös ei siis ole kiinteä kerroin kumpaankaan
+suuntaan — se on, että Kotitalousmittakaavan itseisännöinnin
+kustannuskilpailukyky vähittäishintaan verrattuna riippuu täysin siitä,
+(a) miten tasaisesti omistaja todella käyttää konetta ja (b) mikä
+vähittäistaso on realistinen vaihtoehto.</strong> Hyvin käytetty
+Kotitalouslaite voi alittaa useimmat keski-/premium-vähittäistasot;
+heikosti käytetty voi olla kalliimpi kuin kaikki paitsi kalleimmat
+vähittäistasot. Tämä on yhtenevä laajemman whitepaperin
+omistusarkkitehtuuriväitteen kanssa, jonka mukaan itseisännöinnin
+perustelu lepää datan hallinnalla, räätälöinnillä ja riippumattomuudella
+tarjoajasta — mutta ei ole totta, että itseisännöinti olisi
+kategorisesti kilpailukyvytön raa’assa $/token-kustannuksessa, eikä tämä
+työkirja enää väitä niin. Hyperskaalan tuotantokustannus (0,091–0,312
+$/M tokenia, kanoninen keski 0,133 $/M) pysyy kaukana minkä tahansa
+tässä esitetyn vähittäis-API-hinnan alapuolella joka
+käyttöastesenaariossa — yhtenevästi lähderekisterin löydöksen kanssa,
+jonka mukaan eturintaman laboratorioiden päättelypalvelun katteet ovat,
+Huangin oman lähetyksessä esittämän kehyksen mukaan, “uskomattoman
+tuottoisia” (LÄHDE, vahvistamaton mitään laboratorion tosiasiallisesti
+julkistettuja katteita vasten).</p>
+<hr />
+<h2 id="paikallistamishuomautus">8. Paikallistamishuomautus</h2>
+<p>Kaikki yllä olevat luvut käyttävät globaalia USD-perustasoa
+havainnollistavilla sähkön hintaskenaarioilla. Paikallistaaksesi:</p>
+<ol type="1">
+<li>Korvaa 0,06 $/0,12 $/0,25 $ (tai 0,10 $ keski, jos käytössä)
+per-kWh-skenaariot omalla todellisella paikallisella
+kaupallisella/teollisella tariffillasi — tämä on tavallisesti suurin
+laillinen maiden välisen vaihtelun lähde.</li>
+<li>Korvaa rahoituskorko/-aika omilla paikallisesti saatavilla
+luottoehdoillasi (kuluttajaluotto, pk-yrityslaina tai
+infrastruktuurihankkeen rahoitus, tasosta riippuen).</li>
+<li>Muunna USD paikalliseksi valuutaksi ilmoitetulla FX-kurssilla ja
+päivämäärällä — älä koskaan sekoita valuuttoja äänettömästi.</li>
+<li>Aja käyttöastesenaariot uudelleen omaa realistista käyttökuviotasi
+vasten; tässä esitetyt havainnollistavat matala/keski/korkea-kaistat
+eivät ole kalibroitu millekään tietylle maalle tai organisaatiolle.</li>
+</ol>
+<hr />
+<h2
+id="yhteenvetovertailutaulukko-keskiskenaarion-miljoona-tokenia-kaikkien-neljän-tason-yli">9.
+Yhteenvetovertailutaulukko — keskiskenaarion $/miljoona tokenia kaikkien
+neljän tason yli</h2>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Taso</th>
+<th>Pääomaperusta</th>
+<th>Käyttömenot/yleiskustannukset mukana?</th>
+<th>Keski $/M tokenia (LASKELMA)</th>
+<th>Luottamus pääoma-/tehosyötteisiin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kotitalous (1× DGX Spark)</td>
+<td>4 699 $, FAKTA-hinta</td>
+<td>Kyllä (§2, havainnollistava tuki-/ohjelmistovaraus)</td>
+<td>3,17 $</td>
+<td>Korkea — hinta ja teho FAKTA, läpimenoteho
+FAKTA-yhteisövertailuarvo</td>
+</tr>
+<tr>
+<td>Osuustoiminnallinen (50 jäsentä, 10× DGX Spark)</td>
+<td>46 990 $, FAKTA-hinta ×10</td>
+<td>Kyllä (§3.3, OLETUS-hallinto-/verkkokaista)</td>
+<td>3,20 $</td>
+<td>Korkea laitteistolle; hallinto/yleiskustannukset OLETUS</td>
+</tr>
+<tr>
+<td>Ammattimainen (1× HGX B300 -solmu)</td>
+<td>350 000 $, OLETUS</td>
+<td><strong>Ei — vain pääoma+rahoitus+sähkö (§4.3); havainnollistavan
+käyttömenoherkkyyden lisäämisen jälkeen §4.3:ssa keskitapaus nousee
+~0,080 $/M:ään</strong></td>
+<td>0,064 $ (ei käyttömenoja)</td>
+<td>Matala-keskitasoinen — capex ja teho ovat vahvistamattomia
+paikkamerkkejä; läpimenoteho on skaalausjohdannainen, ei suora
+vertailuarvo</td>
+</tr>
+<tr>
+<td>Hyperskaala (1× GB300 NVL72 -räkki)</td>
+<td>4 000 000 $, OLETUS (vain laitteisto)</td>
+<td>Kyllä (§5.5, OLETUS-käyttömenokaista, 200 $k-1M/vuosi)</td>
+<td>0,133 $</td>
+<td>Keskitasoinen — räkin spesifikaatiot ja teho FAKTA; capex on
+analyytikkoon ankkuroitu OLETUS, ei virallinen hinta</td>
+</tr>
+</tbody>
+</table>
+<p><strong>TULKINTA, korjattu 2026-08-13:</strong> noin 25-50-kertainen
+kuilu Kotitalous-/Osuustoiminnallisen ja Ammattimaisen/Hyperskaalatason
+välillä on suunnaltaan yhtenevä odotettujen mittakaavaetujen kanssa
+tekoälyinfrastruktuurissa (uudemman sukupolven piirit, kiinteän
+kustannuksen parempi jakautuminen huomattavasti korkeamman läpimenotehon
+yli), mutta sitä ei pitäisi lukea tarkkana kertoimena yllä olevien
+sekoitettujen luottamustasojen vuoksi — Kotitalous-/Osuustoiminnallinen
+taso lepää FAKTA-hintojen ja FAKTA-yhteisövertailuarvojen varassa, kun
+taas Ammattimainen taso erityisesti lepää OLETUS-tason capex- ja
+tehosyötteiden varassa, eikä julkista hintaa tälle tietylle
+laitteisto-SKU:lle löytynyt. <strong>Ammattimaisen-vs-Hyperskaalan
+vertailu ei erityisesti ole omenoita-omenoihin</strong>: Ammattimaisen
+0,064 $/M sulkee käyttömenot kokonaan pois, kun Hyperskaalan 0,133 $/M
+sisältää ne, niin osa näennäisestä 2-kertaisesta kuilusta niiden välillä
+on soveltamisala-artefakti, ei puhdas laitteistosukupolvien vaikutus —
+ks. §4.3:n havainnollistava käyttömenoherkkyys, joka kaventaa tätä
+kuilua, kun uskottava (vaikkakin vahvistamaton) käyttömenovaraus
+lisätään Ammattimaiseen tasoon.</p>
+</article>
+<div class="page-footer-nav">
+  <a href="index.html">← Takaisin etusivulle</a>
+  <a href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous/blob/main/03-workbook-global-baseline.md">Katso lähde / muokkaa GitHubissa →</a>
+</div>
+</main>
+<footer>
+  <p>© Valto Loikkanen. Lisensoitu CC BY 4.0 -lisenssillä ilmoitetuin osin. Opetuksellista tutkimusta ja skenaarioanalyysiä — ei sijoitus-, oikeudellista, vero-, hankinta- tai politiikkaneuvontaa. Tämä on suomenkielinen käännös alkuperäisestä englanninkielisestä julkaisusta.</p>
+  <p><a href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous">Katso tietovarasto GitHubissa</a></p>
+</footer>
+</body>
+</html>

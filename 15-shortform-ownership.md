@@ -1,0 +1,15 @@
+Kuka omistaa tekoälysi? Sähköverkkoanalogia omistuskysymyksen takana
+
+Biljoonia dollareita sitoutetaan tekoälyinfrastruktuuriin, mutta pääoma ei vain osta kykyä — se ostaa hallintaa. Alkutekstin "Miksi tekoälyyn investoidaan biljoonia?" osa V erottaa tekoälyn "omistusrakenteen" erillisiin kerroksiin — energia, laitteisto, laskentapääsy, mallit, tieto, agentit, identiteetti ja hallinta — ja havaitsee, että keskittyminen vaihtelee jyrkästi kerroksesta riippuen: laitteistovalmistus on erittäin keskittynyttä yhdelle hallitsevalle toimittajalle, kun taas laskentapääsy vaihtelee yksittäisestä omistetusta laitteesta hyperskaalapilvisopimuksiin [HAVAITTU FAKTA/TULKINTA, osa V §26].
+
+Yksi toistuva tapa tehdä tämä ymmärrettäväksi on sähköverkkoanalogia: kotitalouden aurinkopaneelit vastaavat henkilökohtaisesti omistettua tekoälylaitetta; energiaosuuskunta vastaa yhdistettyä yhteisölaskentaa; kaupallinen sähköntuottaja vastaa sopimusperusteista päättelypalveluntarjoajaa (esim. IBM Cloudin omistautunut klusterisopimus Together AI:n kanssa); ja teollisen mittakaavan laitos vastaa hyperskaala-tekoälytehdasta. Analogian heikoin lenkki on itse sähköverkko/pörssi — sähköllä on kypsä, kitkaton markkina ylijäämäkapasiteetin kauppaan; tekoälylaskennalla ei ole vielä vastaavaa, ja alustat kuten OpenRouter ovat vain osittainen likiarvo [TULKINTA, osa V §28].
+
+Alkuteksti mallintaa todellisia lukuja laskentaosuuskunnalle kahdella eri laitteistotasolla — karkeasti 19,50–23 euroa jäsentä/kuukausi kohti pienempien DGX Spark -luokan laitteiden poolille, verrattuna noin 42 euroon/jäsen/kuukausi yhdelle jaetulle työasemaluokan koneelle, kunkin taustalla olevat oletukset näytettynä selkeästi sen sijaan, että niitä käsiteltäisiin yhtenä kiistanalaisena lukuna [JOHDETTU LASKELMA, osa V §27]. Mitään omistusmallia — keskitettyä alustaa, yrityssopimusta, avoimen painotuksen itseisännöintiä, yksityistä omistusta, osuuskuntaa tai paikallista/alueellista kapasiteettia — ei osoiteta hallitsevan kaikilla kustannuksen, hallinnan, sietokyvyn ja kätevyyden ulottuvuuksilla [osa V §30].
+
+Avaus, ilmoitettu alkutekstissä itsessään: kirjoittajalla, Valto Loikkasella, on kommersiaalisia ja edunajointiin liittyviä intresseja osuustoiminnallisiin ja henkilökohtaisen omistuksen tekoälymalleihin Prifinan, Digiolen, ValtoAI:n ja PIOS- ja EIOS-viitekehyksien kautta. Tässä kuvattu osuustoiminnallinen/omistusarkkitehtuuri esitetään yhtenä ehdokasmallina useiden joukossa, arvioituna omilla luvuillaan — ei väitettynä ylivertaiseksi, ei sijoitus- tai politiikkaneuvontana.
+
+Julkaistu CC BY 4.0 -lisenssillä. Ehdotettu viittaustapa: Tutkimussynteesi ja mallinnus: Valto Loikkanen, tekoälyn avustuksella.
+
+---
+
+Sanamäärä: noin 340 sanaa. Tämä toimitettava on itsenäinen lyhytmuotoinen selittävä teksti (tiedostoa ei kirjoitettu, tehtäväohjeiden mukaisesti raporttitiedostojen luomista vastaan) — palauta yllä oleva teksti lopullisena resurssina. Lähdeperusta: alkutekstin "Miksi tekoälyyn investoidaan biljoonia?" (Valto Loikkanen) osa V ("Omistus, pääsy ja mahdolliset markkina-arkkitehtuurit"), osat 26–30.

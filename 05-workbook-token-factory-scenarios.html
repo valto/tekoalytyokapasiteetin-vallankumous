@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tokenitehtaan
+skenaariotyökirja — Miksi tekoälyyn investoidaan biljoonia?</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header>
+  <h1 style="font-size:1.5rem;"><a href="index.html" style="color:#fff; text-decoration:none;">Miksi tekoälyyn investoidaan biljoonia?</a></h1>
+  <p class="meta">Tutkimuspohja ja elävä viitekehys &nbsp;·&nbsp; CC BY 4.0</p>
+</header>
+<main>
+<nav class="crumbs"><a href="index.html">Etusivu</a> / Tokenitehtaan skenaariotyökirja</nav>
+<article class="doc-body">
+<h1 id="tokenitehtaan-skenaariotyökirja">Tokenitehtaan
+skenaariotyökirja</h1>
+<p><strong>Julkaisuresurssi #10 — “Miksi tekoälyyn investoidaan
+biljoonia?” (Valto Loikkanen, CC BY 4.0)</strong> <strong>Tila:
+koulutuksellinen / ei neuvontaa.</strong> Kaikki alla olevat luvut ovat
+joko lähdeviitattuja faktoja, lähteeseen kohdistettuja lausuntoja,
+näistä läpinäkyvästi johdettuja laskelmia tai selkeästi merkittyjä
+skenaario-oletuksia. Mikään tässä ei ole sijoitus-, oikeudellista,
+vero-, hankinta- tai politiikkaneuvontaa, eikä yksikään skenaariomalli
+ole ennuste tai suositus — kaikki syöttöarvot ovat muokattavia, ja tulos
+on aina yhtä hyvä kuin valitsemasi syöttöarvot.</p>
+<p><strong>Näyttöluokkien lyhenteet</strong> (käytössä läpi tekstin):
+<strong>[FAKTA]</strong> = Havaittu fakta · <strong>[LÄHDE]</strong> =
+Lähteeseen kohdistettu lausunto · <strong>[LASKELMA]</strong> = Johdettu
+laskelma (kaava aina esitetty) · <strong>[OLETUS]</strong> =
+Skenaario-oletus (muokattava, ei markkinaluku) ·
+<strong>[TULKINTA]</strong> = Tulkinta.</p>
+<p><strong>Valuuttahuomautus:</strong> tämä työkirja käyttää
+<strong>globaalia USD-perustasoa</strong>, paitsi luvussa 1, jossa
+täsmäytetään kaksi <strong>EUR-määräistä</strong> lukua kirjoittajan
+omasta julkaistusta osuustoiminnallisesta mallista — EUR on säilytetty
+siellä, koska se on täsmäytettävien alkuperäislähteiden valuutta.</p>
+<hr />
+<h2
+id="korjattu-42-vs.-195023-per-jäsenkk-luvut-eivät-olleet-koskaan-vertailukelpoisia-ratkaistu-ei-vain-täsmäytetty">1.
+KORJATTU: 42 € vs. 19,50–23 € per-jäsen/kk-luvut eivät olleet koskaan
+vertailukelpoisia — ratkaistu, ei vain täsmäytetty</h2>
+<p>Tämän työkirjan aiempi luonnos käsitteli lukuja 42 €/jäsen/kk ja
+19,50–23 €/jäsen/kk kahtena kilpailevana arviona <em>samasta</em>
+osuustoiminnallisesta skenaariosta, joiden välillä oli selittämätön ~2x
+kuilu. 2026-08-13 kirjoittaja tarkisti omat alkuperäiset oletuksensa ja
+selvensi todellisen tilanteen, mikä ratkaisee kuilun sen sijaan, että se
+vaatisi lisää arvailua:</p>
+<ol type="1">
+<li><strong>42 €/jäsen/kk ei ollut koskaan laitteistotarjoukseen
+perustuva luku.</strong> Se rakennettiin kirjoittajan omalle
+<strong>havainnollistavalle 100 000 € ALV:ttä-pääomaoletukselle</strong>
+yhteiskäytössä olevalle työasemaluokan koneelle — nimenomaisesti
+skenaario-oletus, ei todennettu ostohinta millekään tietylle tuotteelle.
+Alkuperäinen julkaistu artikkeli ei paljastanut tätä perustaa, minkä
+takia tämän työkirjan aiempi luonnos virheellisesti käsitteli 42 €:ta
+läpinäkymättömänä, ei-tarkastettavana “julkaistuna faktana”, joka piti
+käänteismallintaa. Se ei ole läpinäkymätön, kun 100 000 €:n perusta on
+ilmoitettu; se on normaali <strong>[OLETUS]</strong>-vetoinen
+skenaariotulos, täysin tarkastettavissa kunhan perusta annetaan (ks.
+laskettu uudelleenlaskenta alla).</li>
+<li><strong>19,50–23 €/jäsen/kk on eri laitteistoluokka, ei kilpaileva
+arvio samasta.</strong> Tämä luku rakennettiin 10× NVIDIA <strong>DGX
+Spark</strong> -yksikön varaan vahvistetulla nykyhinnalla 4 699 $
+kappale (<strong>[FAKTA]</strong>) — huomattavasti pienempi, halvempi,
+yhden GPU:n luokan pöytälaite, ei työasemaluokan tai räkkimittakaavan
+kone. Kaksi lukua kuvasivat eri laitteistoa alusta alkaen.</li>
+</ol>
+<p><strong>Ei siis ole olemassa kuilua täsmäytettäväksi kahden yhden
+asian mittauksen välillä — on olemassa kaksi eri laitteistotason
+skenaariota, jotka ovat molemmat sisäisesti johdonmukaisia, mutta jotka
+virheellisesti esitettiin ikään kuin niiden pitäisi täsmätä.</strong>
+Alla oleva korjattu käsittely pitää ne selkeästi erillään.</p>
+<h3
+id="a.-dgx-station--luokan-skenaario-korjattu-havainnollistava-100-000-pääomaperusta">1a.
+DGX Station -luokan skenaario, korjattu (havainnollistava 100 000 €
+pääomaperusta)</h3>
+<p>NVIDIA:n nykyinen DGX Station (GB300-pohjainen) on todellinen,
+nimetty vertailukohta sen <em>tyyppiselle</em> koneelle, jota osuuskunta
+voisi käytännössä jakaa: <strong>748 GB koherenttia muistia ja jopa 20
+petaFLOPS:ia FP4-tekoälylaskentaa</strong> (<strong>[FAKTA]</strong> —
+nvidia.com/en-us/products/workstations/dgx-station/, tarkistettu
+2026-08-13), NVIDIA:n asemoimana ajamaan malleja aina 1 biljoonan
+parametrin kokoon asti ja pitkäkestoisia paikallisia tekoälyagentteja.
+<strong>NVIDIA ei julkaise vähittäis- tai listahintaa tälle
+järjestelmälle</strong> (<strong>[FAKTA]</strong> — sama lähde; sivu
+ohjaa ostajat “ottamaan yhteyttä kumppaniin” ja
+markkinapaikkalistaukseen hinnan näyttämisen sijaan) — joten mikä
+tahansa tässä käytetty ostohinta on <strong>tarjoustason
+havainnollistava oletus</strong>, ei virallinen hinta, eikä sitä saa
+siteerata sellaisena.</p>
+<p>Vain havainnollistamistarkoituksessa oletetaan, että osuuskunta
+hankkii sopivan järjestelmän <strong>100 000 € excluding
+VAT:lla</strong> (<strong>[OLETUS]</strong> — nimenomaisesti ei DGX
+Stationin listahinta, koska sellaista ei ole olemassa), rahoitettuna 5
+vuoden ajalle 6,5 %:lla (<strong>[OLETUS]</strong>):</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Kustannuserä</th>
+<th>Kaava</th>
+<th>Tulos</th>
+<th>Luokka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Laitteiston rahoitus</td>
+<td>Standardi tasaerälaina 100 000 €:lle, 5v, 6,5 % APR, muunnettuna
+kuukausiluvuksi</td>
+<td><strong>≈1 957 €/month</strong></td>
+<td><strong>[LASKELMA]</strong>
+<strong>[OLETUS]</strong>-pääomaperustalla</td>
+</tr>
+<tr>
+<td>Sähkö</td>
+<td>1 kW havainnollistava keskimääräinen jatkuva kuormitus × 24h × ~30.4
+päivää/kk × 0,15 €/kWh</td>
+<td><strong>≈108 €/month</strong></td>
+<td><strong>[LASKELMA]</strong>
+<strong>[OLETUS]</strong>-keskikuormitusluvulla</td>
+</tr>
+<tr>
+<td>Jäähdytys/tehon yleiskustannus</td>
+<td>25% allowance sähkörivistä</td>
+<td><strong>≈27 €/month</strong></td>
+<td><strong>[OLETUS]</strong></td>
+</tr>
+<tr>
+<td><strong>Peruslaskentainfrastruktuuri yhteensä</strong></td>
+<td>Yllä olevien kolmen rivin summa</td>
+<td><strong>≈2 092 €/month</strong></td>
+<td><strong>[LASKELMA]</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>1 kW:n keskikuormitusoletuksesta:</strong> NVIDIA:n omassa
+dokumentaatiossa todetaan <strong>kiinteä maksimijärjestelmätehobudjetti
+1 600 W (1.6 kW)</strong> DGX Station GB300:lle, jaettuna
+GB110-laskentamoduulin ja valinnaisen RTX-lisäkortin kesken
+(<strong>[FAKTA]</strong> —
+docs.nvidia.com/dgx/dgx-station-development-guide/dynamic-power-sloshing.html,
+tarkistettu 2026-08-13). Yllä käytetty 1 kW:n luku on siis
+<strong>havainnollistava keskimääräisen käyttökuorman oletus, selvästi
+dokumentoidun 1.6 kW:n katon sisäpuolella</strong> — se ei ole mitattu
+kulutusluku mistään todellisesta käyttöönotosta, ja
+käyttöastesidonnainen kuormitus voisi todennäköisesti vaihdella missä
+tahansa kohdassa aina tähän 1.6 kW:n maksimiin asti.</p>
+<p><strong>Jaettuna jäsenten kesken (</strong>[LASKELMA]<strong>,
+samalla 2 092 €/month-perustalla läpi taulukon):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Jäsenet, jotka jakavat tämän yhden koneen</th>
+<th>€/member/month</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20</td>
+<td>105 €</td>
+</tr>
+<tr>
+<td><strong>50</strong></td>
+<td><strong>42 €</strong></td>
+</tr>
+<tr>
+<td>100</td>
+<td><strong>21 €</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Tämä on täsmällinen laskutoimitus, joka on kirjoittajan alun perin
+julkaisemien lukujen 42 € (50 jäsentä) ja 21 € (100 jäsentä) taustalla —
+molemmat nyt esitettyinä <strong>[LASKELMA]</strong>-tuloksina
+eksplisiittisestä, muokattavasta 2 092 €/month-perustasta, ei
+tarkastamattomina “julkaistuina faktoina”. Tämän työkirjan aiempi
+luonnos oli väärässä kuvatessaan 42 €-lukua mahdottomana tarkastaa; se
+on täysin tarkastettavissa, kunhan 100 000 €:n havainnollistava
+pääomaperusta (jota alkuperäinen artikkeli ei ilmoittanut)
+paljastetaan.</p>
+<p>Tämä laskelma jättää tarkoituksella pois ihmiset, datan tallennuksen,
+ohjelmistokehityksen, sovellukset, tuen ja mallien koulutuksen — se
+hinnoittelee vain jaetun laitteiston rahoituksen ja tehon avoimien
+tekoälymallien ajamiseksi, täsmälleen alkuperäisen rajauksen mukaisesti.
+Käytännössä yhtä konetta jaettaisiin päättelypalvelun kautta sen sijaan,
+että jokaiselle jäsenelle varattaisiin erillinen malli tai kone,
+lisäkoneita rahoitettaisiin kysynnän kasvaessa.</p>
+<h3
+id="b.-dgx-spark--skenaario-muuttumaton-pidetty-selkeästi-erillään">1b.
+DGX Spark -skenaario (muuttumaton, pidetty selkeästi erillään)</h3>
+<p><strong>~19,50–23 €/jäsen/kk</strong>-luku pysyy pätevänä
+<strong>kuvauksena eri, pienemmästä laitteistoluokasta</strong>: 10×
+NVIDIA DGX Spark -yksikköä vahvistetulla nykyhinnalla 4 699 $ kappale
+(<strong>[FAKTA]</strong>) — 10 units × 4 699 $ ≈ 46 990 $ pääomaa;
+5v@8% rahoitus ≈ 11 770 $/yr; sähkö ≈ 2 000 $–4 000/yr; yhteensä ≈ 14
+000 $–15 770/yr <strong>ennen hallintoa/verkkoa</strong>, ÷ 50 jäsentä ÷
+12 kuukautta. Ks. Globaali perustaso -työkirjan (Julkaisuresurssi #7)
+luku 2 täydelle rakenteelle. Tämä on <strong>[LASKELMA]</strong>,
+muuttumaton aiempaan luonnokseen verrattuna.</p>
+<p><strong>Yhteenveto, korjattu:</strong> 42 €/jäsen/kk (50 jäsentä,
+havainnollistava 100 000 € DGX-Station-luokan kone) ja 19,50–23
+€/jäsen/kk (50 jäsentä, vahvistetut 4 699 $ DGX Spark -koneet) eivät ole
+kaksi ristiriitaista arviota yhdestä osuuskunnasta. Ne ovat kaksi
+sisäisesti johdonmukaista, nimenomaisesti eri laitteistotason
+skenaariota — yksi suurempi jaettu työasemaluokan järjestelmä versus
+kymmenen pienemmän pöytäluokan laitteen ryhmä. <strong>Molemmat ovat
+oikein siitä, mitä ne kuvaavat; kumpaakaan ei pitäisi siteerata “sen”
+tekoälylaskennan yhteistyön kustannuksena mainitsematta myös, mitä
+laitteistoluokkaa ja jäsenmäärää se olettaa.</strong> Osuuskunnan
+todellinen kaikki-mukaan-lukien-kustannus riippuu siitä, minkä
+laitteistoluokan se valitsee, sen todellisista rahoitusehdoista ja
+käyttöasteesta, ja — ratkaisevasti — sisältyvätkö ihmiset, tallennus,
+ohjelmisto, tuki ja mallien koulutus, joita kumpikaan yllä oleva luku ei
+kata.</p>
+<hr />
+<h2
+id="menetelmähuomautus-miten-tätä-ei-kannata-mallintaa-pidä-omistettu-tuotanto-ja-vähittäishinnoittelu-erillään">2.
+Menetelmähuomautus: “miten tätä ei kannata mallintaa” — pidä omistettu
+tuotanto ja vähittäishinnoittelu erillään</h2>
+<p><strong>Tämä on tarkoituksella säilytetty itsekorjaus, ei siloteltu
+pois.</strong> Aiempi vaihe tämän projektin omassa tutkimusketjussa
+hinnoitteli virheellisesti itse omistetun laskentatilan käyttäen
+vähittäistason eturintaman laboratorioiden API-hintoja
+(OpenAI/Anthropic/Google $/M-token-hintoja) ikään kuin ne olisivat
+kustannusperusta — eivät ole. Vähittäis-API-hinnat ovat <strong>valmis,
+katteellinen, patentoitu mallituotteen hinta</strong>; ne sisältävät
+laboratorion oman katteen, T&amp;K-poistot ja
+liiketoimintamallivalinnat, eivätkä kerro mitään siitä, mitä avoimen
+mallin päättelyn ajaminen omistetulla tai vuokratulla laitteistolla
+maksaa.</p>
+<p>Korjattu kehys, käytetty johdonmukaisesti läpi tämän työkirjan:</p>
+<ul>
+<li><strong>Omistettu tuotantokustannus</strong> = sähkö + laitteisto
+(poistettu tai rahoitettu) + tila/toiminta, ajaen <strong>avoimen
+painotuksen malleja</strong> (esim. Qwen, DeepSeek, Kimi) omistetulla
+tai osuustoiminnallisella laitteistolla. Tämä on “tuota oma sähkösi”
+-puoli.</li>
+<li><strong>Vähittäis-API-hinnoittelu</strong> = mitä OpenAI, Anthropic
+ja Google veloittavat pääsystä omiin patentoituihin malleihinsa. Tämä on
+“ostaa verkosta” -puoli — <strong>vain vertailukohta</strong>, ei
+koskaan korvike omistettun tuotantokustannuksen laskelmalle.</li>
+</ul>
+<p>Kaksi lukua voivat laillisesti erota 1–2 suuruusluokkaa suuntaan tai
+toiseen käyttöasteesta, mallivalinnasta ja siitä, mitä “kustannukseen”
+sisältyy riippuen — se kuilu on juuri se syy pitää ne erillään, ei virhe
+täsmäytettäväksi pois. Jokainen alla oleva taulukko on merkitty
+<strong>OMISTETTU TUOTANTO</strong> tai
+<strong>VÄHITTÄISVERTAILU</strong>, jotta niitä ei koskaan yhdistetä
+yhdeksi sarakkeeksi.</p>
+<p><strong>Rajahuomautus:</strong> mikään alla olevista luvuista ei ole
+suositus rakentaa, ostaa tai välttää mitään tiettyä laskentakokoonpanoa
+— ne ovat muokattavia havainnollistuksia kustannusrakenteen
+ymmärtämiseksi.</p>
+<hr />
+<h2
+id="vaadittu-talouden-kerrosten-erottelu-vain-viite-vahvistettu-aiemmissa-julkaisuresurssityökirjoissa-ei-johdettu-uudelleen-tässä">3.
+Vaadittu talouden kerrosten erottelu (vain viite — vahvistettu aiemmissa
+julkaisuresurssityökirjoissa, ei johdettu uudelleen tässä)</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Kerros</th>
+<th>Mitä se kattaa</th>
+<th>Missä se käsitellään tässä työkirjassa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raaka sähkökustannus</td>
+<td>$/kWh mittarilla</td>
+<td>Luvut 4, 5</td>
+</tr>
+<tr>
+<td>Laitteiston poistettu tuotantokustannus</td>
+<td>pääomakulut ÷ odotettu käyttöikä, ei rahoitusta</td>
+<td>Luku 4 (viite)</td>
+</tr>
+<tr>
+<td>Rahoitettu omaisuuskustannus</td>
+<td>pääomakulut + korko, rahoitusajan mukaan</td>
+<td>Luku 4 (rahoitusajan herkkyys)</td>
+</tr>
+<tr>
+<td>Täysi toimintainfrastruktuurikustannus</td>
+<td>+ tilan sähkö, jäähdytys, verkko</td>
+<td>Luku 4 (viite)</td>
+</tr>
+<tr>
+<td>Kapasiteetti-/käyttöastekustannus</td>
+<td>yllä oleva kustannus ÷ todellinen (ei maksimi) käyttöaste</td>
+<td>Luku 4</td>
+</tr>
+<tr>
+<td>Tokenin tuotantokustannus</td>
+<td>$/M tokens omistetussa laitoksessa</td>
+<td>Luku 4</td>
+</tr>
+<tr>
+<td>Työkuorman/tekoälytyökapasiteetin kustannus</td>
+<td>$/M tokens muunnettuna $/agenttitunniksi</td>
+<td>Luku 6</td>
+</tr>
+<tr>
+<td>Tulos ja arvo</td>
+<td>EI mekaanisesti määräytynyt yllä olevasta</td>
+<td>Ei mallinnettu numeerisesti — ks. rajahuomautus, luku 7</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2
+id="omistetun-tuotannon-kustannustasot-viittaus-ei-uudelleenjohdettu-aiemmista-työkirjaluvuista">4.
+Omistetun tuotannon kustannustasot (viittaus, ei uudelleenjohdettu
+aiemmista työkirjaluvuista)</h2>
+<p><strong>Rajahuomautus tälle luvulle:</strong> nämä ovat
+havainnollistavia skenaariorakenteita, ei suositus ostaa mitään tiettyä
+laitteistoluokkaa, eikä markkinaennuste.</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>Taso</th>
+<th>Pääoma (OLETUS/FAKTA-sekoitus)</th>
+<th>Rahoitus (5v@8%)</th>
+<th>Sähkö</th>
+<th>Omistettu tuotantokustannus</th>
+<th>Näyttöluokka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kotitaloustehdas (1× DGX Spark)</td>
+<td>4 699 $ <strong>[FAKTA — nykyinen NVIDIA-hinta, klusteri
+A]</strong></td>
+<td>~1 177 $/vuosi</td>
+<td>~25–202 $/vuosi (240W, 0,12 $/kWh OLETUS, 10–80 % käyttöaste)</td>
+<td><strong>1,37–11,89 $/M tokenia</strong> (10–80 % käyttöaste) —
+kanoninen luku, Globaali perustaso -työkirja §2.4</td>
+<td>LASKELMA (viitattu)</td>
+</tr>
+<tr>
+<td>Osuustoiminnallinen tehdas (10× DGX Spark, 50 jäsentä)</td>
+<td>~46 990 $</td>
+<td>~11 294,76 $/vuosi</td>
+<td>~505–2 144 $/vuosi + hallinto</td>
+<td><strong>1,99–7,62 <span
+class="math inline">/<em>M</em><em>t</em><em>o</em><em>k</em><em>e</em><em>n</em><em>i</em><em>a</em> * *(20–85|<em>T</em><em>e</em><em>o</em><em>l</em><em>l</em><em>i</em><em>s</em><em>u</em><em>u</em><em>s</em><em>t</em><em>e</em><em>h</em><em>d</em><em>a</em><em>s</em>(<em>G</em><em>B</em>300<em>N</em><em>V</em><em>L</em>72, 4 − <em>r</em><em>ä</em><em>k</em><em>i</em><em>n</em>/288 − <em>G</em><em>P</em><em>U</em> : <em>n</em><em>k</em><em>l</em><em>u</em><em>s</em><em>t</em><em>e</em><em>r</em><em>i</em>)| 16<em>M</em></span>
+</strong>[OLETUS — analyytikkoarvioon perustuva, nimenomaisesti ei
+virallinen NVIDIA-hinta]**</td>
+<td>ks. herkkyystaulukko luvussa 4.1</td>
+</tr>
+</tbody>
+</table>
+<p>Nämä siirtävät aiemman työkirjan luvut muuttumattomina eteenpäin; ks.
+luku 1 osuustoiminnallisen tason selitykselle. <strong>Tässä paperissa
+johdonmukaisesti käytetty kanoninen, koko kerroksen Hyperskaala-luku on
+Globaali perustaso -työkirjan §5.6:n vaihteluväli (0,091–0,312 $/M
+tokens, mid 0,133 $/M) — tämä luku sisältää pääoman, rahoituksen, sähkön
+JA käyttömenot/yleiskustannukset. Alla luvussa 4.1 oleva osittaisen
+kerroksen herkkyystaulukko (pääoma + rahoitus + sähkö vain, ei
+käyttömenoja) on kapeampi, tarkoituksella epätäydellinen
+ristiintarkistus nimenomaan rahoitusaika-vivulle; sen matalampia
+otsikkolukuja (as low as 0,050 $/M) ei saa lukea vaihtoehtoisena tai
+halvempana “todellisena” Hyperskaalakustannuksena — ne yksinkertaisesti
+jättävät pois käyttömenokerroksen, joka sisältyy kanoniseen
+lukuun.</strong></p>
+<h3
+id="rahoitusajan-herkkyys-vain-teollinen-taso-vain-pääomarahoitussähkö-käyttömenot-pois-luettuna-ei-kanoninen-koko-kerroksen-luku">4.1
+Rahoitusajan herkkyys — vain teollinen taso, VAIN PÄÄOMA+RAHOITUS+SÄHKÖ
+(käyttömenot pois luettuna; ei kanoninen koko kerroksen luku)</h3>
+<p><strong>Tämän taulukon soveltamisala, nimenomaisesti
+todettu:</strong> tämä herkkyystaulukko eristää vain
+<em>rahoitusaika</em>-vivun, pitäen pääoman, sähkön ja käyttöasteen
+kiinteinä samalla, kun lainaaikaa vaihdellaan. Se <strong>jättää
+tarkoituksella pois käyttömeno-/yleiskustannuskerroksen</strong> (tila,
+jäähdytys raaka sähkön ylittävältä osin, henkilöstö, verkko,
+korvausvaraus — ks. Globaali perustaso -työkirja §5.5, 200 000 $–1 000
+000 $/räkki/vuosi) jonka yllä oleva kanoninen Hyperskaala-luku sisältää.
+<strong>Alla olevia 0,050–0,094 $/M-tokenia-lukuja ei pidä siteerata
+“sen” Hyperskaalakustannuksena — ne ovat vain osittaisen kerroksen
+havainnollistus rahoitusajan herkkyydestä.</strong></p>
+<p><strong>Kaava:</strong> Vuotuinen rahoitettu pääomakustannus = Pääoma
+÷ AF(n,8%), jossa AF(n,8%) = (1 − 1,08⁻ⁿ) ÷ 0,08. Vuotuinen tilan
+sähkökustannus = 568kW × 90 % käyttöaste × 8 760 h/vuosi × 0,10 $/kWh
+<strong>[OLETUS]</strong> ≈ 447 800 $/vuosi. Kustannus per miljoona
+tokenia = (rahoitettu pääoma + tilan sähkö) ÷ (vuotuiset maksimitokenit
+× 90 % käyttöaste ÷ 1 000 000), jossa vuotuiset maksimitokenit = 2,5M
+tok/s × 31 536 000 s/vuosi ≈ 78,84 biljoonaa tok/vuosi <strong>[2,5M
+tok/s -luku on itsessään HAVAITTU FAKTA 4-räkin/288-GPU:n MLPerf v6.0
+-aggregaatille, ei yhdelle räkille — ks. lähderekisteri klusteri
+A]</strong>.</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>Rahoitusaika</th>
+<th>Annuiteettikerroin AF(n,8%)</th>
+<th>Vuotuinen rahoitettu pääoma (16 M$)</th>
+<th>+ Tilan sähkö/vuosi</th>
+<th>Vuotuinen kokonaiskustannus (vain pääoma+rahoitus+sähkö)</th>
+<th>Kustannus per M tokenia (osittainen kerros)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3 vuotta</td>
+<td>2,577</td>
+<td>6 206 900 $</td>
+<td>447 800 $</td>
+<td>6 654 700 $</td>
+<td>~0,094 $/M tokenia</td>
+</tr>
+<tr>
+<td>4 vuotta</td>
+<td>3,312</td>
+<td>4 832 600 $</td>
+<td>447 800 $</td>
+<td>5 280 400 $</td>
+<td>~0,074 $/M tokenia</td>
+</tr>
+<tr>
+<td>5 vuotta</td>
+<td>3,993</td>
+<td>4 007 300 $</td>
+<td>447 800 $</td>
+<td>4 455 100 $</td>
+<td>~0,063 $/M tokenia</td>
+</tr>
+<tr>
+<td>7 vuotta</td>
+<td>5,206</td>
+<td>3 073 000 $</td>
+<td>447 800 $</td>
+<td>3 520 800 $</td>
+<td>~0,050 $/M tokenia</td>
+</tr>
+</tbody>
+</table>
+<p>Ristiintarkistus: 5 vuoden kohdalla pelkkä tasapoisto (16 M<span
+class="math inline">÷5 = 3, 2<em>M</em></span>/vuosi) tarkoittaa ~0,045
+$/M tokenia; rahoituksen lisämaksu poiston yli on ~0,0114 $/M tokenia —
+yhtenevä aiemman työkirjan ilmoittaman luvun kanssa. <strong>Pidemmät
+rahoitusajat mekaanisesti alentavat per-tokenin rahoitettua
+pääomakustannusta, mutta lisäävät maksettua kokonaiskorkoa ja lukitsevat
+nykyisen laitteiston pidemmäksi ajaksi nopeasti arvoaan menettävää
+laiteluokkaa vastaan — tämä taulukko näyttää aritmeettisen kompromissin,
+se ei suosittele mitään aikaa.</strong> Lisäämällä kanoninen
+keskimääräinen käyttömenoluku (500 000 $/vuosi, Globaali perustaso
+-työkirjan §5.5 mukaan) mihin tahansa yllä olevaan riviin ja laskemalla
+uudelleen palauttaisi sen takaisin kanonisessa taulukossa esitettyyn
+0,091–0,312 $/M-vaihteluväliin — nämä eivät ole kaksi eri mittausta
+Hyperskaalakustannuksesta, ne ovat sama malli esitettynä kahdessa eri
+täydellisyyskerroksessa.</p>
+<h3
+id="vähittäisvertailu-vain-vertailukohta-ei-koskaan-omistettu-tuotantokustannus">4.2
+Vähittäisvertailu (vain vertailukohta — ei koskaan omistettu
+tuotantokustannus)</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Malli</th>
+<th>Syöte $/M tokenia</th>
+<th>Tuloste $/M tokenia</th>
+<th>Näyttöluokka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Sonnet 5 (Anthropic)</td>
+<td>2,00 $</td>
+<td>10,00 $</td>
+<td>FAKTA</td>
+</tr>
+<tr>
+<td>Claude Opus 5 (Anthropic)</td>
+<td>5,00 $</td>
+<td>25,00 $</td>
+<td>FAKTA</td>
+</tr>
+<tr>
+<td>Claude Fable 5 (Anthropic)</td>
+<td>10,00 $</td>
+<td>50,00 $</td>
+<td>FAKTA</td>
+</tr>
+<tr>
+<td>GPT-5.6 Terra (OpenAI)</td>
+<td>2,00 $</td>
+<td>12,00 $</td>
+<td>LÄHDE (tekoälyn tiivistämän hakukyselyn kautta, ei raakaa
+alkuperäistekstiä)</td>
+</tr>
+<tr>
+<td>GPT-5.6 Sol (OpenAI)</td>
+<td>5,00 $</td>
+<td>30,00 $</td>
+<td>LÄHDE (sama varaus)</td>
+</tr>
+<tr>
+<td>Gemini 3.1 Pro Preview (Google), ≤200K tokenia</td>
+<td>2,00 $</td>
+<td>12,00 $</td>
+<td>FAKTA (edelleen “Preview”, ei yleisesti saatavilla)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tämän taulukon oikea lukutapa:</strong> yllä olevat omistetun
+tuotannon kustannukset vaihtelevat Hyperskaalatason 0,091–0,312 $/M:stä
+(yksi–kaksi suuruusluokkaa alle näiden vähittäishintojen) aina
+Kotitaloustason 1,37–11,89 $/M:ään (lähempänä, ja matalalla
+käyttöasteella jopa halvimman vähittäistason lattian sisällä). Kuilu on
+todellinen ja suuri Hyperskaalatasolla, mutta kapeampi ja
+käyttöastesidonnainen Kotitalous-/Osuustoiminnallisella tasolla — se ei
+ole todiste siitä, että vähittäistason laboratorioiden hinnoittelu olisi
+epärationaalista, koska vähittäishinnat sisältävät patentoidun mallin
+T&amp;K:n, turvallisuustyön, katteen ja luotettavuustakuut, joita
+itseisännöity avoimen painotuksen pino ei sisällä; se on todiste siitä,
+että “tuota oma sähkösi vs. ostaa verkosta” -kuilun (luku 2) suuruus
+itsessään riippuu voimakkaasti mittakaavasta ja käyttöasteesta, ei vain
+itseisännöinnin valinnasta.</p>
+<hr />
+<h2 id="bitcoin-louhinnan-bruttoenergiamonetisaation-vertailu">5.
+Bitcoin-louhinnan bruttoenergiamonetisaation vertailu</h2>
+<p><strong>Tämä ei ole nimenomaisesti voittoväite.</strong> Se vertailee
+vain <em>bruttotuloa kulutettua sähkömegawattituntia kohti</em> kahden
+energiamonetisaatiomekanismin välillä — Bitcoin-louhinta (kitkaton,
+protokollatason “liitä ja saat maksun” -markkina) ja hypoteettinen
+tekoäly-tokenien myynti vähittäisvertailuhinnoin (jolla ei ole vastaavaa
+kitkatonta markkinaa — OpenRouter ja vastaavat reitittimet ovat vain
+varhainen, osittainen vastine). Kumpikaan puoli ei vähennä pääomakuluja,
+rahoitusta, jäähdytystä, henkilöstöä tai (tekoälyn osalta) sitä,
+ostaisiko kukaan oikeasti niin montaa tokenia siihen hintaan.</p>
+<p><strong>Bitcoin-puoli — kaava:</strong> Tulo/MWh = (hashprice
+$/PH·s⁻¹/päivä ÷ 1000 muuntaakseen $/TH·s⁻¹/päivä) ÷ 24 (→ $/TH·s⁻¹/h) ÷
+(tehokkuus J/TH ÷ 1000 → kWh per TH·s⁻¹·h) × 1000 (kWh→MWh), joka
+yksinkertaistuu muotoon <strong>Tulo/MWh = 1 333 ÷
+tehokkuus(J/TH)</strong>, ankkuroituna Luxorin ilmoittamaan
+spot-hashpriceen <strong>31,73–32,05 $/PH/s/päivä noin 10.–12.8.2026
+[FAKTA, klusteri F]</strong>. ASIC-tehokkuuskaistat (25–38 J/TH
+vanhemmille laitekannoille, alle 14 J/TH tehokkaimmille nykyisille
+laitekannoille) ovat <strong>[OLETUS]</strong> — havainnollistavia
+sukupolvikaistoja, ei tässä istunnossa tarkastettua tiettyä
+spesifikaatiota.</p>
+<p><strong>Tekoäly-token-puoli — kaava:</strong> 240W jatkuvalla
+kuormituksella ja 50 tok/s:n tulosteella <strong>[OLETUS, DGX Sparkin
+havaitun teho-/läpäisykykyvaihteluvälin sisällä, klusteri A]</strong>, 1
+MWh sähköä ostaa 1 000kWh ÷ 0,24kW = 4 166,7 tuntia käyttöaikaa → 4
+166,7 h × 3 600 s/h × 50 tok/s ≈ 750 miljoonaa tuloste-tokenia per MWh.
+Tulo = 750 × hinta miljoonaa tokenia kohti.</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Skenaario</th>
+<th>Perusta</th>
+<th>Bruttotulo per MWh</th>
+<th>Näyttöluokka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bitcoin-louhinta — vanhempi kalusto (25–38 J/TH)</td>
+<td>1 333 ÷ 25 – 1 333 ÷ 38</td>
+<td><strong>~35–53 $</strong></td>
+<td>LASKELMA FAKTA-ankkurilla + OLETUS-tehokkuudella</td>
+</tr>
+<tr>
+<td>Bitcoin-louhinta — tehokas kalusto (&lt;14 J/TH)</td>
+<td>1 333 ÷ 14</td>
+<td><strong>~95 $+</strong> (nousee edelleen alle 14 J/TH:n)</td>
+<td>LASKELMA FAKTA-ankkurilla + OLETUS-tehokkuudella</td>
+</tr>
+<tr>
+<td>Tekoälytokenit myyty 1 $/M</td>
+<td>750M tokenia × 1 $/M</td>
+<td><strong>750 $</strong></td>
+<td>LASKELMA OLETUS-laitteisto-/hintasyötteillä</td>
+</tr>
+<tr>
+<td>Tekoälytokenit myyty 5 $/M</td>
+<td>750M tokenia × 5 $/M</td>
+<td><strong>3 750 $</strong></td>
+<td>LASKELMA</td>
+</tr>
+<tr>
+<td>Tekoälytokenit myyty 10 $/M</td>
+<td>750M tokenia × 10 $/M</td>
+<td><strong>7 500 $</strong></td>
+<td>LASKELMA</td>
+</tr>
+<tr>
+<td>Tekoälytokenit myyty 25 $/M</td>
+<td>750M tokenia × 25 $/M</td>
+<td><strong>18 750 $</strong></td>
+<td>LASKELMA</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Miksi tekoäly-tokenien luvut näyttävät niin paljon
+suuremmilta:</strong> ne olettavat, että joka tuotettu token myydään
+<em>vähittäis</em>-eturintaman mallin hintaan (luku 4.2), joka on “ostaa
+verkosta” -hinta, ei kustannus. <strong>Korjattu 2026-08-13:</strong>
+aiempi versio tästä kappaleesta arvotti samat 750M tokenia sittemmin
+korvattuun, matalampaan Kotitaloustason kustannuslukuun (~0,6–2 $/M) ja
+sisälsi lisäksi 1 000-kertaisen yksikkövirheen, aliarvioiden syntynyttä
+tulo-per-MWh:ta noin tuhatkertaisesti (se ilmoitti 0,45–1,50 $/MWh;
+oikea aritmetiikka jopa tällä vanhalla, matalammalla kustannusluvulla
+olisi ollut 450–1 500 $/MWh). Käyttäen tämän paperin kanonista
+Kotitaloustason lukua (1,37–11,89 $/M tokenia, luku 4), samat 750M
+tokenia, arvotettuna omistetulla tuotantokustannuksella, ovat arvoltaan
+<strong>1 028–8 918 $ per MWh-ekvivalentti</strong> — <em>yli</em> jopa
+tehokkaan Bitcoin-kaluston, ei sen alapuolella. Vain kanonisen
+Hyperskaalatason 0,091–0,312 $/M:llä tuotantokustannusarvo laskee
+<strong>68–234 $:aan per MWh-ekvivalentti</strong>, joka sijoittuu
+tehokkaan kaluston Bitcoin-vaihteluvälin sisään (~95 $+/MWh) sen
+selkeästi alapuolelle jäämisen sijaan. <strong>Koko vertailu on herkkä
+sille, mikä hintapiste ja mikä tuotantotaso syötetään, minkä juuri takia
+tämä on skenaariotaulukko muokattavilla syötteillä, ei kummankaan
+toiminnan kannattavuusväite, ja sitä ei saa lukea
+sellaisena.</strong></p>
+<hr />
+<h2
+id="tokenkustannuksen-yhdistäminen-työkapasiteettikustannukseen-viite-lyhyt">6.
+Tokenkustannuksen yhdistäminen työkapasiteettikustannukseen (viite,
+lyhyt)</h2>
+<p>$/M tokenia -yhdistämiseksi $/tekoäly-työtunti-yksikköön
+(“työkuorman/tekoälytyökapasiteetin kustannus” -kerros) sovelletaan
+havainnollistavia käyttöintensiteettivyöhykkeitä <strong>[OLETUS,
+tuettuna OpenAI:n itse-raportoimalla Codex-telemetrialla — LÄHDE,
+klusteri J, ei itsenäisesti auditoitu]</strong>:</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Käyttötapa</th>
+<th>Tokenia/tunti (havainnollinen)</th>
+<th>Vähittäis-Sonnet 5 -hinnoittelulla (~6 $/M sekoitettuna)</th>
+<th>Omistetulla tuotantokustannuksella (~1 $/M sekoitettuna)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chat/neuvonantaja</td>
+<td>10 000–30 000</td>
+<td>0,06–0,18 $/h</td>
+<td>0,01–0,03 $/h</td>
+</tr>
+<tr>
+<td>Aktiivinen kopilotti</td>
+<td>60 000–120 000</td>
+<td>0,36–0,72 $/h</td>
+<td>0,06–0,12 $/h</td>
+</tr>
+<tr>
+<td>Delegoitu yksittäinen agentti</td>
+<td>200 000–600 000</td>
+<td>1,20–3,60 $/h</td>
+<td>0,20–0,60 $/h</td>
+</tr>
+<tr>
+<td>Raskas moniagenttiorkestrointi</td>
+<td>1 000 000–12 000 000+</td>
+<td>6–72 $+/h</td>
+<td>1–12 $+/h</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Kaava:</strong> $/tunti = (tokenia/tunti ÷ 1 000 000) ×
+$/M-token-hinta. <strong>Tulkitseva huomautus [TULKINTA]:</strong> tämä
+osoittaa, miksi raskas orkestrointi voi tehdä tekoälytyökapasiteetista
+halpaa $/tunti-mielessä jopa vähittäishinnoilla — mutta
+kapasiteettitunnin kustannus ei kerro mitään sen <em>arvosta</em>, mitä
+tuo kapasiteetti tuottaa. Halpa, nopea, väärä vastaus laajennettuna
+moniagenttitiimin yli on edelleen halpa ja väärä laajassa
+mittakaavassa.</p>
+<hr />
+<h2
+id="pysyvä-rajahuomautus-toistettu-tarkoituksella-ei-todettu-vain-kerran">7.
+Pysyvä rajahuomautus (toistettu tarkoituksella, ei todettu vain
+kerran)</h2>
+<p>Jokainen tämän työkirjan taulukko on skenaario rakennettuna
+näkyville, muokattaville oletuksille — käyttöasteille, sähköhinnoille,
+rahoitusehdoille, ASIC-tehokkuuskaistoille ja vähittäishintapisteille
+voidaan kaikki muuttaa, ja niin tehdessä muuttuu joka alavirran luku.
+Mikään tässä työkirjassa ei ole sijoitus-, oikeudellista, vero-,
+hankinta- tai politiikkaneuvontaa, eikä yksikään tässä oleva luku
+pitäisi lukea ennusteena siitä, mitä mikä tahansa tietty laitos,
+osuuskunta tai louhinta-/päättelytoiminta oikeasti ansaitsee tai maksaa.
+Analyyttisen ketjun viimeinen vaihe — tulos ja arvo — <strong>ei ole
+mekaanisesti määräytynyt</strong> mistään yllä olevista kustannus- tai
+tuloluvuista; tämä vaihe riippuu ihmisen harkinnasta, ohjauksesta ja
+kontekstista, jota tämä työkirja ei mallinna eikä voi mallintaa.</p>
+</article>
+<div class="page-footer-nav">
+  <a href="index.html">← Takaisin etusivulle</a>
+  <a href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous/blob/main/05-workbook-token-factory-scenarios.md">Katso lähde / muokkaa GitHubissa →</a>
+</div>
+</main>
+<footer>
+  <p>© Valto Loikkanen. Lisensoitu CC BY 4.0 -lisenssillä ilmoitetuin osin. Opetuksellista tutkimusta ja skenaarioanalyysiä — ei sijoitus-, oikeudellista, vero-, hankinta- tai politiikkaneuvontaa. Tämä on suomenkielinen käännös alkuperäisestä englanninkielisestä julkaisusta.</p>
+  <p><a href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous">Katso tietovarasto GitHubissa</a></p>
+</footer>
+</body>
+</html>

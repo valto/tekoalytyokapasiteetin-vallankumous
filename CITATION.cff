@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: >-
+  Jos käytät tai viittaat tähän tutkimuspakettiin, viittaa siihen alla
+  olevien metatietojen mukaisesti. DOI lisätään, kun tämä julkaisu on
+  arkistoitu Zenodoon.
+title: "Miksi tekoälyyn investoidaan biljoonia? Luvut ja talous tekoälytyökapasiteetin vallankumouksen takana"
+type: report
+authors:
+  - family-names: Loikkanen
+    given-names: Valto
+version: 1.0.1
+date-released: "2026-08-14"
+license: CC-BY-4.0
+repository-code: "https://github.com/valto/tekoalytyokapasiteetin-vallankumous"
+abstract: >-
+  Neutraalin ulkopuolisen tarkkailijan tutkimussynteesi, joka rekonstruoi
+  yhdistetyn taloudellisen mallin — energia → laitteisto → laskenta →
+  mallit → tokenit → tekoälytyökapasiteetti → digitaalinen työ → tulokset
+  → arvo → toimijuus — Jensen Huangin, Sam Altmanin ja Mark Zuckerbergin
+  julkisista lausunnoista, yhdistettynä itsenäisesti tarkistettuihin
+  laitteistospesifikaatioihin, hinnoitteluun ja vertailutuloksiin, sekä
+  kirjoittajan omaan aiemmin julkaistuun työhön tekoälyinfrastruktuurin
+  omistuksesta ja osuustoiminnallisista malleista. Tämä on suomenkielinen
+  käännös alkuperäisestä englanninkielisestä julkaisusta
+  (github.com/valto/ai-working-capacity-revolution). Sisältää täydentävät
+  työkirjat, diaesityksen, kaaviot ja täyden lähderekisterin, kukin
+  merkitty yhdellä viidestä näyttöluokasta (Havaittu fakta, Lähteeseen
+  kohdistettu lausunto, Johdettu laskelma, Skenaario-oletus, Tulkinta).
+keywords:
+  - tekoäly
+  - tekoälyinfrastruktuuri
+  - tekoälytalous
+  - laskentakustannukset
+  - tokenitalous
+  - tekoälytyökapasiteetti
+  - osuustoiminnallinen omistus
+  - digitaalinen suvereniteetti
+preferred-citation:
+  type: report
+  title: "Miksi tekoälyyn investoidaan biljoonia? Luvut ja talous tekoälytyökapasiteetin vallankumouksen takana"
+  authors:
+    - family-names: Loikkanen
+      given-names: Valto
+  version: 1.0.1
+  date-released: "2026-08-14"
+  url: "https://github.com/valto/tekoalytyokapasiteetin-vallankumous"

@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Humanoidirobottien
+työkapasiteettityökirja — Miksi tekoälyyn investoidaan biljoonia?</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header>
+  <h1 style="font-size:1.5rem;"><a href="index.html" style="color:#fff; text-decoration:none;">Miksi tekoälyyn investoidaan biljoonia?</a></h1>
+  <p class="meta">Tutkimuspohja ja elävä viitekehys &nbsp;·&nbsp; CC BY 4.0</p>
+</header>
+<main>
+<nav class="crumbs"><a href="index.html">Etusivu</a> / Humanoidirobottien työkapasiteettityökirja</nav>
+<article class="doc-body">
+<h1
+id="humanoidirobottien-työkapasiteettityökirja-julkaisuresurssi-11">Humanoidirobottien
+työkapasiteettityökirja (Julkaisuresurssi #11)</h1>
+<h2 id="soveltamisalalauselma-lue-tämä-ensin">Soveltamisalalauselma —
+lue tämä ensin</h2>
+<p>Tämä työkirja on <strong>havainnollistava kehollisen kapasiteetin
+laajennus</strong> whitepaperin ydinketjulle (Sähkö → laitteisto →
+laskenta → mallit → tokenit → tekoälytyökapasiteetti → digitaalinen työ
+→ tulokset → arvo → toimijuus), laajennettuna: <em>Pääoma + energia +
+huolto + käyttöaste + orkestrointi → humanoidin fyysinen
+työkapasiteetti.</em></p>
+<p>Se <strong>ei ole</strong> yleinen väite robotiikan taloudesta,
+tuotesuositus, ennuste minkään todellisen robotin kentällä
+suoriutumisesta, tai sijoitus-/hankintaohjeistus. Se mallintaa yhtä
+kapeaa kysymystä — <em>mitä humanoidirobotin käyttötunnin omistaminen
+maksaa annetuilla oletuksilla</em> — käyttäen (a) yhtä selkeästi
+merkittyä skenaario-oletusta (kirjoittajan alkuperäinen havainnollistava
+25 000 € robotti) ja (b) todellista markkinahintavaihteluväliä koottuna
+neljästä nimetystä, tällä hetkellä myydystä tai ilmoitetusta alustasta.
+Kaikki alla olevat luvut ovat joko siteerattuja ensisijaisia teknisiä
+tietoja/hintoja, lähteeseen kohdistettuja toissijaisia väitteitä,
+läpinäkyvää aritmetiikkaa tai nimenomaisesti merkittyjä
+skenaario-oletuksia — ei koskaan ennuste. <strong>Tämä on
+koulutuksellista tutkimusta ja skenaarioanalyysiä, ei sijoitus-,
+hankinta-, vero- tai politiikkaneuvontaa.</strong> Tämä raja koskee
+kaikkia alla olevia lukuja, ei vain tätä.</p>
+<h3 id="näyttöluokkien-selitteet-käytössä-läpi-tekstin">Näyttöluokkien
+selitteet (käytössä läpi tekstin)</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Tunniste</th>
+<th>Merkitys</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HAVAITTU FAKTA</strong></td>
+<td>Ensisijainen/virallinen lähde, tarkistettu elävästi 2026-08-12 tai
+välittömästi sitä ennen</td>
+</tr>
+<tr>
+<td><strong>LÄHTEESEEN KOHDISTETTU LAUSUNTO</strong></td>
+<td>Nimetyn osapuolen julkinen väite; ei itsenäisesti todistettu
+tosi</td>
+</tr>
+<tr>
+<td><strong>JOHDETTU LASKELMA</strong></td>
+<td>Läpinäkyvä aritmetiikka siteeratuista syötteistä; kaava aina
+esitetty</td>
+</tr>
+<tr>
+<td><strong>SKENAARIO-OLETUS</strong></td>
+<td>Näkyvä, muokattava parametri, ei markkinaluku</td>
+</tr>
+<tr>
+<td><strong>TULKINTA</strong></td>
+<td>Merkitty selitys siitä, miten kohteet voivat liittyä toisiinsa — ei
+koskaan esitetty faktana</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2
+id="osa-1-kaksi-lähtökohtaa-havainnollistava-skenaario-vs.-todellinen-markkinavaihteluväli">Osa
+1 — Kaksi lähtökohtaa: havainnollistava skenaario vs. todellinen
+markkinavaihteluväli</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Tapaus</th>
+<th>Hinta</th>
+<th>Näyttöluokka</th>
+<th>Lähde</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Havainnollistava perustapaus</strong></td>
+<td>25 000 € (≈ 27 000 $, oletetulla 1.08 EUR/USD-kurssilla)</td>
+<td><strong>SKENAARIO-OLETUS</strong> — kirjoittajan oma alkuperäinen
+laskettu esimerkki; ei todellinen tuotehinta</td>
+<td>Kirjoittajan aiempi laskelma (projektin taustan mukaan); FX-kurssi
+on erillinen SKENAARIO-OLETUS, ei markkinakurssi</td>
+</tr>
+<tr>
+<td><strong>Todellisen vaihteluvälin LOW</strong></td>
+<td>13 500 $</td>
+<td><strong>HAVAITTU FAKTA</strong> — Unitree G1:n aloitushinta, “from
+13,5 $K,” vero/toimitus poissuljettuna</td>
+<td>https://www.unitree.com/g1, tarkistettu 2026-08-12</td>
+</tr>
+<tr>
+<td><strong>Todellisen vaihteluvälin MID
+(kuluttaja/prosumer)</strong></td>
+<td>20 000 $ ennakkoon (tai 499 $/kk tilaus)</td>
+<td><strong>LÄHTEESEEN KOHDISTETTU LAUSUNTO</strong> — 1X NEO:n
+varhaisen pääsyn hinta, ilmoitettu Engadgetin toimesta (2025-10-29); ei
+vahvistettu 1X:n omalla hintasivulla lähderekisterin haussa</td>
+<td>https://www.engadget.com/ai/1x-neo-is-a-20000-home-robot-that-will-learn-chores-via-teleoperation-040252200.html</td>
+</tr>
+<tr>
+<td><strong>Todellisen vaihteluvälin HIGH (yritystaso)</strong></td>
+<td>~250 000 $</td>
+<td><strong>LÄHTEESEEN KOHDISTETTU LAUSUNTO</strong> — Agility Robotics
+Digit, yhtenevä useiden toissijaisten/aggregaattorilähteiden kesken;
+mitään ensisijaista Agility-hintasivua ei ollut saatavilla
+vahvistukseen</td>
+<td>Useita toissijaisia lähteitä (GrabARobot, RoboSelect360, Humanoza,
+ym.), tarkistettu 2026-08-12</td>
+</tr>
+</tbody>
+</table>
+<p>Nimenomaisesti poissuljettu tämän työkirjan numeerisesta mallista,
+koska hinnoittelu on vahvistamaton tai olematon 2026-08-12 mennessä:
+Tesla Optimus (Musk on toistanut <strong>20 000 $–30 000 $:n pitkän
+aikavälin tavoitteen</strong>, LÄHTEESEEN KOHDISTETTU LAUSUNTO, ei
+kaupallisia tilauksia tai vahvistettua vähittäishintaa ole olemassa) ja
+Figure AI:n Figure 03 (ei virallista hinnoittelua julkaistu ollenkaan;
+~20 000 $:n luku kiertää vain kolmannen osapuolen aggregaattoreiden
+kautta). Molemmat sijoittuisivat MID-kaistan sisään tai lähelle sitä,
+jos niiden tavoitehinnoista tulisi joskus todellisia hintoja — merkitty
+tässä TULKINTA-tulkintana, ei faktana.</p>
+<p><strong>TULKINTA:</strong> 25 000 €:n (~27 000 $:n) havainnollistava
+tapaus sijoittuu todellisen MID-kuluttajakaistan (20 000 $) ja olisi
+noin 2x havaitun LOW-hinnan ja noin 1/9 ATTRIBUTED-yritystason
+HIGH-hinnan välillä. Se on uskottava havainnollistava piste todellisen
+vaihteluvälin <em>sisällä</em>, ei poikkeama — mutta se ei silti ole
+vahvistettu markkinahinta millekään nimetylle tuotteelle.</p>
+<hr />
+<h2 id="osa-2-vaadittu-talouden-kerrosten-erottelu">Osa 2 — Vaadittu
+talouden kerrosten erottelu</h2>
+<p>Tämän projektin mallinnussääntöjen mukaan alla olevat kerrokset
+pidetään erillään ja niitä ei koskaan yhdistetä yhdeksi luvuksi:
+<strong>pääomakustannus → rahoituskustannus → sähkö (toiminta)kustannus
+→ huoltovaraus → käyttöaste → kustannus per tuottava tunti</strong>.
+(Pidemmät kerrokset — tokenin tuotantokustannus,
+työkuorman/tekoälytyökapasiteetin kustannus, tulos/arvo — jäävät tämän
+laitteisto-tunti-mallin soveltamisalan ulkopuolelle ja käsitellään vain
+Osan 6 tulkinnassa, nimenomaisesti sellaisena merkittynä.)</p>
+<h3 id="pääomakerros-kaikki-neljä-hintapistettä">2.1 Pääomakerros
+(kaikki neljä hintapistettä)</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Tapaus</th>
+<th>Hinta</th>
+<th>Käsiraha (20 %, SKENAARIO-OLETUS)</th>
+<th>Rahoitettu määrä</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Havainnollistava (25 000 € / ~27 000 $)</td>
+<td>27 000 $</td>
+<td>5 400 $</td>
+<td>21 600 $</td>
+</tr>
+<tr>
+<td>Todellinen LOW (13 500 $)</td>
+<td>13 500 $</td>
+<td>2 700 $</td>
+<td>10 800 $</td>
+</tr>
+<tr>
+<td>Todellinen MID (20 000 $)</td>
+<td>20 000 $</td>
+<td>4 000 $</td>
+<td>16 000 $</td>
+</tr>
+<tr>
+<td>Todellinen HIGH (250 000 $)</td>
+<td>250 000 $</td>
+<td>50 000 $</td>
+<td>200 000 $</td>
+</tr>
+</tbody>
+</table>
+<p>20 % käsiraha on <strong>SKENAARIO-OLETUS</strong>, joka hallitsee,
+kuinka paljon pääomaa rahoitetaan vs. maksetaan ennakkoon; se on
+muokattava (ks. Osan 3.2 herkkyystarkastelu).</p>
+<hr />
+<h2 id="osa-3-rahoituskerros">Osa 3 — Rahoituskerros</h2>
+<p><strong>JOHDETTU LASKELMA.</strong> Standardi tasaerälainakaava:</p>
+<p><code>M = P × i / (1 − (1+i)^-n)</code> jossa P = rahoitettu määrä, i
+= kuukausikorko (vuosikorko ÷ 12), n = kuukausierien lukumäärä (vuodet ×
+12).</p>
+<p>Perustapaus: 5 vuoden laina-aika, 8 % vuosikorko (molemmat
+<strong>SKENAARIO-OLETUKSET</strong> — muokattavia; 8 % on
+havainnollistava, ei lainanantajan noteeraama korko). Käsiraha
+poistetaan tasaerinä samalle laina-ajalle ja lisätään takaisin, jotta
+pääoma+rahoituskustannus on vertailukelpoinen tapausten välillä.</p>
+<p><code>Vuotuinen pääoma+rahoituskustannus yhteensä = (M × 12) + (Käsiraha ÷ rahoitusajan vuodet)</code></p>
+<h3 id="perustapaus-5v-8-20-käsiraha">3.1 Perustapaus (5v @ 8 %, 20 %
+käsiraha)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Tapaus</th>
+<th>Kuukausierä</th>
+<th>Vuotuinen rahoitus (M×12)</th>
+<th>Käsiraha poistettuna/v</th>
+<th><strong>Pääoma+rahoituskustannus/v yhteensä</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Havainnollistava (~27 000 $ / 25 000 €)</td>
+<td>437,97 $ (≈405,53 €)</td>
+<td>5 255,64 $</td>
+<td>1 080,00 $</td>
+<td><strong>6 335,64 $</strong> (≈5 866,33 € — täsmää alkuperäiseen
+EUR-laskettuun esimerkkiin)</td>
+</tr>
+<tr>
+<td>Todellinen LOW (13 500 $)</td>
+<td>218,99 $</td>
+<td>2 627,82 $</td>
+<td>540,00 $</td>
+<td><strong>3 167,82 $</strong></td>
+</tr>
+<tr>
+<td>Todellinen MID (20 000 $)</td>
+<td>324,42 $</td>
+<td>3 893,07 $</td>
+<td>800,00 $</td>
+<td><strong>4 693,07 $</strong></td>
+</tr>
+<tr>
+<td>Todellinen HIGH (250 000 $)</td>
+<td>4 055,28 $</td>
+<td>48 663,35 $</td>
+<td>10 000,00 $</td>
+<td><strong>58 663,35 $</strong></td>
+</tr>
+</tbody>
+</table>
+<h3
+id="rahoitusajan-herkkyys-8-korko-20-käsiraha-pidetty-vakiona-pääomarahoituskustannusv-yhteensä">3.2
+Rahoitusajan herkkyys (8 % korko, 20 % käsiraha pidetty vakiona) —
+pääoma+rahoituskustannus/v yhteensä</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Tapaus</th>
+<th>3 v</th>
+<th>4 v</th>
+<th>5 v</th>
+<th>7 v</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Havainnollistava (~27 000 $)</td>
+<td>9 921,79 $</td>
+<td>7 677,83 $</td>
+<td>6 335,64 $</td>
+<td>4 811,38 $</td>
+</tr>
+<tr>
+<td>Todellinen LOW (13 500 $)</td>
+<td>4 961,19 $</td>
+<td>3 838,91 $</td>
+<td>3 167,82 $</td>
+<td>2 405,69 $</td>
+</tr>
+<tr>
+<td>Todellinen MID (20 000 $)</td>
+<td>7 349,92 $</td>
+<td>5 687,28 $</td>
+<td>4 693,07 $</td>
+<td>3 563,98 $</td>
+</tr>
+<tr>
+<td>Todellinen HIGH (250 000 $)</td>
+<td>91 873,94 $</td>
+<td>71 091,01 $</td>
+<td>58 663,35 $</td>
+<td>44 549,77 $</td>
+</tr>
+</tbody>
+</table>
+<p>(Havainnollistava-sarake laskettu uudelleen 27 000 $
+USD-vastinemittakaavassa sisäisen johdonmukaisuuden vuoksi;
+native-EUR-arvot skaalautuvat suhteessa.)</p>
+<h3
+id="käsirahan-herkkyys-5v-8-pidetty-vakiona-pääomarahoituskustannusv-yhteensä">3.3
+Käsirahan herkkyys (5v @ 8 % pidetty vakiona) —
+pääoma+rahoituskustannus/v yhteensä</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Tapaus</th>
+<th>0 % käsiraha</th>
+<th>20 % käsiraha</th>
+<th>40 % käsiraha</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Havainnollistava (~27 000 $)</td>
+<td>6 569,55 $</td>
+<td>6 335,64 $</td>
+<td>6 101,73 $</td>
+</tr>
+<tr>
+<td>Todellinen LOW (13 500 $)</td>
+<td>3 284,78 $</td>
+<td>3 167,82 $</td>
+<td>3 050,87 $</td>
+</tr>
+<tr>
+<td>Todellinen MID (20 000 $)</td>
+<td>4 866,33 $</td>
+<td>4 693,07 $</td>
+<td>4 519,80 $</td>
+</tr>
+<tr>
+<td>Todellinen HIGH (250 000 $)</td>
+<td>60 829,18 $</td>
+<td>58 663,35 $</td>
+<td>56 497,51 $</td>
+</tr>
+</tbody>
+</table>
+<p><strong>TULKINTA:</strong> laina-ajan pituus vaikuttaa tässä mallissa
+paljon enemmän kuin käsirahan koko — venyttäminen 3:sta 7 vuoteen
+leikkaa vuotuisen pääoma+rahoitustaakan noin puoleen, kun käsirahan
+kaksinkertaistaminen vain kaventaa sitä muutaman prosentin. Molemmat
+ovat muokattavia vipuja, ei markkinafaktoja.</p>
+<hr />
+<h2 id="osa-4-sähkökerros">Osa 4 — Sähkökerros</h2>
+<p>Kaksi rinnakkaista menetelmää, molemmat
+<strong>SKENAARIO-OLETUKSET</strong> ellei toisin mainita:</p>
+<p><strong>(a) Kiinteän käyttötunnin oletus</strong> (kuten
+alkuperäisessä havainnollistavassa tapauksessa): 0,11 $/käyttötunti
+(≈0,10 €/h oletetulla FX-kurssilla) — yksinkertainen paikkamerkki, ei
+sidottu mihinkään tiettyyn robotin tehonkulutukseen.</p>
+<p><strong>(b) Spesifikaatioista johdettu hinta</strong>, käyttäen 1X
+NEO:n HAVAITTUA akkuspesifikaatiota (842 Wh kestoaika 4 tunnin ajalta →
+keskimääräinen jatkuva kulutus ≈ 0,2105 kW) havainnollistavalla 0,15
+$/kWh sähköhinnalla (<strong>SKENAARIO-OLETUS</strong> — uskottava
+kaupallinen/teollinen Yhdysvaltain keskihinta, ei noteerattu sähköyhtiön
+tariffi):</p>
+<p><code>Sähkö $/tunti = keskimääräinen tehonkulutus (kW) × sähkön hinta ($/kWh)</code>
+<code>= 0,2105 kW × 0,15 $/kWh = 0,0316 $/tunti</code></p>
+<p>Lähde taustalla olevalle spesifikaatiolle: https://www.1x.tech/neo
+(HAVAITTU FAKTA — 842 Wh kestoaika, 4 tunnin akunkesto), tarkistettu
+2026-08-12.</p>
+<p><strong>TULKINTA:</strong> spesifikaatioista johdettu luku on
+suuruusluokkaa alempi kuin 0,11 $/h:n kiinteä paikkamerkki —
+humanoidirobotit ~200W:n keskimääräisellä kulutuksella ovat
+sähköllisesti halpoja käyttää suhteessa lähes mihin tahansa muuhun tämän
+mallin pääomakustannukseen; sähkö ei ole tässä sitova kustannustekijä
+(toisin kuin whitepaperin muualla käsittelemässä konesalin/tokenin
+tuotantotaloudessa). Tämä spesifikaatio koskee erityisesti 1X NEO:ta ja
+sitä käytetään havainnollistavana suuruusluokka-ankkurina muille
+kolmelle hintapisteelle — sitä ei ole vahvistettu Unitree G1:lle,
+Agility Digitille tai havainnollistavalle tapaukselle.</p>
+<hr />
+<h2 id="osa-5-huoltokerros">Osa 5 — Huoltokerros</h2>
+<p><strong>SKENAARIO-OLETUS:</strong> huolto-/korjausvaraus = 10 %
+ostohinnasta vuodessa (muuttumaton alkuperäisestä havainnollistavasta
+tapauksesta; ei valmistajan noteeraama huoltosopimus millekään näistä
+neljästä alustasta — mikään näistä neljästä lähderekisterin lähteestä ei
+julkaise huoltokustannuslukua).</p>
+<table>
+<thead>
+<tr>
+<th>Tapaus</th>
+<th>Huoltovaraus/v</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Havainnollistava (~27 000 $)</td>
+<td>2 700 $</td>
+</tr>
+<tr>
+<td>Todellinen LOW (13 500 $)</td>
+<td>1 350 $</td>
+</tr>
+<tr>
+<td>Todellinen MID (20 000 $)</td>
+<td>2 000 $</td>
+</tr>
+<tr>
+<td>Todellinen HIGH (250 000 $)</td>
+<td>25 000 $</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2
+id="osa-6-käyttöasteherkkyys-ja-kustannus-per-tunti--vaihteluvälit">Osa
+6 — Käyttöasteherkkyys ja kustannus per tunti -vaihteluvälit</h2>
+<p><strong>JOHDETTU LASKELMA.</strong></p>
+<p><code>Kustannus/tunti (rahoitus+sähkö) = (Pääoma+rahoituskustannus/v yhteensä + sähkö $/h × vuotuiset tunnit) ÷ vuotuiset tunnit</code>
+<code>Kustannus/tunti (rahoitus+sähkö+huolto) = (Pääoma+rahoituskustannus/v yhteensä + sähkö $/h × vuotuiset tunnit + huolto/v) ÷ vuotuiset tunnit</code></p>
+<p>Esitetty molemmilla sähköoletuksilla (flat 0,11 $/h
+vs. spesifikaatiosta johdettu 0,0316 $/h) ja neljällä tuottavan
+käyttöasteen tasolla (2 000 / 4 000 / 6 000 / 8 000 tuntia/vuosi — nämä
+itsessään SKENAARIO-OLETUKSET, jotka rajaavat yhden vuoron ja lähes
+jatkuvan toiminnan väliä).</p>
+<h3
+id="havainnollistava-perustapaus-27-000-25-000-usd-alkuperäinen-eur-ristiintarkistus-suluissa">6.1
+Havainnollistava perustapaus (~27 000 $ / 25 000 €) — USD, alkuperäinen
+EUR-ristiintarkistus suluissa</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Käyttöaste (h/v)</th>
+<th>Rahoitus+sähkö (kiinteä)</th>
+<th>Rahoitus+sähkö+huolto (kiinteä)</th>
+<th>Rahoitus+sähkö (spesifikaatio)</th>
+<th>Rahoitus+sähkö+huolto (spesifikaatio)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 000</td>
+<td>3,28 $ (3,03 €)</td>
+<td>4,63 $ (4,28 €)</td>
+<td>3,20 $</td>
+<td>4,55 $</td>
+</tr>
+<tr>
+<td>4 000</td>
+<td>1,69 $ (1,57 €)</td>
+<td>2,37 $ (2,19 €)</td>
+<td>1,62 $</td>
+<td>2,29 $</td>
+</tr>
+<tr>
+<td>6 000</td>
+<td>1,17 $ (1,08 €)</td>
+<td>1,62 $ (1,49 €)</td>
+<td>1,09 $</td>
+<td>1,54 $</td>
+</tr>
+<tr>
+<td>8 000</td>
+<td>0,90 $ (0,83 €)</td>
+<td>1,24 $ (1,15 €)</td>
+<td>0,82 $</td>
+<td>1,16 $</td>
+</tr>
+</tbody>
+</table>
+<p>(EUR-arvot ovat täsmällinen uudelleenlaskenta native EUR:ssa 0,10 €/h
+flat electricity -hinnalla — ne täsmäävät alkuperäiseen laskettuun
+esimerkkiin, vahvistaen sisäisen johdonmukaisuuden.)</p>
+<h3 id="todellisen-vaihteluvälin-low-13-500-unitree-g1">6.2 Todellisen
+vaihteluvälin LOW (13 500 $, Unitree G1)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Käyttöaste (h/v)</th>
+<th>Rahoitus+sähkö (kiinteä)</th>
+<th>Rahoitus+sähkö+huolto (kiinteä)</th>
+<th>Rahoitus+sähkö (spesifikaatio)</th>
+<th>Rahoitus+sähkö+huolto (spesifikaatio)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 000</td>
+<td>1,69 $</td>
+<td>2,37 $</td>
+<td>1,62 $</td>
+<td>2,29 $</td>
+</tr>
+<tr>
+<td>4 000</td>
+<td>0,90 $</td>
+<td>1,24 $</td>
+<td>0,82 $</td>
+<td>1,16 $</td>
+</tr>
+<tr>
+<td>6 000</td>
+<td>0,64 $</td>
+<td>0,86 $</td>
+<td>0,56 $</td>
+<td>0,79 $</td>
+</tr>
+<tr>
+<td>8 000</td>
+<td>0,51 $</td>
+<td>0,68 $</td>
+<td>0,43 $</td>
+<td>0,60 $</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="todellisen-vaihteluvälin-mid-20-000-1x-neon-varhaisen-pääsyn-hinta">6.3
+Todellisen vaihteluvälin MID (20 000 $, 1X NEO:n varhaisen pääsyn
+hinta)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Käyttöaste (h/v)</th>
+<th>Rahoitus+sähkö (kiinteä)</th>
+<th>Rahoitus+sähkö+huolto (kiinteä)</th>
+<th>Rahoitus+sähkö (spesifikaatio)</th>
+<th>Rahoitus+sähkö+huolto (spesifikaatio)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 000</td>
+<td>2,46 $</td>
+<td>3,46 $</td>
+<td>2,38 $</td>
+<td>3,38 $</td>
+</tr>
+<tr>
+<td>4 000</td>
+<td>1,28 $</td>
+<td>1,78 $</td>
+<td>1,21 $</td>
+<td>1,71 $</td>
+</tr>
+<tr>
+<td>6 000</td>
+<td>0,89 $</td>
+<td>1,23 $</td>
+<td>0,81 $</td>
+<td>1,15 $</td>
+</tr>
+<tr>
+<td>8 000</td>
+<td>0,70 $</td>
+<td>0,95 $</td>
+<td>0,62 $</td>
+<td>0,87 $</td>
+</tr>
+</tbody>
+</table>
+<h3 id="todellisen-vaihteluvälin-high-250-000-agility-digit">6.4
+Todellisen vaihteluvälin HIGH (250 000 $, Agility Digit)</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Käyttöaste (h/v)</th>
+<th>Rahoitus+sähkö (kiinteä)</th>
+<th>Rahoitus+sähkö+huolto (kiinteä)</th>
+<th>Rahoitus+sähkö (spesifikaatio)</th>
+<th>Rahoitus+sähkö+huolto (spesifikaatio)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 000</td>
+<td>29,44 $</td>
+<td>41,94 $</td>
+<td>29,36 $</td>
+<td>41,86 $</td>
+</tr>
+<tr>
+<td>4 000</td>
+<td>14,78 $</td>
+<td>21,03 $</td>
+<td>14,70 $</td>
+<td>20,95 $</td>
+</tr>
+<tr>
+<td>6 000</td>
+<td>9,89 $</td>
+<td>14,05 $</td>
+<td>9,81 $</td>
+<td>13,98 $</td>
+</tr>
+<tr>
+<td>8 000</td>
+<td>7,44 $</td>
+<td>10,57 $</td>
+<td>7,36 $</td>
+<td>10,49 $</td>
+</tr>
+</tbody>
+</table>
+<h3
+id="yhteenveto-kustannus-per-tuottava-tunti--vaihteluväli-koko-kirjon-yli">6.5
+Yhteenveto — kustannus per tuottava tunti -vaihteluväli koko kirjon
+yli</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Käyttöaste</th>
+<th>Täysi havaittu/lähteeseen kohdistettu vaihteluväli (sis. huolto,
+kiinteä sähkö)</th>
+<th>Havainnollistava tapaus sijaitsee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 000 h/v</td>
+<td>2,37–41,94 $</td>
+<td>4,63 $</td>
+</tr>
+<tr>
+<td>4 000 h/v</td>
+<td>1,24–21,03 $</td>
+<td>2,37 $</td>
+</tr>
+<tr>
+<td>6 000 h/v</td>
+<td>0,86–14,05 $</td>
+<td>1,62 $</td>
+</tr>
+<tr>
+<td>8 000 h/v</td>
+<td>0,68–10,57 $</td>
+<td>1,24 $</td>
+</tr>
+</tbody>
+</table>
+<p><strong>TULKINTA:</strong> käyttöaste hallitsee
+kustannus-per-tunti-tulosta enemmän kuin mikä tahansa yksittäinen
+muuttuja tässä mallissa — siirtyminen 2 000:sta 8 000 tuntiin/vuosi
+leikkaa tunnikohtaista kustannusta noin 3.5–4x kaikissa hintapisteissä,
+koska pääoma- ja rahoituskustannukset ovat kiinteitä, kun nimittäjä
+(tunnit) kasvaa. Havainnollistava 25 000 €:n/~27 000 $:n tapaus seuraa
+läheisesti todellista MID-kuluttajakaistaa (20 000 $, 1X NEO), kun
+rahoitus-/huolto-oletukset pidetään vakioina — se ei ole poikkeama
+suhteessa todellisiin, tällä hetkellä ostettavissa oleviin alustoihin,
+mutta se sijoittuu selvästi ATTRIBUTED-yritystason HIGH-tapauksen
+alapuolelle, jonka kustannus per tunti hallitaan ostohinnalla, joka
+itsessään lepää vain toissijaisen lähteen vahvistuksella, ei
+ensisijaisella Agility Robotics -hintataulukolla.</p>
+<hr />
+<h2 id="osa-7-mitä-tämä-malli-nimenomaisesti-jättää-pois">Osa 7 — Mitä
+tämä malli nimenomaisesti jättää pois</h2>
+<p>Alkuperäisen soveltamisalan mukaisesti (muuttumattomana;
+<strong>SKENAARIO-OLETUS</strong>-rajaus, ei täydellisyysväite):
+valvonta-/ihmisvalvontatyön kustannus, robotin ohjelmisto-/tilausmaksut,
+vakuutus, työtilan muokkaus, kulutustarvikkeet ja
+käyttökatkos/suunnittelematon korjausaika kiinteän huoltovarauksen
+ylittävältä osin. Mikään näistä neljästä siteeratusta alustasta ei
+julkaise dataa, joka mahdollistaisi näiden arvioimisen ensisijaisesta
+lähteestä 2026-08-12 mennessä; niiden lisääminen vain nostaisi
+kustannusta per tunti, niin kaikki yllä olevat luvut pitäisi lukea
+<strong>lattiana</strong>, ei täydellisenä kommersiaalisena
+kustannuksena.</p>
+<hr />
+<h2 id="osa-8-missä-tämä-liittyy-laajempaan-ketjuun-vain-tulkinta">Osa 8
+— Missä tämä liittyy laajempaan ketjuun (vain tulkinta)</h2>
+<p><strong>TULKINTA:</strong> tämä työkirja laajentaa whitepaperin
+ydinketjua — Pääoma + energia + huolto + käyttöaste + orkestrointi →
+humanoidin fyysinen työkapasiteetti — mutta pysähtyy “kapasiteettiin”,
+tarkoituksella jatkamatta “työhön → tulokseen → arvoon”. Robotti, joka
+maksaa 1 $/tunti omistaa, ei kerro mitään siitä, onko sen suorittama työ
+arvoltaan 1, 100 dollaria tai ei mitään. Whitepaperin arvokehyksen
+mukaan työkapasiteetti ei ole arvo, ja enemmän käyttötunteja ei
+automaattisesti ole parempi. Näiden kustannus-per-tunti-lukujen
+käyttäminen tietyn liiketoimintasuunnitelman, sijoituspäätöksen tai
+hankintavalinnan perusteluun menisi pidemmälle kuin mitä tämä työkirja
+tukee — <strong>tämä ei ole sijoitus-, hankinta-, vero-, oikeudellista
+tai politiikkaneuvontaa</strong>, ja yllä olevat luvut ovat
+havainnollistavaa aritmetiikkaa ilmoitetuille, muokattaville
+oletuksille, ei ennuste minkään todellisen käyttöönoton taloudesta.</p>
+<hr />
+<h3
+id="tämän-työkirjan-täydellinen-syöterekisteri-muokkaamista-varten">Tämän
+työkirjan täydellinen syöterekisteri (muokkaamista varten)</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Parametri</th>
+<th>Käytetty arvo</th>
+<th>Luokka</th>
+<th>Hallitsee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Havainnollistavan robotin hinta</td>
+<td>25 000 € (~27 000 $)</td>
+<td>SKENAARIO-OLETUS</td>
+<td>Perustapauksen pääomakerros</td>
+</tr>
+<tr>
+<td>EUR/USD FX-kurssi</td>
+<td>1,08</td>
+<td>SKENAARIO-OLETUS</td>
+<td>Havainnollistavan tapauksen USD-muunnos vain</td>
+</tr>
+<tr>
+<td>Unitree G1 -hinta</td>
+<td>13 500 $</td>
+<td>HAVAITTU FAKTA (unitree.com, tarkistettu 2026-08-12)</td>
+<td>Todellinen vaihteluväli, LOW</td>
+</tr>
+<tr>
+<td>1X NEO -hinta</td>
+<td>20 000 $ / 499 $/kk</td>
+<td>LÄHTEESEEN KOHDISTETTU LAUSUNTO (Engadget, 2025-10-29)</td>
+<td>Todellinen vaihteluväli, MID</td>
+</tr>
+<tr>
+<td>Agility Digit -hinta</td>
+<td>~250 000 $</td>
+<td>LÄHTEESEEN KOHDISTETTU LAUSUNTO (useita toissijaisia lähteitä)</td>
+<td>Todellinen vaihteluväli, HIGH</td>
+</tr>
+<tr>
+<td>Käsiraha</td>
+<td>20 % (herkkyys: 0 %/40 %)</td>
+<td>SKENAARIO-OLETUS</td>
+<td>Pääomakerroksen jako</td>
+</tr>
+<tr>
+<td>Rahoituskorko</td>
+<td>8 % vuosikorko</td>
+<td>SKENAARIO-OLETUS</td>
+<td>Rahoituskerros</td>
+</tr>
+<tr>
+<td>Rahoitusaika</td>
+<td>5 v (herkkyys: 3/4/7 v)</td>
+<td>SKENAARIO-OLETUS</td>
+<td>Rahoituskerros</td>
+</tr>
+<tr>
+<td>Kiinteä sähkön hinta</td>
+<td>0,11 $/h (≈0,10 €/h)</td>
+<td>SKENAARIO-OLETUS</td>
+<td>Sähkökerros (menetelmä a)</td>
+</tr>
+<tr>
+<td>Sähkön hinta spesifikaatioista johdetulle menetelmälle</td>
+<td>0,15 $/kWh</td>
+<td>SKENAARIO-OLETUS</td>
+<td>Sähkökerros (menetelmä b)</td>
+</tr>
+<tr>
+<td>1X NEO:n keskimääräinen tehonkulutus</td>
+<td>0,2105 kW (842 Wh / 4 h)</td>
+<td>HAVAITTU FAKTA (1x.tech, tarkistettu 2026-08-12)</td>
+<td>Sähkökerros (menetelmä b)</td>
+</tr>
+<tr>
+<td>Ylläpitovaraus</td>
+<td>10 % ostohinnasta/v</td>
+<td>SKENAARIO-OLETUS</td>
+<td>Huoltokerros</td>
+</tr>
+<tr>
+<td>Tuottava käyttöaste</td>
+<td>2 000 / 4 000 / 6 000 / 8 000 h/v</td>
+<td>SKENAARIO-OLETUS</td>
+<td>Käyttöasteherkkyys</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>Tämä työkirja (Osa 1 real-price sourcing, Osat 2–6 aritmetiikka, Osat
+7–8 soveltamisala/tulkinta) on itsenäinen numeerinen aineisto
+whitepaperille “Miksi tekoälyyn investoidaan biljoonia?” (CC BY 4.0,
+Valto Loikkanen).</p>
+</article>
+<div class="page-footer-nav">
+  <a href="index.html">← Takaisin etusivulle</a>
+  <a href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous/blob/main/07-workbook-humanoid-working-capacity.md">Katso lähde / muokkaa GitHubissa →</a>
+</div>
+</main>
+<footer>
+  <p>© Valto Loikkanen. Lisensoitu CC BY 4.0 -lisenssillä ilmoitetuin osin. Opetuksellista tutkimusta ja skenaarioanalyysiä — ei sijoitus-, oikeudellista, vero-, hankinta- tai politiikkaneuvontaa. Tämä on suomenkielinen käännös alkuperäisestä englanninkielisestä julkaisusta.</p>
+  <p><a href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous">Katso tietovarasto GitHubissa</a></p>
+</footer>
+</body>
+</html>

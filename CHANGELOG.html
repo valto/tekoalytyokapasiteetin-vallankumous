@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muutosloki — Miksi tekoälyyn investoidaan biljoonia?</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header>
+  <h1 style="font-size:1.5rem;"><a href="index.html" style="color:#fff; text-decoration:none;">Miksi tekoälyyn investoidaan biljoonia?</a></h1>
+  <p class="meta">Tutkimuspohja ja elävä viitekehys &nbsp;·&nbsp; CC BY 4.0</p>
+</header>
+<main>
+<nav class="crumbs"><a href="index.html">Etusivu</a> / Muutosloki</nav>
+<article class="doc-body">
+<h1 id="muutosloki">Muutosloki</h1>
+<p>Kaikki merkittävät muutokset tähän tutkimuspakettiin dokumentoidaan
+tässä. Versiointi seuraa <a href="https://semver.org/">Semantic
+Versioningia</a> hengeltään — suuri versionumeron nosto tarkoittaa
+muutosta kanonisiin lukuihin tai johtopäätöksiin, ei vain tekstiin.</p>
+<h2 id="julkaisematon-tavoitteena-v1.0.2">[Julkaisematon] — tavoitteena
+v1.0.2</h2>
+<h3 id="korjattu">Korjattu</h3>
+<ul>
+<li>Korjattu laskuvirhe delegoitu agentti -vyöhykkeen
+Hyperskaala-$/tekoäly-työtunti-luvussa: alkutekstin §25 ja
+<code><a href="13-slide-deck-outline.html">13-slide-deck-outline.md</a></code> (sekä alun perin tästä johdettu
+<code>19-slide-deck.pptx</code>:n dia 13) siteerasivat vanhentunutta
+0,0252 $/h-lukua ja “~150-kertaista” vaihteluväliä, jotka ovat
+ristiriidassa Osion 17 oman matriisin, kanonisen CSV:n ja oikean
+laskutoimituksen kanssa (400 000 tokenia/h × 0,133 $/M = 0,0532 $/h).
+Korjattu oikeaan 0,0532 $/h- ja “~68-kertainen”-lukuun kaikissa kolmessa
+resurssissa. Tämä virhe havaittiin alun perin englanninkielisessä
+lähderepositoriossa ja korjattiin molemmissa kielissä
+samanaikaisesti.</li>
+</ul>
+<h3 id="lisätty-sisältö">Lisätty — sisältö</h3>
+<ul>
+<li>Jaettu ihmistyön vertailu (alkuteksti §19.2;
+<code><a href="04-workbook-ai-working-capacity-conversion.html">04-workbook-ai-working-capacity-conversion.md</a></code> osa E.2)
+kahteen selkeään sarakkeeseen: <strong>Työntekijän kokonaiskustannus
+työnantajalle</strong> (sisäinen palkkaus — palkka + edut + ylikuorma)
+ja <strong>Laskutettava/ulkoisesti ostettu tuntihinta</strong>
+(agentuuri/urakoitsija/konsultointi, joka upottaa oman katteensa ja
+ylikuormansa päälle). Ilmoittaa parittamisen nimenomaisesti: omistetun
+tekoälyn tuotantokustannus vertautuu työntekijän kokonaiskustannukseen;
+vähittäis-API-hinta vertautuu ihmisen laskutettavaan hintaan — parien
+sekoittaminen sekoittaa samat sisäisen/ulkoisen kustannuksen kerrokset,
+joita raportti varoittaa sekoittamasta jo tekoälypuolella yksin
+(omistettu tuotantokustannus vs. vähittäis-API-hinta). Lisätty
+havainnollinen laskutettavan hinnan vyöhyke (~2-3x
+työnantajakustannusvyöhykkeet) selkeästi merkittynä
+skenaario-oletuksena.</li>
+<li>Lisätty tiivis “1 työtunti / 10 tiimin tunti / 1 työpäivä / 10
+tiimin päivä” -taulukko (alkuteksti §16,
+käyttöintensiteettivyöhyketaulukon jälkeen;
+<code><a href="04-workbook-ai-working-capacity-conversion.html">04-workbook-ai-working-capacity-conversion.md</a></code> uusi osa B.2)
+ilmoittaen nimenomaisesti, että orkestrointi ei luo erilaista tuntia —
+se luo useita työtunteja rinnakkain, ja että tiimin työkapasiteetti on
+työntekijät × tunnit molemmilla, tekoäly- ja ihmispuolella,
+poikkeuksetta. Lisätty sama taulukko ja kehystys diaesityksen dialle 12
+(<code><a href="13-slide-deck-outline.html">13-slide-deck-outline.md</a></code>/<code>19-slide-deck.pptx</code>),
+ja työnantaja/laskutettava-jako dialle 14.</li>
+<li>Muutettu alkutekstin §24:n PK-yritys/yrittäjä-linssin kuvaus “täytyy
+hallita tekoälytyövoimaa, jota se ei aiemmin tarvinnut johtaa” muotoon
+“täytyy johtaa ja hallita tekoälytyövoimaa, jota sillä ei aiemmin ollut”
+— tekee “johtaa”-sanasta oletustermin ihmis-tekoälytiimisuhteelle
+kypsyyskertomuksessa, varaten “valvoa”-sanan tietylle
+tarkastelu-/riskikustannuskomponentille, jota käytetään jo oikein
+käyttövyöhykekuvauksissa (§16-17, osa E.3:n valvontakuormavaraus), ja
+“hallita”-sanan rajoille/vastuullisuudelle.</li>
+<li>Lisätty alkutekstin §3.6, “Elävä viitekehys — kehys on kestävä,
+luvut eivät ole”: ilmoittaa nimenomaisesti, että ydinketju, tekoälyn
+kypsyysakselit (Neuvo→Työskentele yhdessä→Delegoi→Johda;
+Yksilö→Tiimi→Tekoälytyövoima) ja näyttöluokkakuri on tarkoitettu
+pysymään vakaana, kun taas joka numeerinen syöte (laitteiston hinta,
+sähkön hinta, rahoituskustannus, käyttöaste, ihmisen
+työnantaja-/laskutettava kustannus, vähittäistoken-hinta) odotetaan
+jatkavan muuttumista — ja että mikä tahansa lainattu luku tulisi
+tunnistaa skenaarionsa, oletuksensa ja mallin versionsa mukaan sen
+sijaan, että sitä luetaan kiinteänä faktana.</li>
+</ul>
+<h3 id="lisätty-github-pages--sivuston-arkkitehtuuri">Lisätty — GitHub
+Pages -sivuston arkkitehtuuri</h3>
+<ul>
+<li><strong>Natiivit HTML-sivut joka markdown-asiakirjalle.</strong>
+Rakennettu <code>tools/build-pages.py</code> (pandoc + jaettu sivupohja,
+<code>tools/page-template.html</code>) tuottamaan vastaava
+<code>*.html</code>-sivu kaikille 21 seuratulle markdown-asiakirjalle
+(alkuteksti, kaikki työkirjat, kaikki liitteet, README, CHANGELOG,
+jne.), ristiviitteillä asiakirjojen välillä uudelleenkirjoitettuina
+<code>.md</code>:stä <code>.html</code>:ään, jotta paketin lukeminen
+alusta loppuun ei enää vaadi siirtymistä GitHubin
+markdown-katseluohjelmaan. <code>index.html</code>:n lukupolku- ja
+pakettisisältölinkit osoittavat nyt näihin paikallisiin sivuihin
+<code>github.com/blob/main/*.md</code>-URL-osoitteiden sijaan. Erotettu
+laskeutumissivun sisäinen CSS jaettuun
+<code>assets/site.css</code>-tiedostoon, laajennettuna
+artikkeli-/taulukko-/sisällysluettelo-/murupolkutyyleillä
+sisältösivuille.</li>
+<li><strong>Kaaviogalleria</strong> (<code>diagrams.html</code>) —
+kaikki 11 kaaviota sisäkkäisinä kuvateksteillä ja kuvailevalla
+vaihtoehtoisella tekstillä, korvaten linkin GitHubin
+hakemistolistaukseen (joka palauttaa 404-virheen Pagesissa, koska Pages
+ei selaa hakemistoja).</li>
+<li><strong>Näkökulmat ja kirjoitukset -osio</strong>
+(<code>perspectives.html</code>, <code>perspectives/*.yaml</code>) —
+suodatettava hakemisto alkuperäisistä, itsenäisistä ja kriittisistä
+julkaisuista, jotka johdettu tästä tutkimuksesta tai haastavat sen. Joka
+merkintä on YAML-tiedosto (skeema
+<code>perspectives/README.md</code>:ssä);
+<code>tools/build-perspectives.py</code> renderöi ne asiakaspuolen
+suodatettavaksi sivuksi (tyypin ja aiheen mukaan). Siemennetty kolmella
+merkinnällä kirjoittajan omista aiemmin julkaistuista töistä, jo
+vahvistettuina lähderekisterissä (“Kuka omistaa tekoälysi,” digitaalisen
+suvereniteetin osuustoiminnallisen kustannuksen artikkeli, ja “Huomiotta
+jäänyt tekoälyn skaalausvaihtokerros”). Lisätty toimintakehotus
+kolmannen osapuolen kirjoituksille.</li>
+<li><strong>Takalinkkien tunnistusputken suunnittelu</strong>
+(<code>docs/backlink-discovery.md</code>) — dokumentoi tunnistus →
+luokittelu → Näkökulmat-hakemisto -arkkitehtuurin
+(Ahrefs/Semrush-takalinkki-API:t, jotka syöttävät
+<code>status: pending-review</code>-ehdokasjonoa, ei koskaan
+automaattisesti julkaisematta) myöhempää toteutusta varten; ei vielä
+kytketty, koska se vaatii maksullisen API-tilauksen ja tunnistetiedot,
+joita tällä tietovarastolla ei ole.
+<code>perspectives/_pending/</code>-hakemisto ja luokitteluvaiheen
+datavirta ovat paikoillaan, jotta tämä voidaan lisätä ilman
+uudelleensuunnittelua.</li>
+<li><strong>Mallin versiobanneri.</strong> Laskeutumissivu ilmoittaa nyt
+nimenomaisesti viimeisen tagatun mallin version (v1.0.1) ja toistaa
+kestävän kehyksen/muuttuvien lukujen periaatteen itse sivulla, ei vain
+alkutekstissä.</li>
+</ul>
+<p>Uudelleengeneroi <code>01-whitepaper.pdf</code> (89 sivua, aiemmin
+88), <code>19-slide-deck.pptx</code>, kaikki markdown-lähteiset
+<code>*.html</code>-sivut, ja <code>perspectives.html</code>; synkronoi
+työpöydän PDF-kopion; uudelleengeneroi
+<code>CHECKSUMS.sha256</code>.</p>
+<h2 id="section">[1.0.1] — 2026-08-14</h2>
+<h3 id="lisätty-sisältö-1">Lisätty — sisältö</h3>
+<ul>
+<li>Korvattu alkusanojen “Kirjoittajasta ja menetelmästä” -osio
+laajennetulla “Kirjoittajasta, näkökulmasta ja menetelmästä” -osiolla —
+kattaa kirjoittajan laajemman yrittäjyys-/innovaatioekosysteemi- ja
+neuvonantajataustan (30+ ekosysteemiä, valtion/EU:n/yliopiston
+neuvonantajatyö) tekoälyinfrastruktuurikohtaisen avauksen rinnalla, ja
+nimeää ValtoAI:n ja EIOS-viitekehyksen (organisaatiot/hallitu
+tieto/agenttivalmis konteksti) aiemmin nimettyjen Prifinan, Digiolen ja
+PIOS:n rinnalla. Levitetty samaa hankeluetteloa Menetelmät §3.4:n
+avaukseen, <code><a href="12-executive-brief.html">12-executive-brief.md</a></code>:ään,
+<code><a href="15-shortform-ownership.html">15-shortform-ownership.md</a></code>:ään,
+<code><a href="13-slide-deck-outline.html">13-slide-deck-outline.md</a></code>/<code>19-slide-deck.pptx</code>:ään
+(dia 15), ja <code><a href="README.html">README.md</a></code>:ään, korvaten kaikki jäljelle
+jääneet “peecos/PIOS”-viittaukset.</li>
+<li>Lisätty uusi käsitteellinen silta-osio, “Tekoälytyökapasiteetista
+uuteen arvoon,” osan IV (§25) ja osan V väliin alkutekstissä — merkitty
+nimenomaisesti TULKINNAKSI läpi, ei tuo uusia kustannuslukuja. Erottaa
+“voidaanko kapasiteetti luoda” (tämän raportin
+kustannus-/kapasiteettimalli, osat I–IV) “voiko tämä kapasiteetti luoda
+ja vallata uutta arvoa” (keksintö-, innovaatio-, käyttöönotto- ja
+tulomallikysymykset, joihin tämän raportin kustannustaulukot eivät voi
+vastata), ja huomauttaa, että sama raja koskee mitä tahansa tulevaa
+skenaariotyökalua, joka rakennetaan tämän raportin työkirjojen päälle.
+Lisätty vastaava kappale <code><a href="12-executive-brief.html">12-executive-brief.md</a></code>:ään ja uusi
+dia 18
+<code><a href="13-slide-deck-outline.html">13-slide-deck-outline.md</a></code>/<code>19-slide-deck.pptx</code>:ään
+(diaesitys on nyt 26 diaa, aiemmin 25; diat 18–25 uudelleennumeroitu
+19–26:ksi).</li>
+<li>Lisätty Kaavio 11 (“Kasvun luominen uuden arvon pohjalta”) —
+kirjoittajan oma ennalta olemassa oleva kehyskaavio, toimitettu suoraan
+ja käytetty sellaisenaan osoitteessa
+<code>assets/diagrams/diagram-11-creating-growth-from-new-value.jpg</code>.
+Toisin kuin Kaaviot 1–10, tätä ei rakennettu tyhjästä
+suunnittelijabriiffistä; <code><a href="17-visual-asset-briefs.html">17-visual-asset-briefs.md</a></code>:n Kaavio
+11 -merkintä dokumentoi sen sijaan todellisen kuvan rakenteen (kaksi
+saraketta lähentyvät yhteiseen “Uusi arvo” -vyöhykkeeseen) toimittajille
+ja johdonmukaisuuden tarkistamiseen. Provenienssikehystetty
+PNG-johdannainen
+(<code>diagram-11-creating-growth-from-new-value.png</code>,
+näyttöluokkatunniste, viittaus, lähdehuomautus, vakiofoottei) lisättiin
+käytettäväksi PDF:ssä, diaesityksessä ja Pages-sivustolla; alkuperäinen
+JPG säilytetään raakalähteenä.</li>
+<li>Korjattu vanhentunut ristiviite <code><a href="README.html">README.md</a></code>:n
+avausrivissä (osoitti alkutekstin “§4:ään,” jota ei enää ole olemassa
+numeroituna osiona; korjattu “Menetelmät §3.4:ksi”).</li>
+</ul>
+<h3
+id="lisätty-julkaisumekaniikka-vastauksena-ulkoiseen-tarkastukseen">Lisätty
+— julkaisumekaniikka (vastauksena ulkoiseen tarkastukseen)</h3>
+<ul>
+<li><code>tools/requirements.txt</code> — kiinnitetyt riippuvuusversiot
+(openpyxl, python-pptx, pypdf) toistettavaa
+johdonmukaisuustarkistusympäristöä varten.</li>
+<li>Uudelleenkirjoitettu
+<code>tools/check-canonical-consistency.py</code>: vaaditut luvut
+johdetaan nyt ajonaikaisesti
+<code>data/canonical-cost-model.csv</code>:stä sen sijaan, että ne olisi
+koodattu kiinteästi; lisätty PDF-tekstitarkistus (aiemmin tarkistettiin
+vain markdown/xlsx/pptx, niin että vanhentunut PDF, jota ei
+uudelleengeneroitu markdown-korjauksen jälkeen, olisi voinut läpäistä
+tarkistuksen hiljaisesti); joka tarkistus epäonnistuu nyt suljettuna —
+puuttuva riippuvuus tai rikkinäinen Python-ympäristö (esim.
+<code>pyexpat</code>-symbolin yhteensopimattomuus) raportoidaan
+epäonnistumisena, ei koskaan hiljaisesti ohitettuna, ja odottamaton
+poikkeus mihin tahansa tarkistukseen kiinni jää ja raportoidaan sen
+sijaan, että skripti kaatuisi.</li>
+<li><code>index.html</code> + <code>.nojekyll</code> — GitHub Pages
+-laskeutumissivu: lukupolut, täydet pakettisisältötaulukot,
+versio-/viittaus-/lisenssilinkit, ja asennusohjeet
+johdonmukaisuustarkistajalle. Markdown-asiakirjat linkittyvät
+GitHub-renderöityyn näkymäänsä; binäärit
+(PDF/xlsx/pptx/tarkistussummat/kaaviot) tarjoillaan suoraan
+Pages-sivustolta.</li>
+<li><code>01-whitepaper.pdf</code> upottaa nyt neljä kantavinta
+kaaviotaan (päästä päähän -ketju, omistusrakenne, mittakaavaspektri,
+uuden arvon silta) suoraan käyttökohtaansa tekstissä, jotta lukija,
+jolla on vain PDF, näkee ne tarvitsematta tietovarastoa; korjattu
+<code>pdf-style.css</code>-puute (ei <code>img</code>-mitoitussääntöä
+ollut olemassa), joka aiheutti upotettujen kuvien ylivuotamisen sivun
+leveyden yli, ennen kuin tämä huomattiin ja korjattiin.</li>
+<li><code>CHECKSUMS.sha256</code> ei enää sisällä
+kommentti-/otsikkoriveijä, niin että se vahvistuu ilman varoituksia
+molemmilla, macOS <code>shasum -a 256 -c</code> ja GNU
+<code>sha256sum -c</code>; selittävä otsikko siirretty
+<code><a href="README.html">README.md</a></code>:ään.</li>
+</ul>
+<h3 id="korjattu-1">Korjattu</h3>
+<ul>
+<li><code>main</code> oli ajautunut pois
+<code>CITATION.cff</code>/<code>CHECKSUMS.sha256</code>/<code><a href="README.html">README.md</a></code>:n
+v1.0.0-versioväitteistä yllä olevien sisältölisäysten jälkeen —
+ratkaistu tällä v1.0.1-julkaisulla.</li>
+<li><code>index.html</code>: “Kaaviot (11)” -linkki osoitti
+<code>assets/diagrams/</code>:ään, joka palauttaa 404-virheen GitHub
+Pagesissa (se ei selaa hakemistoja) — muutettu GitHubin
+puunäkymään.</li>
+<li><code><a href="README.html">README.md</a></code>: korjattu vanhentunut “82-sivuinen asiakirja”
+-viittaus (PDF on nyt 88 sivua) ja vanhentunut “ei julkaistu julkiselle
+sivustolle (ei GitHub Pagesia)” -rivi — Pages-sivusto on ollut käynnissä
+tämän julkaisun edeltävästä commitista lähtien.</li>
+<li><code><a href="17-visual-asset-briefs.html">17-visual-asset-briefs.md</a></code>: korjattu “Kaikki 10
+kaaviota” muotoon “Kaikki 11 kaaviota” kaavioiden välisissä
+johdonmukaisuushuomautuksissa.</li>
+</ul>
+<h2 id="section-1">[1.0.0] — 2026-08-13</h2>
+<p>Ensimmäinen julkinen julkaisu.</p>
+<h3 id="paketti">Paketti</h3>
+<ul>
+<li>Täysi alkuteksti (<code><a href="01-whitepaper.html">01-whitepaper.md</a></code> / <code>.pdf</code>,
+45 osiota, 82 sivua) jäljittäen energia → laitteisto → laskenta →
+tokenit → tekoälytyökapasiteetti → työ → tulokset → arvo → toimijuus,
+Jensen Huangin, Sam Altmanin ja Mark Zuckerbergin julkisista
+lausunnoista plus itsenäisesti tarkistetuista
+laitteistospesifikaatioista ja hinnoittelusta.</li>
+<li>Kuusi täydentävää työkirjaa täysin näkyvillä kaavoilla (Globaali
+perustaso, Tekoälytyökapasiteetin muunto, Tokenitehtaan skenaariot,
+Sijoitusteesin muistiinpanot, Humanoidirobottien työkapasiteetti,
+Paikallistettu EUR-Suomi-malli).</li>
+<li>Reaaliaikaisilla kaavoilla toimiva Excel-työkirja
+(<code>18-companion-data-model.xlsx</code>, 10 välilehteä), 25-dian
+diaesitys (<code>19-slide-deck.pptx</code>), ja 10 kaaviota
+(<code>assets/diagrams/</code>).</li>
+<li>Täysi lähderekisteri (67 tarkistusta 10 tutkimusklusterin yli) ja
+yhdistetty oletusrekisteri.</li>
+<li>Viisi näyttöluokkaa (Havaittu fakta, Lähteeseen kohdistettu
+lausunto, Johdettu laskelma, Skenaario-oletus, Tulkinta) sovellettuna
+johdonmukaisesti joka resurssiin.</li>
+</ul>
+<h3
+id="korjattu-ennakkojulkaisun-tarkistuksen-aikana-kolme-ulkoista-tarkastuskierrosta">Korjattu
+ennakkojulkaisun tarkistuksen aikana (kolme ulkoista
+tarkastuskierrosta)</h3>
+<ul>
+<li>Korjattu Hyperskaalatason kustannus-/soveltamisalavirhe: raportin
+kanoninen täysi kerrosluku (0,091–0,312 dollaria/M tokenia, keski 0,133
+dollaria/M) verrattiin aiemmissa luonnoksissa epäjohdonmukaisesti
+osittaiseen kerroslukuun, joka jättää pois opexin — nyt selkeästi
+erotettu kaikkialla nimenomaisilla soveltamisalamerkinnöillä.</li>
+<li>Korjattu virheellinen ekstrapolointi OpenAI:n omasta itse
+raportoidusta “60+ agenttituntia/päivä” -telemetriasta, jota oli
+käytetty implikoimaan yleistä populaatiokäyttötilastoa.</li>
+<li>Ratkaistu näennäinen ~2-kertainen ristiriita kahden aiemmin
+julkaistun osuustoiminnallisen kustannusluvun välillä (42 € vs. 19,50–23
+€/jäsen/kuukausi) — ne kuvaavat kahta eri laitteistotasoa, ei
+kilpailevia arvioita yhdestä osuuskunnasta.</li>
+<li>Vahvistettu aiemmin VAHVISTAMATTOMAKSI merkitty “0,123 dollaria/M
+tokenia” GB300-päättelyluku suoraan NVIDIAn omalta sivustolta,
+nimenomaisella soveltamisalahuomautuksella, joka rajaa sen sen kuvaamaan
+tiettyyn räkki-/interaktiivisuuskokoonpanoon.</li>
+<li>Yhtenäistetty klusteri vanhentuneita Kotitaloustason (0,6–2
+dollaria/M, korvattu) ja Osuustoiminnallisen tason (0,77–1,20
+dollaria/M, korvattu) lukuja läpi alkutekstin, työkirjan, diaesityksen
+ja kaavioiden yhdeksi kanoniseksi Kotitalous (1,37–11,89 dollaria/M) ja
+Osuustoiminnallinen (1,99–7,62 dollaria/M) -vaihteluväliksi, ja
+uudelleenlaskettu joka riippuva $/tekoäly-työtunti-luku kanonisista
+vaihteluväleistä.</li>
+<li>Korjattu 1000-kertainen yksikkövirhe Bitcoin-louhinnan energian
+rahaksimuunto -vertailussa; korjattu laskutoimitus kääntää tämän kohdan
+alkuperäisen havainnollisen johtopäätöksen (tuotantokustannuksella
+arvotetut tekoälytokenit ylittävät, eivät jää alle, tehokkaan
+Bitcoin-louhinnan tulon per MWh).</li>
+<li>Korjattu kaksi tekstimerkintäsolua täydentävässä Excel-työkirjassa,
+jotka oli tallennettu rikkinäisinä kaavoina (olisivat renderöineet
+<code>#NAME?</code>:n Excelissä).</li>
+<li>Korjattu yksi Hyperskaalatason käyttöasteoletus Excel-työkirjassa,
+joka oli asetettu korkeaan tapaukseen (90 %) sen sijaan, että se olisi
+keskitapaus (60 %), jolle kanoninen luku on rakennettu.</li>
+<li>Korjattu viisi kaaviosuunnitteluvirhettä, jotka löydettiin
+visuaalisen tarkistuksen aikana (tunniste-/kuvatekstitörmäykset, tyhjä
+ruudukko, jolta puuttuivat solumerkinnät, alikaavion päällekkäisyys,
+kanvaksen ulkopuolelle leikkautunut sisältö) kaavioissa 1, 2, 3, 5, 9 ja
+10.</li>
+</ul>
+<h3 id="lisätty-tätä-julkaisua-varten">Lisätty tätä julkaisua
+varten</h3>
+<ul>
+<li><code><a href="00-how-to-use-this-research.html">00-how-to-use-this-research.md</a></code> — yhden sivun
+orientaatiomuistio.</li>
+<li><code><a href="20-appendix-known-limitations.html">20-appendix-known-limitations.md</a></code> — koottu lista
+avoimista epävarmuustekijöistä (mallin suorituskyky, käyttöaste,
+rahoitus, sähkön hinnoittelu, käyttöönoton ajoitus, Ammattimaisen tason
+näyttökuilu).</li>
+<li><code>data/canonical-cost-model.csv</code> — yksittäinen kanoninen
+lähde joka tason kustannusluvuille.</li>
+<li><code>tools/check-canonical-consistency.py</code> — automaattinen
+ajautumatarkistus läpi alkutekstin, työkirjojen, diaesityksen ja
+xlsx:n.</li>
+<li><code>CITATION.cff</code> — koneluettava viittausmetadata.</li>
+<li><code>LICENSE</code> — täysi CC BY 4.0 laillinen teksti plus
+soveltamisalahuomautus, joka erottaa tämän kirjoittajan alkuperäisen
+sisällön lainatuista kolmannen osapuolen lausunnoista, tavaramerkeistä
+ja ulkoisesta datasta.</li>
+<li><code>CHECKSUMS.sha256</code> — SHA-256-manifesti joka
+julkaisuresurssille.</li>
+<li>Kehystetty uudelleen raportin avauskysymys implisiittisestä
+kupla/murros-binäärimuodosta “mitä pitäisi olla totta, jotta tämä
+kulutus olisi taloudellisesti järkevää” -muotoon (alkuteksti §6/§7,
+johdon tiivistelmä, diaesitys).</li>
+<li>Lisätty lukupolkuohjeistus README:hen erottaen alkuteksti
+(auktoritatiivinen kartta), johdon tiivistelmä (aloituspiste), työkirjat
+(tarkistus-/tutkimuskerros), ja diaesitys (keskustelunavaaja).</li>
+</ul>
+<h3 id="tunnetut-rajoitteet">Tunnetut rajoitteet</h3>
+<p>Katso <code><a href="20-appendix-known-limitations.html">20-appendix-known-limitations.md</a></code> täydelle
+listalle. Kohokohdat: DGX Spark -läpäisykykyluvut lepäävät yhdellä
+tarkastamattomalla yhteisön vertailutuloksella; kaikki käyttöaste-,
+rahoitus- ja sähkönhintasyötteet ovat skenaario-oletuksia, ei mitattuja
+tai noteerattuja todellisen maailman lukuja; Ammattimaisella tasolla
+(HGX B300 -solmu) ei ole julkista hintaa tai tehospesifikaatiota ja se
+on merkitty läpi heikoimmin todennetuksi tasoksi; nimettyjen johtajien
+käyttöönoton ajoitusta koskevat väitteet ovat lähteeseen kohdistettuja
+lausuntoja, ei itsenäisesti vahvistettuja ennusteita.</p>
+</article>
+<div class="page-footer-nav">
+  <a href="index.html">← Takaisin etusivulle</a>
+  <a href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous/blob/main/CHANGELOG.md">Katso lähde / muokkaa GitHubissa →</a>
+</div>
+</main>
+<footer>
+  <p>© Valto Loikkanen. Lisensoitu CC BY 4.0 -lisenssillä ilmoitetuin osin. Opetuksellista tutkimusta ja skenaarioanalyysiä — ei sijoitus-, oikeudellista, vero-, hankinta- tai politiikkaneuvontaa. Tämä on suomenkielinen käännös alkuperäisestä englanninkielisestä julkaisusta.</p>
+  <p><a href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous">Katso tietovarasto GitHubissa</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sijoitusteesin
+muistiinpanot — Miksi tekoälyyn investoidaan biljoonia?</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header>
+  <h1 style="font-size:1.5rem;"><a href="index.html" style="color:#fff; text-decoration:none;">Miksi tekoälyyn investoidaan biljoonia?</a></h1>
+  <p class="meta">Tutkimuspohja ja elävä viitekehys &nbsp;·&nbsp; CC BY 4.0</p>
+</header>
+<main>
+<nav class="crumbs"><a href="index.html">Etusivu</a> / Sijoitusteesin muistiinpanot</nav>
+<article class="doc-body">
+<h1
+id="sijoitusteesin-skenaariomuistiinpanot-julkaisuresurssi-12">Sijoitusteesin
+skenaariomuistiinpanot — Julkaisuresurssi #12</h1>
+<h3
+id="kumppani-miksi-tekoälyyn-investoidaan-biljoonia--teokselle-valto-loikkanen-cc-by-4.0">Kumppani
+“Miksi tekoälyyn investoidaan biljoonia?” -teokselle (Valto Loikkanen,
+CC BY 4.0)</h3>
+<p><strong>Tämän muistiinpanon tila:</strong> Nämä ovat koulutuksellisia
+skenaariomuistiinpanoja, ei sijoitus-, hankinta-, vero- tai
+politiikkaneuvontaa. Jokainen alla oleva luku on joko HAVAITTU FAKTA
+(lähdeviitattu ensisijaiseen lähteeseen), LÄHTEESEEN KOHDISTETTU
+LAUSUNTO (nimetyn henkilön/organisaation väite, ei itsenäisesti
+todistettu), JOHDETTU LASKELMA (esitetty kaavalla), SKENAARIO-OLETUS
+(muokattava havainnollistava syöte, ei markkinaluku) tai TULKINTA
+(merkitty mahdollinen tulkinta yllä olevasta). Tämä raja koskee erikseen
+<strong>kutakin alla olevaa tasokappaletta</strong> — mikään neljästä
+alla olevasta tasosta ei ole suositus ostaa, rakentaa tai sijoittaa
+mihinkään.</p>
+<p><strong>Kanonisen lähteen huomautus (2026-08-13):</strong> jokainen
+alla oleva kustannusluku on siteerattu suoraan Globaali perustaso
+-työkirjasta (Julkaisuresurssi #7) ja Tekoälytyökapasiteetin
+muuntotyökirjasta (Julkaisuresurssi #9) — kahdesta työkirjasta, jotka
+kantavat tämän paperin auktoritatiiviset tuotantokustannuskäyrät — sen
+sijaan, että ne johdettaisiin uudelleen tässä. Missä tämän muistiinpanon
+aiempi luonnos käytti väliaikaisia tai eri lähteistä peräisin olevia
+lukuja, ne on korvattu kanonisilla luvuilla.</p>
+<h3 id="näyttöluokkien-selitteet">Näyttöluokkien selitteet</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Koodi</th>
+<th>Merkitys</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HAVAITTU FAKTA</td>
+<td>Tarkistettu suoraa/ensisijaista lähdettä vasten</td>
+</tr>
+<tr>
+<td>LÄHTEESEEN KOHDISTETTU LAUSUNTO</td>
+<td>Nimetyn henkilön/organisaation julkinen väite; ei itsenäisesti
+todistettu</td>
+</tr>
+<tr>
+<td>JOHDETTU LASKELMA</td>
+<td>Läpinäkyvä aritmetiikka siteeratuista syötteistä; kaava
+esitetty</td>
+</tr>
+<tr>
+<td>SKENAARIO-OLETUS</td>
+<td>Muokattava havainnollistava parametri, ei markkinaluku</td>
+</tr>
+<tr>
+<td>TULKINTA</td>
+<td>Merkitty mahdollinen tulkinta, joka yhdistää
+faktoja/lausuntoja/skenaarioita</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="taso-1-kotitalous-yhden-laitteen-laskenta">Taso 1 — Kotitalous
+(yhden laitteen laskenta)</h2>
+<p>Kotitaloustason “tehdas” on yksi prosumer-tekoälytyöasema
+(havainnollistava viitelaite: NVIDIA DGX Spark), jota yksilö tai
+kotitalous käyttää henkilökohtaiseen tai pienen projektin käyttöön.
+Talous toimii vain, jos omistajan omakäyttö — tai pieni
+jälleenmyyty/jaettu osuus siitä — on riittävän korkea ja riittävän vakaa
+kattamaan kiinteän rahoituskustannuksen; alla on lyhyt
+skenaariotaulukko, ei suositus.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Kohta</th>
+<th>Arvo</th>
+<th>Luokka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Viitelaite</td>
+<td>NVIDIA DGX Spark, GB10 Superchip, 128GB yhtenäistä muistia</td>
+<td>HAVAITTU FAKTA —
+nvidia.com/en-us/products/workstations/dgx-spark/</td>
+</tr>
+<tr>
+<td>Vaadittu pääoma (nykyinen suositushinta)</td>
+<td>4 699 $ (Founders Edition; nostettu 3 999 $:sta helmikuussa
+2026)</td>
+<td>HAVAITTU FAKTA — NVIDIA Developer Forumsin hinnanmuutosilmoitus</td>
+</tr>
+<tr>
+<td>Havainnollistava rahoitettu pääoma+sähkökustannus</td>
+<td>~1 129 $/yr (5v @ 8% rahoitus) + 25–210 $/yr sähköä
+käyttöasteesta/hintaskenaariosta riippuen</td>
+<td>JOHDETTU LASKELMA — ks. Globaali perustaso -työkirja §2.1–2.2
+täydelle johdannolle</td>
+</tr>
+<tr>
+<td>Kustannus per M tokenia, koko käyttöastevälillä (matala/keski/korkea
+skenaario)</td>
+<td><strong>1,37–11,89 $/M tokenia</strong> (paras tapaus: 38,4 tok/s,
+80 % käyttöaste; huonoin tapaus: 30,8 tok/s, 10 % käyttöaste)</td>
+<td>JOHDETTU LASKELMA, kanoninen luku Globaali perustaso -työkirjan §2.4
+mukaan</td>
+</tr>
+<tr>
+<td>$/tekoäly-työtunti, keskiskenaario (3,17 $/M tokenia, 30,8 tok/s, 40
+% käyttöaste)</td>
+<td>Chat/neuvonantaja 0,032–0,095 $/h; aktiivinen kopilotti 0,190–0,380
+$/h; delegoitu agentti 0,633–1,900 $/h; raskas orkestrointi 3,17–38,00
+$/h</td>
+<td>JOHDETTU LASKELMA, kanoninen luku Globaali perustaso -työkirjan §2.5
+mukaan</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Verrattuna vähittäis-API-hintaan (korjattu
+2026-08-13):</strong> parhaimmalla käyttöasteella Kotitaloustaso on
+halvempi kuin kaikki vähittäistasot paitsi OpenAI:n halvin (Luna);
+huonoimmalla käyttöasteella Kotitaloustaso on kalliimpi kuin useimmat
+vähittäistasot paitsi kaikkein kalleimmat (Sol, Fable 5). Tämä on aito
+vaihteluväli, ei kiinteä kerroin suuntaan tai toiseen — ks. Globaali
+perustaso -työkirja §7 täydelle korjatulle vertailutaulukolle.</p>
+<p><strong>Kysyntäpuolen tekijät, jotka oikeuttaisivat sen:</strong>
+jatkuva henkilökohtainen tai pienen tiimin käyttö selvästi satunnaisen
+chat-tason yläpuolella (siis säännöllinen työtoveri-/kopilottitason
+käyttö, ei sattumanvaraisia kyselyitä); tietosuoja-, viive- tai
+offline-saatavuusvaatimus, jota API-pääsy ei täytä; halukkuus ajaa
+avoimen painotuksen malleja sen sijaan, että maksettaisiin eturintaman
+laboratorion vähittäis-API-hintoja samasta työkuormasta.</p>
+<p><strong>Keskeiset riskit:</strong> laitteisto menettää arvoaan
+nopeasti liikkuvaa eturintamaa vastaan (tänään ostettu laite voi olla
+kykyvanhentunut ennen kuin se on taloudellisesti poistettu); yhteisön
+ilmoittama läpimenoteho (DGX Sparkin Qwen3.5-122B-A10B-foorumibenchmark,
+LÄHTEESEEN KOHDISTETTU LAUSUNTO, ~38,4 tok/s vahvistettu / ~51 tok/s
+väitetty mutta vahvistamaton) on selvästi alle sen, mitä yritystason
+räkit saavuttavat, joten per-tokenin kustannus on rakenteellisesti
+korkeampi kuin suuremmilla tasoilla; jouten oleva aika on puhdasta
+uponnutta kustannusta, koska rahoitus kertyy käytettiinpä laitetta tai
+ei; käyttöaste on yksittäisenä muuttujana suurin kustannusvipu
+(~7-kertainen heilahdus 10 % ja 80 % käyttöasteen välillä samalla
+läpimenoteholla, Globaali perustaso -työkirjan §2.4 mukaan).</p>
+<p><strong>Mitä pitäisi olla totta, jotta tämä taso olisi
+järkevä:</strong> omistajan todellisen käytön täytyy sijoittua lähelle
+“aktiivinen kopilotti” -kaistan huippua tai sen yläpuolelle,
+johdonmukaisesti, useiden vuosien ajan, käyttöasteella, joka pitää
+$/M-tokenia selvästi alle 11,89 $ huonoimman tapauksen luvun —
+satunnainen tai kokeileva käyttö tekee eturintaman laboratorion
+vähittäis-API-hinnoittelusta halvemman kuin laitteiston omistamisesta
+useimmissa skenaarioissa. Tämä on havainnollistus tasapainopisteen
+logiikasta, ei väite, että kotitalousomistus voittaisi vuokrauksen
+jollekin tietylle ostajalle.</p>
+<p><em>Ei-neuvontaa koskeva vastuuvapauslauseke: tämän tason luvut ovat
+muokattava havainnollistus tasapainopisterakenteesta, ei suositus ostaa
+DGX Spark tai mikä tahansa muu laite.</em></p>
+<hr />
+<h2
+id="taso-2-osuustoiminnallinen-jaettu-monilaite--tai-jaettu-työasemaluokan-kone">Taso
+2 — Osuustoiminnallinen (jaettu monilaite- tai jaettu työasemaluokan
+kone)</h2>
+<p>Osuustoiminnallinen tehdas kokoaa pääomaa jäsenten kesken päästäkseen
+yksittäistä yksikkökustannusta alemmas jaetun käyttöasteen avulla,
+hintana koordinaatioyleiskustannus ja hallinto-/pääsynjakoongelma. Tälle
+skenaariolle on olemassa kaksi laitteistotasoa, jotka kuvaavat kahta eri
+laitetta, ei kahta kilpailevaa arviota yhdestä asiasta.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Kohta</th>
+<th>Arvo</th>
+<th>Luokka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DGX Spark -pooli</strong> — 10 yksikköä, 50 jäsentä</td>
+<td>Pääoma ~46 990 $; rahoitus+sähkö ~14 000–15 770 $/vuosi ennen
+hallintoa/verkkoa</td>
+<td>JOHDETTU LASKELMA — 10 × 4 699 $ (HAVAITTU FAKTA yksikköhinta); ks.
+Globaali perustaso -työkirja §3.1–3.4</td>
+</tr>
+<tr>
+<td>Kustannus per M tokenia (DGX Spark -pooli, 20–85 % käyttöaste)</td>
+<td><strong>1,99–7,62 $/M tokenia</strong></td>
+<td>JOHDETTU LASKELMA, kanoninen luku Globaali perustaso -työkirjan §3.4
+mukaan</td>
+</tr>
+<tr>
+<td>$/jäsen/kk (DGX Spark -pooli, 50 jäsentä)</td>
+<td><strong>24,67–27,40 $/jäsen/kk</strong></td>
+<td>JOHDETTU LASKELMA, kanoninen luku Globaali perustaso -työkirjan §3.5
+mukaan</td>
+</tr>
+<tr>
+<td>$/tekoäly-työtunti, keskiskenaario (3,20 $/M tokenia)</td>
+<td>Chat/neuvonantaja 0,032–0,096 $/h; aktiivinen kopilotti 0,192–0,384
+$/h; delegoitu agentti 0,641–1,922 $/h; raskas orkestrointi 3,20–38,44
+$/h</td>
+<td>JOHDETTU LASKELMA, kanoninen luku Globaali perustaso -työkirjan §3.6
+mukaan</td>
+</tr>
+<tr>
+<td><strong>Jaettu DGX Station -luokan kone</strong> — 1 yksikkö, 50 tai
+100 jäsentä</td>
+<td>Pääoma, havainnollistava 100 000 € ilman ALV:a (tälle koneluokalle
+ei ole olemassa virallista NVIDIA-hintaa); rahoitettu 5v @ 6,5 %</td>
+<td>SKENAARIO-OLETUS — ks. Tokenitehtaan skenaariotyökirja §1a täydelle
+rakenteelle</td>
+</tr>
+<tr>
+<td>$/jäsen/kk (jaettu työasemaluokan kone)</td>
+<td><strong>42 €/jäsen/kk 50 jäsenellä; 21 €/jäsen/kk 100
+jäsenellä</strong></td>
+<td>JOHDETTU LASKELMA 100 000 €:n havainnollisesta pääomaperustasta,
+Tokenitehtaan skenaariotyökirjan §1a mukaan</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Molemmat luvut ovat oikein sille laitteistolle, jota ne
+kuvaavat, eivät kilpailevia arvioita yhdestä osuuskunnasta.</strong> DGX
+Spark pool hinnoittelee kymmenen pienempää, itsenäistä pöytäluokan
+laitetta; jaettu työasemaluokan kone hinnoittelee yhden suuremman
+järjestelmän, jossa on huomattavasti enemmän muistia ja laskentaa per
+yksikkö. Ks. Tokenitehtaan skenaariotyökirja (Julkaisuresurssi #10)
+§1/§1a/§1b täydelle korjatulle selitykselle siitä, miksi näitä ei
+koskaan ollut ristiriidassa.</p>
+<p><strong>Kysyntäpuolen tekijät, jotka oikeuttaisivat kumman tahansa
+tason:</strong> riittävästi jäseniä, joilla on aidosti toisiaan
+täydentävät käyttöaikataulut (tasoittavat toistensa huippuja) pitämään
+kokonaiskäyttöaste korkeana; jaettu luottamus-/hallintorakenne, joka voi
+jakaa niukkaa huippukapasiteettia oikeudenmukaisesti; osuuskunnan
+käyttöprofiili, joka painottuu kopilotti-/delegoitu agentti -kaistoihin
+sen sijaan, että olisi satunnaista chattia (per-capita vain-chat-käyttö
+ei poista jaettua laitteistoa hyvin).</p>
+<p><strong>Keskeiset riskit:</strong> ilmaisin ratsastaja- ja jakoon
+liittyvät oikeudenmukaisuusongelmat (raskaat käyttäjät vs. kevyet
+maksajat); koordinaatio-/hallintoyleiskustannus, jota ei täysin
+mallinneta kummassakaan yllä olevassa otsikkoluvussa; jäsenkato, joka
+horjuttaa käyttöasteoletusta, jota molemmat tasot riippuvat; väärän
+laitteistotason valinta todelliselle jäsenkysynnälle (DGX Spark pool voi
+palvella riittämättömästi jäseniä, jotka tarvitsevat suurikontekstista
+tai biljoonan parametrin luokan paikallista päättelyä, kun taas yksi
+DGX-Station-class machine voi olla vajaakäytöllä osuuskunnalle, jonka
+jäsenet tarvitsevat enimmäkseen kevyitä, rinnakkaisia,
+matalakontekstisia työkuormia).</p>
+<p><strong>Mitä pitäisi olla totta, jotta tämä taso olisi
+järkevä:</strong> valittiinpa mikä taso tahansa (DGX Spark -pooli
+hintaan 24,67–27,40 $/jäsen/kk, tai jaettu DGX Station -luokan kone
+hintaan 42 €/jäsen/kk 50 jäsenellä / 21 € 100 jäsenellä), sen täytyy
+voittaa jäsenen realistinen vaihtoehto — joko yksilöllinen
+kotitalousomistus (Taso 1) tai mitattu API-/pilvipääsy — kyseisen
+jäsenen todellisella käyttötasolla ja todellisilla kykyvaatimuksilla
+(muisti/kontekstikoko, mallin mittakaava, rinnakkaisuus), ei oletetulla
+keskiarvolla.</p>
+<p><em>Ei-neuvontaa koskeva vastuuvapauslauseke: yllä olevat
+osuustoiminnalliset luvut ovat havainnollistavia skenaariolaskelmia
+kahdelle eri laitteistotasolle, ei validoitu osuuskunnan perustamisen
+liiketoimintasuunnitelma.</em></p>
+<hr />
+<h2
+id="taso-3-ammattimainen-pk-yritys-varattu-yritysmittakaavan-kapasiteetti">Taso
+3 — Ammattimainen / PK-yritys (varattu yritysmittakaavan
+kapasiteetti)</h2>
+<p>Tämä taso sijoittuu osuustoiminnallisen ja hyperskaalatason väliin,
+ja se on nykyisen lähdeaineiston vähiten täsmällisesti rajattu —
+käsittele sitä skenaarioluonnoksena, ei johdettuna mallina. Se kattaa
+yrityksen, toimiston tai keskisuuren yrityksen, joka tarvitsee varattua,
+korkeamman vuorovaikutteisuuden päättelykapasiteettia enemmän kuin
+osuustoiminnallinen allas tyypillisesti tarjoaa, joko omistamalla
+yritysluokan laitteistoa tai, yleisemmin, sopimalla varatusta
+pilvi-/co-location-kapasiteetista.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Kohta</th>
+<th>Arvo</th>
+<th>Luokka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pääomapolku A — omistettu yritysluokan laitteisto</td>
+<td>Yksittäinen NVIDIA HGX B300 (8× Blackwell Ultra GPU) -solmu;
+havainnollistava capex 250 000–500 000 $ (keski 350 000 <span
+class="math inline">)<em>j</em><em>a</em><em>t</em><em>e</em><em>h</em><em>o</em><em>n</em><em>k</em><em>u</em><em>l</em><em>u</em><em>t</em><em>u</em><em>s</em>8–15<em>k</em><em>W</em>(<em>k</em><em>e</em><em>s</em><em>k</em><em>i</em>11<em>k</em><em>W</em>)— * *<em>N</em><em>V</em><em>I</em><em>D</em><em>I</em><em>A</em><em>e</em><em>i</em><em>j</em><em>u</em><em>l</em><em>k</em><em>a</em><em>i</em><em>s</em><em>e</em><em>h</em><em>i</em><em>n</em><em>t</em><em>a</em><em>a</em><em>t</em><em>a</em><em>i</em><em>t</em><em>e</em><em>h</em><em>o</em><em>s</em><em>p</em><em>e</em><em>s</em><em>i</em><em>f</em><em>i</em><em>k</em><em>a</em><em>a</em><em>t</em><em>i</em><em>o</em><em>t</em><em>a</em><em>t</em><em>ä</em><em>l</em><em>l</em><em>e</em><em>S</em><em>K</em><em>U</em> : <em>l</em><em>l</em><em>e</em> * *, <em>n</em><em>i</em><em>i</em><em>n</em><em>m</em><em>o</em><em>l</em><em>e</em><em>m</em><em>m</em><em>a</em><em>t</em><em>l</em><em>u</em><em>v</em><em>u</em><em>t</em><em>o</em><em>v</em><em>a</em><em>t</em><em>n</em><em>i</em><em>m</em><em>e</em><em>n</em><em>o</em><em>m</em><em>a</em><em>i</em><em>s</em><em>e</em><em>s</em><em>t</em><em>i</em><em>p</em><em>a</em><em>i</em><em>k</em><em>k</em><em>a</em><em>m</em><em>e</em><em>r</em><em>k</em><em>k</em><em>e</em><em>j</em><em>ä</em>|<em>S</em><em>K</em><em>E</em><em>N</em><em>A</em><em>A</em><em>R</em><em>I</em><em>O</em> − <em>O</em><em>L</em><em>E</em><em>T</em><em>U</em><em>S</em>—<em>n</em><em>i</em><em>m</em><em>e</em><em>n</em><em>o</em><em>m</em><em>a</em><em>i</em><em>s</em><em>e</em><em>s</em><em>t</em><em>i</em><em>e</em><em>i</em><em>v</em><em>i</em><em>r</em><em>a</em><em>l</em><em>l</em><em>i</em><em>s</em><em>t</em><em>a</em><em>h</em><em>i</em><em>n</em><em>n</em><em>o</em><em>i</em><em>t</em><em>t</em><em>e</em><em>l</em><em>u</em><em>a</em>, <em>G</em><em>l</em><em>o</em><em>b</em><em>a</em><em>a</em><em>l</em><em>i</em><em>p</em><em>e</em><em>r</em><em>u</em><em>s</em><em>t</em><em>a</em><em>s</em><em>o</em> − <em>t</em><em>y</em><em>ö</em><em>k</em><em>i</em><em>r</em><em>j</em><em>a</em><em>n</em>§4.1<em>m</em><em>u</em><em>k</em><em>a</em><em>a</em><em>n</em>||<em>P</em><em>ä</em><em>ä</em><em>o</em><em>m</em><em>a</em><em>p</em><em>o</em><em>l</em><em>k</em><em>u</em><em>B</em>—<em>s</em><em>o</em><em>p</em><em>i</em><em>m</em><em>u</em><em>k</em><em>s</em><em>e</em><em>l</em><em>l</em><em>i</em><em>n</em><em>e</em><em>n</em><em>v</em><em>a</em><em>r</em><em>a</em><em>t</em><em>t</em><em>u</em><em>k</em><em>a</em><em>p</em><em>a</em><em>s</em><em>i</em><em>t</em><em>e</em><em>e</em><em>t</em><em>t</em><em>i</em>|<em>E</em><em>s</em><em>i</em><em>m</em><em>e</em><em>r</em><em>k</em><em>k</em><em>i</em><em>m</em><em>i</em><em>t</em><em>t</em><em>a</em><em>k</em><em>a</em><em>a</em><em>v</em><em>a</em><em>s</em><em>t</em><em>a</em> : <em>I</em><em>B</em><em>M</em><em>C</em><em>l</em><em>o</em><em>u</em><em>d</em> + <em>T</em><em>o</em><em>g</em><em>e</em><em>t</em><em>h</em><em>e</em><em>r</em><em>A</em><em>I</em> : <em>n</em><em>m</em><em>o</em><em>n</em><em>i</em><em>v</em><em>u</em><em>o</em><em>t</em><em>i</em><em>n</em><em>e</em><em>n</em>240<em>M</em></span>
+-sopimus varatulle NVIDIA HGX B300 -päättelyklusterille, saatavilla Q1
+2027</td>
+<td>HAVAITTU FAKTA — IBM Newsroomin lehdistötiedote, 11.8.2026 (tämä on
+jaettu/monen asiakkaan sopimus, joka havainnollistaa ammattimaisen tason
+markkinan mittakaavaa, ei yhden ostajan omaa kulutusta)</td>
+</tr>
+<tr>
+<td>Kustannus per M tokenia, HGX B300 -solmu (25–90 % käyttöaste)</td>
+<td><strong>0,044–0,146 $/M tokenia</strong> — rakennettu JOHDETUN
+lineaarisen GPU-määrän skaalauksen pohjalta HAVAITUISTA per-GPU
+MLPerf-luvuista, jotka lähdetyökirja merkitsee optimistiseksi
+ylärajaksi, koska se olettaa, että 8-GPU-kotelo toistaa NVL72-räkkitason
+per-GPU-läpimenotehon</td>
+<td>JOHDETTU LASKELMA, kanoninen luku Globaali perustaso -työkirjan §4.3
+mukaan; matala luottamus pohjana olevien capex/tehosyötteiden
+osalta</td>
+</tr>
+<tr>
+<td>$/tekoäly-työtunti, keskiskenaario (0,064 $/M tokenia)</td>
+<td>Chat/neuvonantaja 0,0006–0,0019 $/h; aktiivinen kopilotti
+0,0038–0,0076 $/h; delegoitu agentti 0,0127–0,0382 $/h; raskas
+orkestrointi 0,064–0,764 $/h</td>
+<td>JOHDETTU LASKELMA, kanoninen luku Globaali perustaso -työkirjan §4.4
+mukaan</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tärkeä rajaushuomautus:</strong> yllä oleva 0,044–0,146
+$/M-tokenia-vaihteluväli on erityisesti Ammattimaisen tason pienemmälle
+HGX B300 (8-GPU) -solmulle. Sitä ei pidä sekoittaa Hyperskaalatason
+0,123 $/M-tokenia-lukuun (vahvistettu suoraan NVIDIAn omalla sivustolla,
+2026-08-13) tai laajempaan 0,065–3,3 $/M-tokenia
+GB300-vuorovaikutteisuuskäyrään — ne kuvaavat 72-GPU:n GB300 NVL72
+-räkkiä, eri, suurempaa laitteistotasoa (Taso 4 alla).</p>
+<p><strong>Kysyntäpuolen tekijät, jotka oikeuttaisivat sen:</strong>
+yritys, jonka tuote aidosti vaatii korkean vuorovaikutteisuuden, matalan
+viiveen päättelyä volyymissä (ei vain satunnaista käyttöä);
+työkuormaprofiili, joka vastaa delegoidun agentin tai varhaisen
+moniagentin kaistaa kevyen chatin sijaan; vaatimustenmukaisuus-,
+tietosuoja- tai räätälöintitarve, jota valmiit eturintaman
+laboratorioiden API:t eivät täytä yhtä halvasti tällä volyymilla.</p>
+<p><strong>Keskeiset riskit:</strong> tämän tason pohjana olevat capex-
+ja tehonkulutussyötteet ovat vahvistamattomia paikkamerkkejä (mitään
+julkista NVIDIA-/jälleenmyyjähintaa HGX B300 node -laitteelle ei ole
+olemassa), niin tämän tason koko kustannuskäyrä kantaa oleellisesti
+matalampaa luottamusta kuin Tasot 1, 2 tai 4; monivuotisen varatun
+kapasiteetin sopimukseen sitoutuminen (Pääomapolku B) lukitsee nykyisen
+laitteistosukupolven nopeasti arvoaan menettävää suorituskykykäyrää
+vastaan (Vera Rubin-class-laitteiston väitetään NVIDIA:n omassa
+markkinoinnissa — LÄHTEESEEN KOHDISTETTU LAUSUNTO, ei itsenäisesti
+todistettu — leikkaavan tokenin kustannuksen jopa 10x versus GB200, kun
+SemiAnalysisin itsenäinen analyysi on maltillisempi, roughly
+2–5.4x).</p>
+<p><strong>Mitä pitäisi olla totta, jotta tämä taso olisi
+järkevä:</strong> yrityksen todellinen, jatkuva tokenivolyymi ja
+vaadittu vuorovaikutteisuustaso täytyy olla tiedossa (ei arvattu) ennen
+kuin verrataan omistettua/varattua kapasiteettia eturintaman
+laboratorion API-vuokraukseen tai osuustoiminnalliseen tasoon;
+vahvistettu HGX B300 -hinta-/tehotarjous pitäisi korvata yllä olevat
+paikkamerkkisyötteet ennen kuin tätä tasoa käytetään mihinkään
+todelliseen mitoitusharjoitukseen.</p>
+<p><em>Ei-neuvontaa koskeva vastuuvapauslauseke: tämä taso on näiden
+neljän luonnoksen vähiten vahvistettu, eikä sitä pitäisi käyttää
+mitoittamaan mitään todellista pääomasitoumusta; se havainnollistaa
+kustannus- ja riskimuotoa, ei liiketoimintasuunnitelmaa.</em></p>
+<hr />
+<h2 id="taso-4-hyperskaala-usean-gigawatin-tekoälyinfrastruktuuri">Taso
+4 — Hyperskaala (usean gigawatin tekoälyinfrastruktuuri)</h2>
+<p>Tämä on taso, jota nimetyt rahoitus- ja teollisuusjohtajat (Jensen
+Huang, Larry Fink, and five other CEOs on CNBC, Aug 10 2026)
+käsittelevät nimenomaisesti uusien sadan-miljardin-dollarin-luokan
+rahoitusrakenteiden kohteena. Kaikki mittakaavasta,
+käyttöönottotarkoituksesta ja kokonaisesta tulevasta pääomasta tässä
+tulee nimetyistä, julkisista mutta eteenpäin katsovista lausunnoista —
+ei tarkastetusta markkinakokonaisuudesta.</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Kohta</th>
+<th>Arvo</th>
+<th>Luokka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vasta ilmoitettu rahoitusrakenne</td>
+<td>Six MOUs (Apollo, Blackstone, BlackRock, Brookfield, Goldman Sachs,
+KKR) aiming to mobilize &gt;500 $B kolmannen osapuolen pääomaa
+hyperskaalaajille, eturintaman laboratorioille ja yrityksille</td>
+<td>HAVAITTU FAKTA — CNBC transcript &amp; article, Aug 10 2026,
+corroborated by Fortune</td>
+</tr>
+<tr>
+<td>Kustannus per gigawatti</td>
+<td>“jotain 50, 60 miljardin dollarin luokkaa” per gigawatti (energia,
+maa, teho/kuori, laskenta)</td>
+<td>LÄHTEESEEN KOHDISTETTU LAUSUNTO — Jensen Huang, CNBC-lähetys,
+10.8.2026; itsenäiset analyytikkoarviot (Morgan Stanley ~49 miljardia
+dollaria/GW, Bernstein ~35 miljardia dollaria/GW, Foxconn ~47 miljardia
+dollaria/GW, Epoch.ai ~38 miljardia dollaria/GW) sulkevat tämän sisäänsä
+uskottavana korkeintaan, ei vahvistettuna</td>
+</tr>
+<tr>
+<td>Pidemmän aikavälin pääomamittakaava</td>
+<td>“trillions of dollars over the coming years”; &gt;70GW:n uusi
+Yhdysvaltain sähkönkysyntä implisiittisesti</td>
+<td>LÄHTEESEEN KOHDISTETTU LAUSUNTO — Larry Fink, same broadcast;
+suunnaltaan yhtenevä, mutta ei identtinen, itsenäisten BCG (50–80GW US
+shortfall by 2030) ja S&amp;P Global (64.4GW hyperscale draw in 2025)
+-lukujen kanssa</td>
+</tr>
+<tr>
+<td>Kustannus per M tokens — täysi tuotantokustannuskäyrä, 25–90%
+käyttöaste</td>
+<td><strong>0,091–0,312 $/M tokens (canonical mid: 0,133 $/M)</strong> —
+pääoma + rahoitus + sähkö + käyttömenot, kaikki kerrokset mukana</td>
+<td>JOHDETTU LASKELMA, kanoninen luku Globaali perustaso -työkirjan §5.6
+mukaan</td>
+</tr>
+<tr>
+<td>Ristiintarkistus: NVIDIA:n omat vahvistetut luvut</td>
+<td>0,123 $/M tokens at 116 tokens/sec/user, using NVIDIA Dynamo and
+TensorRT-LLM, attributed to SemiAnalysis InferenceX (April 2026)</td>
+<td>HAVAITTU FAKTA — vahvistettu suoraan
+nvidia.com/en-gb/solutions/ai/inference/, tarkistettu 2026-08-13;
+sijoittuu yllä olevaan kanoniseen vaihteluväliin, tiettyyn
+vuorovaikutteisuuspisteeseen</td>
+</tr>
+<tr>
+<td>$/AI-working-hour (raskas moniagenttikaista, 1M–12M+ tokens/hr, koko
+vaihteluväli)</td>
+<td><strong>0,091–3,74 $/hr</strong> across the low-to-high
+käyttöastevälin</td>
+<td>JOHDETTU LASKELMA — kaava: <span
+class="math inline">/<em>h</em><em>r</em> = (</span>/M tokens) ×
+(tokens/hour ÷ 1 000 000); alapää 0.091×1=0,091 $, yläpää 0.312×12=3,74
+$</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Kysyntäpuolen tekijät, jotka oikeuttaisivat sen (nimettyjen
+johtajien esittämällä tavalla, ei itsenäisesti vahvistettu):</strong>
+Huangin väite, että “AI tokens are… incredibly profitable” eturintaman
+laboratorioille (LÄHTEESEEN KOHDISTETTU LAUSUNTO); OpenAI:n omat
+sisäiset telemetriatiedot, joiden mukaan Codex now accounts for 99,8 %
+sen viikoittaisesta sisäisestä tulostetokenimäärästä (LÄHTEESEEN
+KOHDISTETTU LAUSUNTO, OpenAI:n itse-ilmoittama, ei tarkastettu data);
+Altmanin blogikirjoituksen väite, että tekoälyn kustannus laskee ~10x
+every 12 months, jonka hän yhdistää Jevonsin paradoksin tapaiseen
+kysyntäreaktioon (LÄHTEESEEN KOHDISTETTU LAUSUNTO, ei kysynnän
+kasvunopeuden luku, vaikka sitä toisinaan parafraseerataan
+sellaisena).</p>
+<p><strong>Keskeiset riskit:</strong> koko rahoitusteesi lepää eteenpäin
+katsovilla, julkisilla mutta tarkastamattomilla lausunnoilla
+osapuolilta, jotka hyötyvät kerättävästä pääomasta (Huang myy siruja;
+Finkin yhtiö auttaisi sijoittamaan pääoman); 50–60 $B/GW-luku on Huangin
+oma ilmoittama arvio, itsenäisten analyytikkovaihteluvälien yläpäässä,
+ei tarkastettu kustannus; laitteiston arvonalenemisriski on
+rakenteellinen myös tässä mittakaavassa — tänään sitoutunut pääoma
+GB300-era economics -mukaisesti on lukittu laitteistoa vastaan, jonka
+oman valmistajan mukaan tulee olemaan olennaisesti halvempaa per token
+samalla monivuotisella rahoitusaikahorisontilla; &gt;70GW US
+power-demand-luku vaatii todellisen sähköverkon rakentamista, joka on
+itsessään kiistanalaista ja hidasliikkeistä infrastruktuuria,
+riippumatta pääoman saatavuudesta.</p>
+<p><strong>Mitä pitäisi olla totta, jotta tämä taso olisi
+järkevä:</strong> tokenkysynnän kasvun ja per-tokenin kannattavuuden
+eturintaman laboratorioille pitäisi jatkua jonkinlaisella nopeudella,
+joka muistuttaa Altmanin ja Huangin kuvaamia, useiden vuosien ajan,
+useiden laitteistosukupolvien poikki, ilman kestävää per-tokenin hinnan
+romahdusta, joka ohittaisi vastaavan kysynnän kasvun — mitään näistä ei
+ole tänä päivänä itsenäisesti todistettavissa; se on veto sille, että
+yllä olevat LÄHTEESEEN KOHDISTETUT LAUSUNNOT ovat suunnaltaan oikeita,
+ei ratkaistu fakta.</p>
+<p><em>Ei-neuvontaa koskeva vastuuvapauslauseke: mikään tämän tason
+taulukossa tai keskustelussa ei ole signaali sijoittaa, lainata tai
+sopia mihinkään nimettyihin yhtiöihin, johtajiin tai
+rahoitusvälineisiin; se tiivistää, mitä nimetyt osapuolet ovat
+julkisesti väittäneet ja mitä itsenäiset vertailuarvot osoittavat, vain
+koulutustarkoituksessa.</em></p>
+<hr />
+<p><strong>Tasojenvälinen huomautus (TULKINTA):</strong> siirtyminen
+kotitaloudesta hyperskaalaan vaihtaa laskevan $/M-token-kustannuksen
+nousevaan pääoman keskittymiseen, nousevaan riippuvuuteen nimetyn
+osapuolen eteenpäin katsovista lausunnoista itsenäisesti tarkastettujen
+lukujen sijaan, ja siirtymän yksilön/pienen ryhmän hallinnasta (Tasot
+1–2) kohti rahoitusrakenteita, joita hallitsee pieni joukko
+infrastruktuuri- ja varainhoitoyhtiöitä (Taso 4) — tämä
+keskittymä-vs-kustannus-kompromissi on sama omistusrakennekysymys, joka
+nostetaan esiin muualla tässä paperissa, ei erillinen löydös.</p>
+<hr />
+<p>Tämä toimitus on Julkaisuresurssi #12, osa “Miksi tekoälyyn
+investoidaan biljoonia?” -tutkimuspakettia (CC BY 4.0, Valto
+Loikkanen).</p>
+</article>
+<div class="page-footer-nav">
+  <a href="index.html">← Takaisin etusivulle</a>
+  <a href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous/blob/main/06-investment-thesis-notes.md">Katso lähde / muokkaa GitHubissa →</a>
+</div>
+</main>
+<footer>
+  <p>© Valto Loikkanen. Lisensoitu CC BY 4.0 -lisenssillä ilmoitetuin osin. Opetuksellista tutkimusta ja skenaarioanalyysiä — ei sijoitus-, oikeudellista, vero-, hankinta- tai politiikkaneuvontaa. Tämä on suomenkielinen käännös alkuperäisestä englanninkielisestä julkaisusta.</p>
+  <p><a href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous">Katso tietovarasto GitHubissa</a></p>
+</footer>
+</body>
+</html>

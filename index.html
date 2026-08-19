@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miksi tekoälyyn investoidaan biljoonia? — Tutkimuspaketti</title>
+<meta name="description" content="Neutraali tutkimussynteesi, joka rekonstruoi tekoälylaskennan, tokenien ja työkapasiteetin taloutta — täydellä lähderekisterillä, muokattavilla työkirjoilla ja näyttöluokkamerkinnöillä läpi.">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header>
+  <h1>Miksi tekoälyyn investoidaan biljoonia?</h1>
+  <p class="subtitle">Luvut ja talous tekoälytyökapasiteetin vallankumouksen takana — sähköstä ja infrastruktuurista tokeneihin, robotteihin, arvoon, omistukseen ja toimijuuteen.</p>
+  <p class="meta">Kirjoittaja: Valto Loikkanen &nbsp;·&nbsp; Lisenssi: CC BY 4.0 &nbsp;·&nbsp; Faktojen aikarajaus: 2026-08-13</p>
+</header>
+
+<main>
+
+<div class="banner">
+  <strong>Suomenkielinen käännös</strong> alkuperäisestä englanninkielisestä julkaisusta <a href="https://valto.github.io/ai-working-capacity-revolution/">valto.github.io/ai-working-capacity-revolution</a>. Käännös on kirjaimellinen — luvut, päivämäärät, URL-osoitteet, lainaukset ja osioiden numerointi pysyvät muuttumattomina. <strong>Mallin versio: v1.0.1</strong> (viimeksi tagattu julkaisu, 2026-08-14) &nbsp;·&nbsp; tämä sivusto seuraa tietovaraston <code>main</code>-haaraa, joka voi olla tämän tagin edellä. Katso <a href="CHANGELOG.html">CHANGELOG</a> mikä on muuttunut sen jälkeen. <strong>Käsitteellinen kehys (energia → laitteisto → laskenta → mallit → tokenit → tekoälytyökapasiteetti → työ → tulokset → arvo → toimijuus; Neuvo → Työskentele yhdessä → Delegoi → Johda; Yksilö → Tiimi → Tekoälytyövoima) on tarkoitettu pysymään kestävänä versioiden yli — numeeriset syötteet (laitteiston hinta, sähkön hinta, rahoituskustannus, käyttöaste, ihmistyövoiman kustannus ja vastaavat) odotetaan jatkavan muuttumista.</strong> Mikä tahansa julkaistu luku tästä paketista tulisi lukea "näillä ilmoitetuilla oletuksilla, tässä mallin versiossa, laskelma antaa X:n" — ei kiinteänä faktana, riippumattomana versiosta tai skenaariosta.
+</div>
+
+<p>Neutraalin ulkopuolisen tarkkailijan tutkimussynteesi, joka rekonstruoi yhdistetyn taloudellisen mallin — energia → laitteisto → laskenta → mallit → tokenit → tekoälytyökapasiteetti → digitaalinen työ → tulokset → arvo → toimijuus — Jensen Huangin, Sam Altmanin ja Mark Zuckerbergin julkisista lausunnoista, yhdistettynä itsenäisesti tarkistettuihin laitteistospesifikaatioihin, hinnoitteluun ja vertailutuloksiin. Joka olennainen väite on merkitty yhdellä viidestä näyttöluokasta (<span class="tag">HAVAITTU FAKTA</span><span class="tag">LÄHTEESEEN KOHDISTETTU LAUSUNTO</span><span class="tag">JOHDETTU LASKELMA</span><span class="tag">SKENAARIO-OLETUS</span><span class="tag">TULKINTA</span>), jotta lukija näkee yhdellä silmäyksellä, mikä on itsenäisesti vahvistettu, mikä on jonkun tallenteella oleva väite, mikä on laskutoimitus ja mikä on muokattavissa oleva havainnollistus.</p>
+
+<p>Se ei ole toimittajaraportti, poliittinen ohjelma tai sijoitussuositus. Kuudelle lukijalinssille — Yksityishenkilö, PK-yritys/yrittäjä, Rahoitus-/infrastruktuurisijoittaja, Valtio/alue/yhteisö, Tekoälyrakentaja/-operaattori ja Kouluttaja/tutkija/toimittaja — annetaan yhtäläinen paino ja ei priorisointijärjestystä, tarkoituksellisella toimituksellisella päätöksellä.</p>
+
+<h2>Lukupolut</h2>
+<p>Eri lukijat voivat saada yhteisen faktapohjan eri syvyyksillä, joutumatta kaikki läpikäymään koko asiakirjaa ensin.</p>
+<div class="paths">
+  <div class="path-card">
+    <h3>Aloita tästä</h3>
+    <p>Yksi sivu: mikä tämä on/ei ole, mitä se voi/ei voi vahvistaa, miten sitä haastetaan.</p>
+    <a href="00-how-to-use-this-research.html">Miten tätä tutkimusta käytetään →</a>
+  </div>
+  <div class="path-card">
+    <h3>Auktoritatiivinen kartta</h3>
+    <p>Täysi malli, 45 osiota, kaikki näyttöluokkamerkinnät, kaikki varaukset.</p>
+    <a href="01-whitepaper.pdf">Alkuteksti (PDF) →</a> &nbsp;·&nbsp; <a href="01-whitepaper.html">Markdown →</a>
+  </div>
+  <div class="path-card">
+    <h3>Aloituspiste</h3>
+    <p>Nopea, itsenäinen tiivistelmä lukijoille, jotka haluavat argumentin muodon.</p>
+    <a href="12-executive-brief.html">Johdon tiivistelmä →</a>
+  </div>
+  <div class="path-card">
+    <h3>Tarkistus- ja tutkimuskerros</h3>
+    <p>Joka kaava näkyvissä, joka oletus muokattava solu.</p>
+    <a href="18-companion-data-model.xlsx">Excel-työkirja →</a> &nbsp;·&nbsp; <a href="#workbooks">Täydentävät työkirjat →</a>
+  </div>
+  <div class="path-card">
+    <h3>Keskustelunavaaja</h3>
+    <p>26-dian esitys puhujan muistiinpanoineen, argumentin esittämiseen tai jakamiseen.</p>
+    <a href="19-slide-deck.pptx">Diaesitys →</a>
+  </div>
+  <div class="path-card">
+    <h3>Ennen luvun siteeraamista</h3>
+    <p>Mitä tämän mallin näyttö voi ja ei voi tällä hetkellä vahvistaa.</p>
+    <a href="20-appendix-known-limitations.html">Tunnetut rajoitteet →</a>
+  </div>
+  <div class="path-card">
+    <h3>Mitä muut kirjoittavat</h3>
+    <p>Alkuperäisiä, itsenäisiä ja kriittisiä kirjoituksia, jotka johdettu tästä tutkimuksesta tai haastavat sen.</p>
+    <a href="perspectives.html">Näkökulmat ja kirjoitukset →</a>
+  </div>
+</div>
+
+<h2>Ydinasiakirjat</h2>
+<div class="table-wrap"><table class="assets">
+<tr><th>Asiakirja</th><th>Mikä se on</th></tr>
+<tr><td><a href="01-whitepaper.html">01 — Alkuteksti</a> (<a href="01-whitepaper.pdf">PDF</a>)</td><td>Täysi 45-osioinen tutkimusraportti</td></tr>
+<tr><td><a href="02-source-register.html">02 — Lähderekisteri</a></td><td>Väite väitteeltä faktantarkistusloki</td></tr>
+<tr><td><a href="09-appendix-glossary.html">09 — Sanasto</a></td><td>Joka tekninen/taloudellinen termi, selkokielisesti</td></tr>
+<tr><td><a href="10-appendix-source-register-formatted.html">10 — Lähderekisteri (muotoiltu)</a></td><td>Julkaisumuotoiltu versio, lähteen mukaan</td></tr>
+<tr><td><a href="11-appendix-assumption-register.html">11 — Oletusrekisteri</a></td><td>Joka muokattava skenaario-oletus, koottuna</td></tr>
+<tr><td><a href="12-executive-brief.html">12 — Johdon tiivistelmä</a></td><td>Itsenäinen tiivistelmä koko raportista</td></tr>
+<tr><td><a href="20-appendix-known-limitations.html">20 — Tunnetut rajoitteet</a></td><td>Koottu lista avoimista epävarmuustekijöistä</td></tr>
+</table></div>
+
+<h2 id="workbooks">Täydentävät työkirjat</h2>
+<div class="table-wrap"><table class="assets">
+<tr><th>Työkirja</th><th>Kattaa</th></tr>
+<tr><td><a href="03-workbook-global-baseline.html">03 — Globaali perustaso</a></td><td>Kotitalous-/Osuustoiminnallinen-/Ammattimainen-/Hyperskaalataso-kustannuskäyrät, globaali USD-perustaso</td></tr>
+<tr><td><a href="04-workbook-ai-working-capacity-conversion.html">04 — Tekoälytyökapasiteetin muunto</a></td><td>Käyttöintensiteettitikapuu, $/token → $/tekoäly-työtunti</td></tr>
+<tr><td><a href="05-workbook-token-factory-scenarios.html">05 — Tokenitehtaan skenaariot</a></td><td>Osuustoiminnallisen kustannuksen täsmäytys, Bitcoin-energian rahaksimuunto -vertailu</td></tr>
+<tr><td><a href="06-investment-thesis-notes.html">06 — Sijoitusteesin muistiinpanot</a></td><td>Opetukselliset, ei-neuvonnalliset sijoitusskenaariot mittakaavatasoittain</td></tr>
+<tr><td><a href="07-workbook-humanoid-working-capacity.html">07 — Humanoidirobottien työkapasiteetti</a></td><td>Ruumiillistuneen työkapasiteetin laajennus (robotit)</td></tr>
+<tr><td><a href="08-workbook-localized-scenario-eur-finland.html">08 — Paikallistettu skenaario (EUR/Suomi)</a></td><td>Laskettu ei-USD-paikallistusmalli</td></tr>
+<tr><td><a href="18-companion-data-model.xlsx">18 — Excel-datamalli</a></td><td>Reaaliaikaisilla kaavoilla toimiva työkirja, 10 välilehteä, kaikki tasot</td></tr>
+<tr><td><a href="data/canonical-cost-model.csv">Kanoninen kustannusmalli (CSV)</a></td><td>Yksittäinen totuuden lähde joka tason kustannusluvuille</td></tr>
+</table></div>
+
+<h2>Esitys ja lyhytmuoto</h2>
+<div class="table-wrap"><table class="assets">
+<tr><th>Resurssi</th><th>Kenelle</th></tr>
+<tr><td><a href="19-slide-deck.pptx">19 — Diaesitys</a> (<a href="13-slide-deck-outline.html">jäsennys</a>)</td><td>26 diaa puhujan muistiinpanoineen</td></tr>
+<tr><td><a href="14-shortform-general.html">14 — Yleinen selittäjä</a></td><td>~300 sanan sosiaalinen/lyhytmuotoinen kappale</td></tr>
+<tr><td><a href="15-shortform-ownership.html">15 — Omistuskappale</a></td><td>Omistuskysymys (osa V)</td></tr>
+<tr><td><a href="16-shortform-value.html">16 — Arvokappale</a></td><td>Miksi halvat tokenit ≠ halpa arvo (osa IV)</td></tr>
+<tr><td><a href="diagrams.html">Kaaviot (11)</a> (<a href="17-visual-asset-briefs.html">spesifikaatiot</a>)</td><td>Päästä-päähän-ketju, kustannusvesiputous, omistusrakenne, mittakaavaspektri, uuden arvon silta, ja muuta</td></tr>
+</table></div>
+
+<h2>Versio, viittaus ja lisenssi</h2>
+<p>
+  <a class="btn" href="CITATION.cff">CITATION.cff</a>
+  <a class="btn" href="LICENSE">LICENSE</a>
+  <a class="btn" href="CHECKSUMS.sha256">CHECKSUMS.sha256</a>
+  <a class="btn" href="CHANGELOG.html">CHANGELOG.md</a>
+</p>
+<p>Julkaistu <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> -lisenssillä tämän raportin alkuperäiselle tekstille, kaavioille ja mallirakenteelle — katso <a href="LICENSE">LICENSE</a> soveltamisalahuomautukselle lainatuista kolmannen osapuolen lausunnoista, tavaramerkeistä ja ulkoisesta datasta, jotka pysyvät omien ehtojensa alaisina.</p>
+<p>Ehdotettu viittaustapa: <em>"Tutkimussynteesi ja mallinnus: Valto Loikkanen, tekoälyn avustuksella."</em></p>
+
+<h2>Tarkistusten ajaminen itse</h2>
+<p>Tämä paketti sisältää mekaanisen johdonmukaisuustarkistajan, joka vahvistaa, että alkuteksti, PDF, Excel-työkirja ja diaesitys ovat kaikki yhtenäisiä kanonisen kustannusmallin kanssa — katso <a href="README.html#running-the-consistency-checker">README</a> asennusohjeille.</p>
+
+</main>
+
+<footer>
+  <p>© Valto Loikkanen. Lisensoitu CC BY 4.0 -lisenssillä ilmoitetuin osin. Opetuksellista tutkimusta ja skenaarioanalyysiä — ei sijoitus-, oikeudellista, vero-, hankinta- tai politiikkaneuvontaa. Tämä on suomenkielinen käännös alkuperäisestä englanninkielisestä julkaisusta.</p>
+  <p><a href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous">Katso lähde GitHubissa</a></p>
+</footer>
+
+</body>
+</html>

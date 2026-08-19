@@ -1,0 +1,173 @@
+# Diaesityksen jäsennys — "Miksi tekoälyyn investoidaan biljoonia?"
+### Täydentävä toimitettava (Julkaisuresurssi #5) — 26 diaa, seuraa alkutekstin omaa Alkusanat → Loppusanat-rakennetta. Näyttöluokkatunnisteita käytetty läpi: **[FAKTA]** = Havaittu fakta · **[LÄHDE]** = Lähteeseen kohdistettu lausunto · **[LASKELMA]** = Johdettu laskelma · **[OLETUS]** = Skenaario-oletus · **[TULKINTA]** = Tulkinta.
+
+---
+
+**Dia 1 — Otsikko**
+- "Miksi tekoälyyn investoidaan biljoonia?" — Luvut ja talous tekoälytyökapasiteetin vallankumouksen takana
+- Kirjoittaja: Valto Loikkanen · v1.0 tutkimuspaketti · Faktojen aikarajaus 2026-08-13
+- Lisenssi: CC BY 4.0 — Attribution 4.0 International
+- Puhujan muistiinpano: Tämä on neutraali tutkimussynteesi, ei toimittajaraportti tai sijoitussuositus — ilmoita tämä kehys ennen mitään muuta.
+
+**Dia 2 — Menetelmä: Viisi näyttöluokkaa**
+- Taulukko: HAVAITTU FAKTA (ensisijainen lähde, tarkistettu viimeistään 2026-08-12) · LÄHTEESEEN KOHDISTETTU LAUSUNTO (tallenteella oleva väite, ei automaattisesti todistettu) · JOHDETTU LASKELMA (kaava aina näkyvissä) · SKENAARIO-OLETUS (muokattava, ei markkinaluku) · TULKINTA (merkitty lukutapa, ei koskaan fakta)
+- Joka väite tässä diaesityksessä kantaa yhden näistä viidestä tunnisteesta, täsmälleen kuten lähderaportissa.
+- Ei keksittyjä lainauksia, lukuja tai URL-osoitteita; vahvistamattomat kohteet on merkitty VAHVISTAMATTOMAKSI sen tasoittamisen sijaan.
+- Puhujan muistiinpano: Tämä dia on sopimus yleisön kanssa — joka seuraava luku on jäljitettävissä johonkin näistä viidestä kategoriasta.
+
+**Dia 3 — Miten tätä tutkimusta käytetään: Kuusi yhtäläistä linssiä**
+- Yksityishenkilö · PK-yritys/yrittäjä · Rahoitus-/infrastruktuurisijoittaja · Valtio/alue/yhteisö · Tekoälyrakentaja/-operaattori · Kouluttaja/tutkija/toimittaja
+- Yhtäkään linssiä ei priorisoida muiden yli — tarkoituksellinen toimituksellinen kanta, jota noudatetaan läpi raportin, ei huolimattomuus [TULKINTA, ilmoitettu toimituksellinen linja].
+- Kullakin linssillä on eri lähtöpiste samaan ketjuun: energia → laitteisto → laskenta → mallit → tokenit → tekoälytyökapasiteetti → työ → tulokset → arvo → toimijuus.
+- Puhujan muistiinpano: Kerro yleisölle, mistä linssistä he todennäköisesti lukevat, mutta korosta, että diaesitys tarkoituksellisesti kieltäytyy priorisoimasta näitä kuutta.
+
+**Dia 4 — Johdon tiivistelmä: Ketju**
+- Ketju: energia → laitteisto → laskenta → mallit → tokenit → tekoälytyökapasiteetti → digitaalinen työ → tulokset → arvo → toimijuus (Alkusanat §1).
+- Rinnakkainen fyysinen ketju: pääoma + energia + ylläpito + käyttöaste + orkestrointi → humanoidin työkapasiteetti (osa VI).
+- Otsikko: 10.8.2026 — NVIDIA + 6 yritystä (Apollo, Blackstone, BlackRock, Brookfield, Goldman Sachs, KKR) aiesopimukset mobilisoida yli 500 miljardia dollaria [FAKTA]; Fink: "biljoonia dollareita tulevien vuosien aikana" [LÄHDE, Fink].
+- Kymmenen sekunnin viesti: biljoonia sitoutetaan uskomukseen, että halpa tekoälytyökapasiteetti on tulossa — työkapasiteetti ei ole arvo, eikä mikään tässä todista tämän uskomuksen oikeaksi.
+- Puhujan muistiinpano: Tämä dia on koko raportti pienoiskoossa; kaikki sen jälkeen on näyttöä tämän yhden kappaleen osien puolesta tai vastaan.
+
+**Dia 5 — Osa I: Miksi tekoälyyn investoidaan biljoonia?**
+- 10.8.2026: NVIDIA allekirjoittaa aiesopimukset kuuden omaisuudenhoitajan/pankin kanssa mobilisoidakseen yli 500 miljardia dollaria kolmannen osapuolen tekoälyinfrastruktuuripääomaa [FAKTA, CNBC/Fortune].
+- Huang: "joka gigawatti on jotain 50, 60 miljardin dollarin luokkaa" [LÄHDE, Huang].
+- Kolme rakenteellisesti erilaista, eri kannustimin varustettua vastausta tarjolla: laskenta infrastruktuurina (Huang), älykkyys hyödykkeenä (Altman), superälykkyys henkilökohtaisena (Zuckerberg) — esitettynä rinnakkain, ei kannatettuna.
+- Puhujan muistiinpano: Kehystä tämä lukijan todellisena kysymyksenä, ei retorisena — kolme intressitahoa, kolme eri panosta.
+
+**Dia 6 — Kolme äänta, rinnakkain**
+- Taulukko:
+
+| Lähde | Kehystys | Edustava lausunto | Luokka |
+|---|---|---|---|
+| Huang (NVIDIA) | Laskenta infrastruktuurina | Sirut ovat "sijoituskelpoinen omaisuus" | LÄHDE |
+| Altman (OpenAI) | Älykkyys hyödykkeenä | "Kustannus...laskee noin 10-kertaisesti joka 12 kuukauden aikana...alemmat hinnat johtavat paljon enemmän käyttöön" | LÄHDE |
+| Zuckerberg (Meta) | Superälykkyys henkilökohtaisena | "Yksilön voimaannuttaminen hyvinvoinnin lähteenä" | FAKTA (sanatarkasti) / LÄHDE (väitteenä) |
+- Yhtäkään kolmesta väitteestä ei ole itsenäisesti tarkastettu; se, että ne sanottiin, on vahvistettu, ovatko ne totta, ei.
+- Puhujan muistiinpano: Vastusta kiusausta julistaa voittajaa tässä — koko raportin toimituksellinen kanta riippuu siitä, että näin ei tehdä.
+
+**Dia 7 — Mitä pitäisi olla totta: Kupla, infrastruktuurimurros, vai molemmat?**
+- Tukee "murrosta": allekirjoitetut 500 miljardin dollarin aiesopimukset ovat todellisia [FAKTA]; itsenäiset tehontarveennusteet (BCG 50–80GW, S&P Global 64.4GW vuonna 2025) ovat suunnallisesti yhdenmukaisia [LÄHDE, matalan luottamuksen lähteistys].
+- Tukee "kuplavaroitusta": Huangin/Finkin omat per-GW- ja kysyntäluvut ovat intressitahon LÄHDE-lausuntoja; itsenäiset analyytikkoarviot (35–49 miljardia dollaria/GW) sijaitsevat Huangin 50–60 miljardin dollarin luvun alapuolella [LÄHDE].
+- Kurinalainen kanta: molemmat tulkinnat perustuvat päällekkäisiin, ei kilpaileviin faktoihin [TULKINTA] — sama aiesopimus voi olla todellista infrastruktuuria ja sisältää väärin hinnoiteltua pääomaa.
+- Puhujan muistiinpano: Tarkoitus ei ole valita puolta — se on osoittaa, että samat faktat tukevat kahta eri kertomusta samanaikaisesti.
+
+**Dia 8: Osa II — Sähkö, teho ja tokenit wattia kohti**
+- GB300 NVL72 -räkki: 135kW TDP / 155kW huippu OEM-spesifikaation mukaan [FAKTA, Lenovo]; NVIDIA itse ei julkaise tehonkulutuslukua.
+- MLPerf v6.0: "2,5M tokenia/sek" on 4 räkin/288 GPU:n yhteenlaskettu tulos, ei yksittäisen räkin luku — yleinen väärä attribuutio, korjattu tässä [FAKTA].
+- Tokenia/watti ei ole yksi luku per siru — se vaihtelee karkeasti 1,7M–5,2M tokenia/sek/MW riippuen viivetoleranssista [LASKELMA/TULKINTA].
+- Puhujan muistiinpano: Käytä tätä diaa osoittamaan raportin kurin toimivan käytännössä — vertailutuloksen väärän attribuution havaitseminen ja korjaaminen sen toistamisen sijaan.
+
+**Dia 9 — Laitteisto pääomahyödykkeenä, ja sen rahoitus**
+- Huang kehystää NVIDIAn alustan "sijoituskelpoiseksi omaisuudeksi" [LÄHDE, Huang, CNBC 10.8.2026].
+- Havaittu vs. oletettu pääomapino: DGX Spark 4 699 dollarin suositushinta [FAKTA]; HGX B300:lla ei julkista hintaa [OLETUS]; GB300-räkki ~4 miljoonaa dollaria on havainnollinen analyytikkoarvio [OLETUS].
+- Poistoriski: Vera Rubinin väitetty "jopa 10x enemmän tokeneita/MW" verrattuna GB200:aan [LÄHDE, valmistaja]; SemiAnalysiksen itsenäinen luku on 2–5,4x [FAKTA-läheinen].
+- Puhujan muistiinpano: Korosta, että tämän päivän pääoma on veto laitteistokäyrää vastaan, jonka liikkeestä nopeasti eteenpäin niin valmistaja kuin itsenäiset analyytikot ovat samaa mieltä.
+
+**Dia 10 — Kahdeksan kustannuskerrosta (ei koskaan yhdistettynä yhdeksi luvuksi)**
+- Kerrokset: raaka energiakustannus → laitteiston poistoihin perustuva kustannus → rahoitetun omaisuuden kustannus → täysi käyttöinfrastruktuurikustannus → kapasiteetti-/käyttöastekustannus → token-tuotantokustannus → työkuorma-/tekoälytyökapasiteettikustannus → tulos ja arvo (ei koskaan mekaanisesti johdettu).
+- Laskettu EUR-esimerkki: rahoitusaika yksin siirtää kustannuksen 0,688 €/M tokenista 1,435 €/M tokeniin 50 %:n käyttöasteella [LASKELMA].
+- Käyttöaste on tavallisesti yksittäinen suurin vipu joka mittakaavassa [TULKINTA, ristikkäistyökirjakuvio].
+- Puhujan muistiinpano: Tämä tikapuu on koko kustannusanalyysin selkäranka — joka dollariluku myöhemmin diaesityksessä sijaitsee yhdellä tietyllä askelmalla, ei koskaan sekoitettuna toiseen.
+
+**Dia 11 — Omistettu tuotantokustannus vs. vähittäis-API-hinta**
+- Itsekorjaus säilytetty tarkoituksellisesti: vähittäislaboratorion hinnat ovat valmiin, katteella hinnoitellun tuotteen hinta, ei kustannusperusta omistetulle laitteistolle [metodologiahuomautus].
+- Vähittäisvertailu: Claude Sonnet 5 2/10 dollaria per M tokenia [FAKTA]; GPT-5.6 Terra ~2/12 dollaria [LÄHDE, välikäden hakuun perustuen]; Gemini 3.1 Pro Preview 2/12 dollaria [FAKTA].
+- Omistettu tuotanto: Kotitalous 1,37–11,89 dollaria/M tokenia (kanoninen); Hyperskaala ~0,091–0,312 dollaria/M tokenia, kanoninen täysi kerros, keski 0,133 dollaria/M [LASKELMA] — Hyperskaala sijaitsee 1–2 suuruusluokkaa vähittäistä alempana; Kotitalous sijaitsee lähempänä, ja matalalla käyttöasteella sisällä, halvinta vähittäislattiaa. Kuilu on todellinen kaikkialla, mutta sen koko on taso- ja käyttöasteriippuvainen, tarkoituksella, ei virheestä.
+- Puhujan muistiinpano: Tämä kuilu on pointti, ei sovitettava virhe — "tuota oma sähkösi" vs. "ostä verkosta."
+
+**Dia 12 — Osa III: Käyttöintensiteettivyöhykkeet**
+- Neljä vyöhykettä (tokenia/tekoäly-työtunti, kaikki SKENAARIO-OLETUS): Chat/neuvonantaja (10K–30K) · Aktiivinen kopilotti (60K–120K) · Delegoitu agentti (200K–600K) · Raskas moniagenttiorkestrointi (1M–12M+).
+- OpenAI:n oma tarkastamaton telemetria: Codex = 99,8 % viikoittaisista sisäisistä tuotostokeneista; 99. persentiilin käyttäjät ajoivat 60+ agenttituntia/päivä [LÄHDE, OpenAI, itse raportoitu].
+- Nämä kuvaavat OpenAI:n henkilöstön käyttöä OpenAI:n omasta tuotteesta — ei yleistä populaatiotilastoa [varaus, ilmoitettu selkeästi].
+- Orkestrointi ei luo erilaista tuntia — se luo useita työtunteja rinnakkain: 1 tunti = 1 agentti/henkilö × 1h; 10 tiimin tunti = 10 agenttia/henkilöä × 1h = 10 agentti/ihmistyötuntia; 1 päivä = 8 agentti/ihmistyötuntia; 10 tiimin päivä = 80 agentti/ihmistyötuntia. Tiimin kapasiteetti on työntekijät × tunnit, molemmilla puolilla, poikkeuksetta.
+- Puhujan muistiinpano: Vyöhyke 4:n avoin kattoluku on tuettu, ei todistettu, tämän yhden yrityksen sisäisellä datalla. 1-vs-10-taulukko on suoja, jotta vyöhyke 4:n lukua ei luetaan "yhtenä erittäin nopeana tuntina" sen sijaan, että se olisi "useita rinnakkaisia tavallisia tunteja."
+
+**Dia 13 — Tokeneista $/tekoäly-työtuntiin**
+- Kaava: $/tekoäly-työtunti = (tokenia/tunti ÷ 1 000 000) × ($/M tokenia kyseisellä tasolla) [LASKELMA].
+- Delegoitu agentti -vyöhykkeellä, keskeinen tapaus: Hyperskaala 0,0532 dollaria/h vs. Kotitalous 1,268 dollaria/h vs. Vähittäis-API 3,60 dollaria/h [LASKELMA] — ~68-kertainen vaihtelu tasojen välillä samalla käyttövyöhykkeellä.
+- Itseisännöinti ei ole automaattisesti halvin polku — sen perusta lepää hallinnalla ja riippumattomuudella, ei vähittäishinnan alittamisella [TULKINTA].
+- Puhujan muistiinpano: Vaihtelu on laskutoimitus, ei mielipide — mutta se, mikä sarake on tärkeä, riippuu täysin siitä, mikä linssi kysyy.
+
+**Dia 14 — Laatukertoimet ja ihmisen/tekoälyn vertailun rajat**
+- Kahdeksan tekijää muotoilee tehollisen työkapasiteetin: kyvykkyys, luotettavuus, aloitteellisuus, harkinta, luovuus, konteksti, työkalut, tieto [TULKINTA, kirjoittajan oma kehys].
+- Luotettavuus ja tieto toimivat kertoimina, ei lisäominaisuuksina — epäluotettava kapasiteetti rajoittaa, kuinka paljon voidaan turvallisesti delegoida.
+- Mikä ON vertailukelpoista: läpäisykyky, marginaalikustannus, kapasiteetin joustavuus. Mikä EI ole: työkuorman kompleksisuus, laatu/oikeellisuus, valvontakuorma, kontekstin täydellisyys — pidetty näkyvästi erillään, ei taivutettu yhdeksi kertoimeksi.
+- Työnantaja/laskutettava-jako: omistettu tekoäly rinnastuu työntekijän kokonaiskustannukseen työnantajalle (kaikki mukaan lukien — palkka+edut+ylikuorma); vähittäistekoäly rinnastuu laskutettavaan/ulkoisesti ostettuun tuntihintaan (agentuuri/urakoitsija/konsultointi, joka upottaa oman katteensa ja ylikuormansa päälle). Omistetun tekoälyn vertaaminen laskutettavaan hintaan — tai vähittäistekoälyn vertaaminen työnantajakustannukseen — sekoittaa sisäisen/ulkoisen kerroksen täsmälleen kuten osa III varoittaa omistetun tuotantokustannuksen ja vähittäis-API-hinnan sekoittamisesta [TULKINTA].
+- Puhujan muistiinpano: Tämä on suojadia naiiveja "$/tunti tekoäly vs. $/tunti ihminen" -otsikoita vastaan — ja sitä kapeampaa virhettä vastaan, jossa valitaan mikä tahansa tekoälyluku ja mikä tahansa ihmisluku, jotka tekevät parhaimman kuuloisen vertailun.
+
+**Dia 15 — Osa IV: Tieto tekoälyn käyttöjärjestelmänä**
+- Kirjoittajan oma kehystys: tieto on "käyttöjärjestelmä tekoälylle" [FAKTA että lause esiintyy; TULKINTA taustalla olevana väitteenä] — avattu kirjoittajan intressi tähän kehykseen (Prifina/Digiole/ValtoAI/PIOS/EIOS).
+- Sama malli + eri tieto = hyvin erilainen tehollinen työkapasiteetti.
+- Zuckerberg: "täysin yksityinen tila...jota edes Meta ei näe" [LÄHDE]; Altmanin käyttöanekdootti implikoi ~1 000 000-kertaista token-kasvua raskaimmalle käyttäjälle, 2019→2026 [LASKELMA LÄHDE-syötteistä].
+- Puhujan muistiinpano: Merkitse avaus tässä nimenomaisesti — tämä osio sijaitsee lähimpänä kirjoittajan omaa kommersiaalista panosta.
+
+**Dia 16 — Tekoälyn kypsyys ja muuttuva ihmisen rooli**
+- Kaksi akselia: miten työ tehdään (Neuvo → Työskentele yhdessä → Delegoi → Johda) ja orkestroinnin mittakaava (yksilö → tiimi → työvoima) [TULKINTA, kirjoittajan kehys, osittain vahvistamaton julkinen muoto].
+- Kolme kehystystä samasta murroksesta: Altman vapaudesta/toimijuudesta [LÄHDE]; Zuckerberg valtatasapainosta [FAKTA/LÄHDE]; Huang pääoman allokoinnista [LÄHDE] — ei kukaan oikeampi kuin muut.
+- Kun toteutus halpenee, "mitä meidän pitäisi tehdä" korvaa "miten saamme sen tehtyä" kantavana ihmiskysymyksenä [TULKINTA].
+- Puhujan muistiinpano: Kukin kuudesta linssistä kokee tämän murroksen eri tavoin — ei tarkoitettua priorisointijärjestystä.
+
+**Dia 17 — Arvo voi olla positiivinen, nolla tai negatiivinen**
+- Työkapasiteetti ≠ arvo. Orkestrointi moninkertaistaa kapasiteetin, ei harkintaa [TULKINTA]: "halpa, nopea, väärä vastaus, skaalattuna moniagenttitiimin yli, on edelleen halpa ja väärä laajassa mittakaavassa."
+- Kolme ihmisvertausta: loistava professori vs. katuviisas yrittäjä; uusi toimitusjohtaja vs. veteraanityöntekijä; maailmanluokan sijoittaja vs. empaattinen myyjä — kukin osoittaa kyvykkyys ≠ sopivuus ≠ arvo.
+- Mikään tuotantotaso tai omistusarkkitehtuuri ei osoiteta tämän raportin näytön perusteella olevan luonnostaan todennäköisempi tuottamaan positiivista arvoa kuin toinen.
+- Puhujan muistiinpano: Tämä on saranadia — kaikki sitä ennen on kustannusta/kapasiteettia; kaikki sen jälkeen olettaa tämän rajan pitävän.
+
+**Dia 18 — Tekoälytyökapasiteetista uuteen arvoon**
+- Käsitteellinen silta, ei numeerinen havainto [TULKINTA läpi]: luotu kapasiteetti (osat I–IV) ei ole automaattisesti kasvua, tuloa tai yhteiskunnallista hyötyä.
+- Kaksi erillistä kysymystä: (1) voidaanko kapasiteetti luoda — tämän raportin kustannus-/käyttöastemalli; (2) voiko tämä kapasiteetti luoda ja vallata uutta arvoa — keksintö, hyväksynta, luottamus, tulomalli, mitä mikään $/token-luku ei tarjoa.
+- Visuaali: "Kasvun luominen uuden arvon pohjalta" (Kaavio 11) — kaksi sarakkeitta, jotka lähentyvät yhteiseen "Uusi arvo" -vyöhykkeeseen: Idea/Keksintö → Innovaatio → Uuden arvon vahvistaminen laskeutuen vasemmalla; Tuottavuus → Tulomalli → Arvolupaus ja viestintä nousten oikealla.
+- Huomautus: sama raja koskee mitä tahansa tulevaa skenaariotyökalua, joka rakennetaan tämän raportin työkirjojen päälle — se mallintaa kustannusta ja kapasiteettia, ei sitä, luoko käyttöönotto arvoa.
+- Puhujan muistiinpano: Tämä dia on toinen sarana — se estää yleisöä lukemasta "halvemmat tokenit" "enemmäksi kasvua" ilman puuttuvaa keskivaihetta.
+
+**Dia 19 — Osa V: Omistusrakenne**
+- Kerrokset, kukin erikseen omistettavissa: energia, laitteisto, laskenta (pääsy), mallit, tieto, agentit, identiteetti, hallinta.
+- Keskittyminen vaihtelee jyrkästi kerroksesta riippuen: laitteistovalmistus on erittäin keskittynyttä [FAKTA/TULKINTA]; tieto on vähiten standardoitu/siirrettävä kerros [TULKINTA].
+- Yksikään toimija ei omista "tekoälyä" päästä päähän — omistuskysymykset on kysyttävä kerros kerrallaan.
+- Puhujan muistiinpano: Käytä tätä kehystämään "kuka omistaa tekoälyn" huonoksi kysymykseksi — se on todella kuusi tai seitsemän eri kysymystä.
+
+**Dia 20 — Kuusi rinnakkain elävää pääsymallia**
+- Taulukko: Keskitetty alusta · Yrityskohtainen omistautunut (esim. IBM Cloud/Together AI 240 miljoonan dollarin sopimus [FAKTA]) · Avoimet mallit omalla laitteistolla · Yksityinen/henkilökohtainen omistus · Osuuskunta (19,50–23 dollaria/jäsen/kuukausi DGX Spark -poolille, tai 42 dollaria/jäsen/kuukausi jaetulle työasemaluokan koneelle — kaksi laitteistotasoa, ei yksi kiistanalainen luku [LASKELMA/FAKTA]) · Paikallinen/alueellinen kapasiteetti.
+- Yhtäkään ei väitetä yleisesti ylivertaiseksi — kompromissit eroavat mittakaavan, kustannuksen, yksityisyyden, sietokyvyn, kätevyyden ja hallinnan välillä [TULKINTA].
+- Omistusmallit tulevat laskennallisesti järkeviksi vain kun käyttö sijaitsee johdonmukaisesti kopilotti-vyöhykkeen intensiteetissä tai sitä korkeammalla [LASKELMA-tuettu kannattavuusraja].
+- Puhujan muistiinpano: Kaksi osuustoiminnallista lukua kuvaavat kahta eri laitteistotasoa (DGX Spark -pooli vs. jaettu työasemaluokan kone), ei ristiriitaa yhdessä arviossa — esitettynä nimenomaisesti oletusten läpinäkyvyyden laskuesimerkkinä.
+
+**Dia 21 — Sähköverkkoanalogia ja digitaalinen suvereniteetti maantieteen ulkopuolella**
+- Analogia: kotitalouden aurinko → osuuskunta → kaupallinen tuottaja → teollisen mittakaavan laitos → verkkopörssi, kartoitettuna tekoälylaskentatasoille [TULKINTA, kirjoittajan oma kommentaari, ei itsenäisesti sanatarkasti lähdetetty].
+- Heikoin lenkki: kitkatonta spot-markkinaa tekoälylaskennalle ei vielä ole olemassa, toisin kuin sähköllä tai Bitcoinin hajautusteholla [FAKTA/TULKINTA].
+- Suvereniteetti uudelleenkehystetty viiden kysymyksen kautta: hallinta, siirrettävyys, poistumismahdollisuus, hallintotapa, jatkuvuus — ei vain palvelimen maantiede [TULKINTA, tässä raportissa ehdotettu kehys].
+- Puhujan muistiinpano: Huomauta nimenomaisesti, että tämä analogia on kirjoittajan oma rakenteellinen vertailu, merkitty sellaiseksi sen sijaan, että se esitettäisiin ratkaistuna.
+
+**Dia 22 — Osa VI: Mittakaavaskenaariot, taso tasolta**
+- Taulukko: Kotitalous (4 699 dollaria, 1,37–11,89 dollaria/M tokenia) · Osuustoiminnallinen (~47 000 dollaria, 1,99–7,62 dollaria/M) · Ammattimainen (epävirallinen/OLETUS, 0,044–0,146 dollaria/M, ei opexia — heikoimmin todennettu) · Hyperskaala (~16 miljoonaa dollaria/4-räkki, kanoninen täysi kerros 0,091–0,312 dollaria/M, keski 0,133 dollaria/M) [LASKELMA läpi].
+- Hallitsevat vivut: käyttöaste (3,5–4-kertainen vaihtelu), rahoitusaika, interaktiivisuusasetus — kaikki muokattavia, ei ennuste.
+- Kapasiteetin kustannus per tunti ei ole arvo — 500–800-kertainen vaihtelu tuotantokustannuksen ja vähittäishinnoittelun välillä osoittaa, kuinka merkityksetön paljas luku on ilman hinnoitteluoletustaan.
+- Puhujan muistiinpano: Ilmoita ei-neuvonta-raja tässä selkeästi — joka luku on skenaario, ei suositus.
+
+**Dia 23 — Humanoidirobotit ruumiillistuneena työkapasiteettina**
+- Todellinen markkinavaihteluväli: Unitree G1 alkaen 13 500 dollarista [FAKTA] Agility Digitiin ~250 000 dollariin [LÄHDE, toissijainen]; havainnollinen 25 000 €:n peruslaskenta sijaitsee tässä vaihteluvälissä [TULKINTA].
+- Sama käyttöastekuvio kuin digitaalisilla tasoilla: 2 000→8 000 h/vuosi leikkaa kustannus/tunti ~3,5–4-kertaisesti [LASKELMA]; sähkö ei ole sitova kustannus tässä (toisin kuin token-tuotannossa).
+- Soveltamisala nimenomaisesti kapea: sulkee pois valvonnan, vakuutuksen, käyttökatkot — joka luku on kustannuslattia, ei täysi kommersiaalinen kustannus.
+- Puhujan muistiinpano: Merkitse tämä "myöhemmäksi, havainnolliseksi laajennukseksi", ei yleiseksi robotiikkatalousväitteeksi.
+
+**Dia 24 — Osa VII: Kuusi linssiä, yhtäläinen paino, ei priorisointia**
+- Yksityishenkilö: vuokraus vs. omistus -kannattavuusraja sijaitsee lähellä kopilotti-vyöhykettä, ei chat-vyöhykettä.
+- PK-yritys: toimitusinnovaatio, ei tuoteinnovaatio, on saavutettavissa oleva mahdollisuus [LÄHDE, kirjoittajan aiempi työ].
+- Sijoittaja/valtio/rakentaja/kouluttaja: samat aiesopimus- ja kustannusluvut, luettuna eri riskilinssien kautta — intressitahon lausunnot (Huang, Fink) merkitty johdonmukaisesti LÄHDE:ksi, ei tarkastetuksi faktaksi.
+- Puhujan muistiinpano: Toista — nämä on ryhmitelty vain diatilan säästämiseksi, ei koska mikään linssi olisi muiden yläpuolella.
+
+**Dia 25 — Loppusanat: Mahdollisuus, ei väistämättömyys**
+- Pääoma- ja infrastruktuuriluvut (osat II–IV) tukevat lukemista tämän mahdollisuudeksi, ei kohtaloksi [TULKINTA, toimituksellinen valinta].
+- Tuntematon muuttuja: käyttöönotto, organisatorinen muutos ja aika — ei mallin kyvykkyys — näyttävät olevan sitova rajoite [TULKINTA].
+- Loppusynteesi: "miten saamme sen tehtyä" halpenee nopeammin kuin useimmat sanovat suoraan; "mitä meidän pitäisi tehdä" ei ole helpottunut yhtään.
+- Puhujan muistiinpano: Lopeta avoimeen kysymykseen, ei ratkaistuun vastaukseen — raportti tarkoituksellisesti ei päätä tätä lukijan puolesta.
+
+**Dia 26 — Lisenssi ja viittaus**
+- Julkaistu CC BY 4.0 -lisenssillä. Ehdotettu viittaustapa: Tutkimussynteesi ja mallinnus: Valto Loikkanen, tekoälyn avustuksella.
+- Tämä materiaali on opetuksellista tutkimusta ja skenaarioanalyysiä — ei sijoitus-, oikeudellista, vero-, hankinta- tai politiikkaneuvontaa.
+- Täydentävät työkirjat (Globaali perustaso, Tekoälytyökapasiteetin muunto, Tokenitehtaan skenaariot, Sijoitusteesin muistiinpanot, Humanoidirobottien työkapasiteetti, Paikallistettu/EUR-Suomi-malli) saatavilla lukijoille rakentaa uudelleen mikä tahansa malli omilla syötteillään.
+- Puhujan muistiinpano: Lopeta osoittamalla työkirjoihin paikkana, jossa yleisö voi käydä rakentamassa omat lukunsa.
+
+---
+
+Julkaistu CC BY 4.0 -lisenssillä. Ehdotettu viittaustapa: Tutkimussynteesi ja mallinnus: Valto Loikkanen, tekoälyn avustuksella.

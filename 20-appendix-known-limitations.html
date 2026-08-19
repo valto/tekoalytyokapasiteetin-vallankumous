@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tunnetut
+rajoitteet — Miksi tekoälyyn investoidaan biljoonia?</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header>
+  <h1 style="font-size:1.5rem;"><a href="index.html" style="color:#fff; text-decoration:none;">Miksi tekoälyyn investoidaan biljoonia?</a></h1>
+  <p class="meta">Tutkimuspohja ja elävä viitekehys &nbsp;·&nbsp; CC BY 4.0</p>
+</header>
+<main>
+<nav class="crumbs"><a href="index.html">Etusivu</a> / Tunnetut rajoitteet</nav>
+<article class="doc-body">
+<h1 id="liite-tunnetut-rajoitteet-ja-avoimet-epävarmuustekijät">Liite —
+Tunnetut rajoitteet ja avoimet epävarmuustekijät</h1>
+<p><strong>Täydentää julkaisua:</strong> “Miksi tekoälyyn investoidaan
+biljoonia?” (v1.0 tutkimuspaketti) <strong>Faktojen aikarajaus:</strong>
+2026-08-13</p>
+<p>Tämä liite kokoaa yhteen paikkaan ne epävarmuustekijät, jotka tämän
+paketin oma näyttöluokkakuri nostaa esiin läpi alkutekstin ja
+työkirjojen. Mikään näistä ei ole uusi havainto — kukin on jo merkitty
+käyttökohdassaan — mutta lukijan, joka arvioi, voiko tämän paketin
+johtopäätöksiin luottaa, tulisi voida nähdä koko lista kerralla sen
+kokoamisen sijaan osa osalta. Tämä on tarkoituksellisesti rajoitelista,
+ei virhelista: alla olevat kohdat ovat avoimia kysymyksiä, joita näyttö
+ei tällä hetkellä voi ratkaista, ei korjattavia virheitä.</p>
+<hr />
+<h2 id="mallinlaitteiston-suorituskyky">1. Mallin/laitteiston
+suorituskyky</h2>
+<ul>
+<li><strong>DGX Sparkin läpäisykyky perustuu yhteen tarkastamattomaan
+yhteisön vertailutulokseen, ei valmistajan tai vertaisarvioituun
+lukuun.</strong> Vahvistettu 30,8–38,4 tok/s -haarukka
+(Qwen3.5-122B-A10B) tulee yhdestä foorumiketjusta; edelleen väitetty 51
+tok/s -kattoluku jäljittyy hakemattomaan myöhempään viestiin samassa
+ketjussa ja käsitellään läpi raportin vahvistamattomana. Eri työkuorma,
+eri kvantisointimenetelmä tai eri malli tuottaisi todennäköisesti eri
+luvun.</li>
+<li><strong>“0,123 dollaria/M-tokenia” -luku GB300:lle koskee yhtä
+tiettyä interaktiivisuusasetusta (116 tok/s/käyttäjä) yhdellä tietyllä
+72-GPU:n räkkikokoonpanolla.</strong> SemiAnalysiksen omassa
+reaaliaikaisessa hallintapaneelissa haarukka on huomattavasti laajempi
+(0,065–3,3 dollaria/M) riippuen interaktiivisuudesta — kaikkia tuolta
+hallintapaneelista lainattuja yksittäisiä lukuja tulee käsitellä
+hetkellisenä tilannekuvana, ei kiinteänä kustannuksena.</li>
+<li><strong>Valmistajan väittämät laitteistosukupolvien parannukset
+(esim. NVIDIAn “jopa 10x enemmän tokeneita/MW” Vera Rubinille verrattuna
+GB200:aan) ovat kyseisen laitteiston myyjän
+markkinointiväitteitä.</strong> Itsenäiset vertailutuloksiin perustuvat
+arviot (SemiAnalysis: 2–5,4x) ovat matalampia ja työkuormariippuvaisia.
+Mikä tahansa nykyhetkellä tehty pääomasitoumus on veto käyrää vastaan,
+jota kumpikaan luku ei täysin ratkaise.</li>
+</ul>
+<h2 id="käyttöaste">2. Käyttöaste</h2>
+<ul>
+<li><strong>Käyttöaste on yksittäinen suurin vaikutin joka
+kustannusmallissa tässä paketissa</strong> — ja joka käytetty
+käyttöasteluku (10 %/40 %/80 % kotitaloustasolla, 20 %/50 %/85 %
+osuustoiminnallisella tasolla, 60 %/90 % hyperskaalatasolla) on
+<strong>skenaario-oletus, valittu havainnollistamiseksi, ei mitattu tai
+ennustettu todellisen maailman käyttöaste</strong> millekään
+todelliselle käyttöönotolle. Todellinen käyttöaste millekään tietylle
+toimipisteelle on tuntematon, kunnes sitä on operoitu ja mitattu.</li>
+<li><strong>Julkista käyttöastetelemetriaa ei ole olemassa millekään
+tämän paketin viitelaitteistotasolle</strong> (DGX Spark kentällä,
+todellinen osuuskunta, todellinen HGX B300 -solmu tai todellinen
+hyperskaalaräkki tämän raportin tiettyjen kustannusoletusten alaisena).
+OpenAI:n oma Codex-telemetria (osa 16) kuvaa OpenAI:n sisäistä käyttöä
+OpenAI:n omasta tuotteesta — ei yleistä käyttöastetta, joka soveltuisi
+mihinkään tässä mallinnettuun laitteistotasoon.</li>
+</ul>
+<h2 id="rahoitus">3. Rahoitus</h2>
+<ul>
+<li><strong>Kaikki rahoituskorot ja -ehdot (5 vuotta/8 %, 5 vuotta/6,5
+%, rahoitusajan herkkyystaulukot) ovat havainnollisia
+oletuksia</strong>, ei noteerattuja luottoehtoja miltään lainanantajalta
+millekään kuvatulle laitteistolle. Todelliset rahoitusehdot vaihtelevat
+lainanottajan, oikeudenkäyttöalueen, vakuusrakenteen ja lainanottohetken
+luottomarkkinaolosuhteiden mukaan.</li>
+<li><strong>Rahoitusajan kompromissi (pidemmät ajat alentavat
+vuosikustannusta mutta lukitsevat vanhenevan laitteiston pidemmäksi
+aikaa) on todellinen rakenteellinen kompromissi, mutta tämä paketti ei —
+eikä voi — määrittää “oikeaa” rahoitusaikaa millekään todelliselle
+ostajalle.</strong> Se riippuu kyseisen ostajan omasta
+pääomakustannuksesta, riskinsietokyvystä ja odotuksista seuraavasta
+laitteistosukupolvesta — mitään näistä tämä paketti ei voi havaita.</li>
+</ul>
+<h2 id="sähkön-hinnoittelu">4. Sähkön hinnoittelu</h2>
+<ul>
+<li><strong>Joka käytetty sähkön hinta (0,06 dollarista/kWh 0,25
+dollariin/kWh, sekä EUR-Suomi-paikallistuksen havainnollinen 0,09–0,15
+euroa/kWh) on skenaario-oletus</strong>, ei reaaliaikaisesti noteerattu
+kaupallinen/teollinen tariffi millekään tietylle sijainnille. Sähkön
+hinnat vaihtelevat huomattavasti maan, tariffiluokan, käyttöajan ja
+sopimusrakenteen mukaan — tätä mallia paikallistavia lukijoita
+kehotetaan korvaamaan joka hinta omalla todellisella, päivätyllä
+tarjouksellaan.</li>
+<li><strong>Hyperskaala- ja ammattimaisen tason tehonkulutusluvut
+perustuvat yhdistelmään HAVAITTUJA laitteistospesifikaatioita ja
+OLETUS-tason toimipiste-/PUE-ylikuormaa</strong>, jolle ei ole julkista,
+vahvistettua lukua näille tietyille mallinnetuille kokoonpanoille.
+Todellinen hyperskaalatoimipisteen ylikuorma vaihtelee ilmaston,
+jäähdytysarkkitehtuurin ja toimipisteen iän mukaan.</li>
+</ul>
+<h2 id="käyttöönoton-ajoitus">5. Käyttöönoton ajoitus</h2>
+<ul>
+<li><strong>Tämä paketti ei väitä mitään siitä, milloin — tai tapahtuuko
+ollenkaan — Altmanin, Huangin ja Finkin kuvaama kysynnän kasvu toteutuu
+heidän kuvaamallaan vauhdilla.</strong> “Karkeasti miljoonakertainen
+token-kulutuksen kasvu, 2019→2026” -luku on johdettu laskelma OpenAI:n
+omista raportoiduista käyttöluvuista kahdella ajankohdalla — se ei kerro
+mitään kehityskulusta näiden pisteiden välillä tai niiden ulkopuolella,
+ja Altmanin oma väite tulevasta lisämiljoonakertaisesta laajenemisesta
+on lähteeseen kohdistettu lausunto intressitaholta, ei itsenäisesti
+mallinnettu ennuste.</li>
+<li><strong>Osassa I kuvatut rahoitussitoumukset (yli 500 miljardin
+dollarin NVIDIA/kuuden yrityksen aiesopimukset) ovat todellisia,
+allekirjoitettuja sitoumuksia — mutta allekirjoitettu aiesopimus pääoman
+mobilisoimiseksi ei ole samaa kuin jo käyttöönotettu pääoma, jo
+rakennettu infrastruktuuri tai jo toteutunut kysyntä.</strong> Tämä
+paketti ei seuraa käyttöönottoa suhteessa näihin sitoumuksiin ajan
+myötä; lukijan, joka luottaa tähän pakettiin saadakseen ajantasaisen
+näkymän käyttöönoton etenemisestä, tulisi tarkistaa uudempi ensisijainen
+lähde.</li>
+</ul>
+<h2
+id="ammattimainen-taso-erityisesti-tämän-mallin-heikoimmin-todennettu-taso">6.
+Ammattimainen taso erityisesti (tämän mallin heikoimmin todennettu
+taso)</h2>
+<ul>
+<li><strong>NVIDIA ei julkaise julkista hintaa tai
+tehonkulutusspesifikaatiota HGX B300 (8-GPU) -solmulle, jota käytetään
+tämän tason viitelaitteistona.</strong> Molemmat, tämän tason capex ja
+tehonkulutus, ovat skenaario-oletuksia, ei havaittuja faktoja —
+merkittävästi eri luottamustaso kuin kotitaloustasolla (HAVAITTU 4 699
+dollarin hinta) tai hyperskaalatasolla (HAVAITUT räkkispesifikaatiot,
+vaikka capex on edelleen OLETUS-tasoinen).</li>
+<li><strong>Ammattimaisen tason otsikkotason $/M-token-luku jättää pois
+opex-/ylikuormakerroksen, jonka hyperskaalatason kanoninen luku
+sisältää</strong>, mikä tekee suorasta vertailusta näiden kahden tason
+välillä rakenteellisesti harhaanjohtavan, ellei lukija lisää
+vertailukelpoista opex-varausta (havainnollinen herkkyystarkastelu on
+annettu Globaali perustaso -työkirjassa, mutta se on itsessään
+vahvistamaton mitään todellista 8-GPU-solmun opex-lukua vasten).</li>
+<li><strong>Tämän tutkimuksen aikana ei löydetty todellista
+jälleenmyyjän tarjousta, käyttöönottotapaustutkimusta tai operatiivista
+vertailutulosta tälle tietylle laitteistokokoonpanolle.</strong> Mikä
+tahansa liiketoimintasuunnitelma, joka rakennetaan tämän tason luvuille,
+tulee käsitellä vain havainnollisena, kunnes todellinen tarjous on
+saatavilla.</li>
+</ul>
+<h2
+id="kirjoittajan-intressiavaus-ja-sen-vaikutus-omistusarkkitehtuurikeskusteluun">7.
+Kirjoittajan intressiavaus ja sen vaikutus
+omistusarkkitehtuurikeskusteluun</h2>
+<ul>
+<li><strong>Kirjoittajalla on avattu kommersiaalinen ja edunajointiin
+liittyvä intressi osuustoiminnallisiin/omistusperustaisiin
+tekoälyinfrastruktuurimalleihin</strong> (Menetelmät §3.4). Vaikka tämän
+paketin osuustoiminnallisen tason luvut on laskettu samalla tavalla kuin
+joka muukin taso — läpinäkyvät kaavat, ilmoitetut oletukset — lukijan
+tulisi punnita osan V kehystysvalintoja (mitä pääsymalleja käsitellään,
+missä järjestyksessä, millä painotuksella) tätä avattua intressiä
+vasten.</li>
+<li><strong>Kirjoittajan omat aiemmin julkaisemat osuustoiminnalliset
+kustannusluvut (42 euroa/jäsen/kuukausi ja 19,50–23
+euroa/jäsen/kuukausi) sovitettiin yhteen tämän hankkeen oman
+tutkimusprosessin aikana</strong> sen jälkeen, kun ne alkuun näyttivät
+olevan ristiriidassa; yhteensovitus (kaksi eri laitteistotasoa, ei yksi
+kiistanalainen luku) on itsessään nyt kantava väite tässä paketissa, ja
+se lepää kirjoittajan omaan jälkikäteiseen selvennykseen omasta
+aiemmasta työstään sen sijaan, että se perustuisi riippumattomaan
+kolmannen osapuolen vahvistukseen siitä, kumman laitteistotason hän alun
+perin tarkoitti.</li>
+</ul>
+<hr />
+<p><strong>Miten tätä listaa tulisi käyttää:</strong> mikään yllä
+olevista kohdista ei mitätöi tämän paketin laskutoimituksia — joka
+johdettu laskelma seuraa edelleen oikein ilmoitetuista syötteistään. Ne
+rajoittavat sitä, kuinka paljon painoarvoa tämän paketin
+<em>tuotoksille</em> (tietty $/M-token-luku, tietty
+kannattavuusrajaväite) tulisi antaa todellisen maailman kustannusten
+kuvauksena, sen sijaan että ne kuvaisivat, mitä nämä kustannukset
+olisivat ilmoitettujen, muokattavien oletusten alaisena. Lukijoiden,
+jotka rakentavat oman versionsa mistä tahansa tämän paketin mallista,
+tulisi käsitellä tätä listaa tarkistuslistana syötteistä, jotka on
+korvattava omilla vahvistetuilla luvuilla ennen tuotokseen
+luottamista.</p>
+<hr />
+<p><em>Julkaistu CC BY 4.0 -lisenssillä. Tutkimussynteesi ja mallinnus:
+Valto Loikkanen, tekoälyn avustuksella. Faktojen aikarajaus:
+2026-08-13.</em></p>
+</article>
+<div class="page-footer-nav">
+  <a href="index.html">← Takaisin etusivulle</a>
+  <a href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous/blob/main/20-appendix-known-limitations.md">Katso lähde / muokkaa GitHubissa →</a>
+</div>
+</main>
+<footer>
+  <p>© Valto Loikkanen. Lisensoitu CC BY 4.0 -lisenssillä ilmoitetuin osin. Opetuksellista tutkimusta ja skenaarioanalyysiä — ei sijoitus-, oikeudellista, vero-, hankinta- tai politiikkaneuvontaa. Tämä on suomenkielinen käännös alkuperäisestä englanninkielisestä julkaisusta.</p>
+  <p><a href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous">Katso tietovarasto GitHubissa</a></p>
+</footer>
+</body>
+</html>

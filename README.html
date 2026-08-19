@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>README — Miksi tekoälyyn investoidaan biljoonia?</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header>
+  <h1 style="font-size:1.5rem;"><a href="index.html" style="color:#fff; text-decoration:none;">Miksi tekoälyyn investoidaan biljoonia?</a></h1>
+  <p class="meta">Tutkimuspohja ja elävä viitekehys &nbsp;·&nbsp; CC BY 4.0</p>
+</header>
+<main>
+<nav class="crumbs"><a href="index.html">Etusivu</a> / README</nav>
+<article class="doc-body">
+<h1 id="miksi-tekoälyyn-investoidaan-biljoonia">Miksi tekoälyyn
+investoidaan biljoonia?</h1>
+<p><em>Luvut ja talous tekoälytyökapasiteetin vallankumouksen takana —
+sähköstä ja infrastruktuurista tokeneihin, robotteihin, arvoon,
+omistukseen ja toimijuuteen.</em></p>
+<p><strong>Kirjoittaja:</strong> Valto Loikkanen <strong>Tila:</strong>
+<strong>v1.0.1</strong> tutkimuspaketti, julkaistu 2026-08-14. Katso
+<code><a href="CHANGELOG.html">CHANGELOG.md</a></code> mitä on muuttunut v1.0.0:sta lähtien, ja
+tietovaraston <a
+href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous/releases">Julkaisut-sivu</a>
+viitattavia, tarkistussummalla vahvistettuja tilannekuvia joka
+julkaisusta varten. <strong>Tämä on suomenkielinen käännös</strong>
+alkuperäisestä englanninkielisestä julkaisusta: <a
+href="https://github.com/valto/ai-working-capacity-revolution">github.com/valto/ai-working-capacity-revolution</a>.
+Käännös on kirjaimellinen — luvut, päivämäärät, URL-osoitteet,
+lainaukset, henkilö-/yritysnimet ja osioiden numerointi pysyvät
+muuttumattomina; vain teksti on käännetty. Katso
+<code>TERMINOLOGY.md</code> käytetylle terminologialle. <strong>Tutkimus
+aloitettu:</strong> 12. elokuuta 2026 <strong>Faktojen
+aikarajaus:</strong> 2026-08-13 <strong>Lisenssi:</strong> <a
+href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+alkuperäiselle tekstille, kaavioille ja mallirakenteelle — katso
+<code>LICENSE</code> täydelle soveltamisalahuomautukselle (kolmannen
+osapuolen lainaukset, tavaramerkit ja ulkoinen data on suljettu pois ja
+pysyvät omien ehtojensa alaisina). <strong>Ehdotettu
+viittaustapa:</strong> “Tutkimussynteesi ja mallinnus: Valto Loikkanen,
+tekoälyn avustuksella.” <strong>Viittaus:</strong> katso
+<code>CITATION.cff</code>. <strong>Tarkistussummat:</strong> katso
+<code>CHECKSUMS.sha256</code>. <strong>Muutosloki:</strong> katso
+<code><a href="CHANGELOG.html">CHANGELOG.md</a></code>.</p>
+<h2 id="mikä-tämä-on">Mikä tämä on</h2>
+<p>Neutraalin ulkopuolisen tarkkailijan tutkimussynteesi, joka
+rekonstruoi yhdistetyn taloudellisen mallin — energia → laitteisto →
+laskenta → mallit → tokenit → tekoälytyökapasiteetti → digitaalinen työ
+→ tulokset → arvo → toimijuus — Jensen Huangin (ja NVIDIA/Wall Street
+-rahoituspaneelin), Sam Altmanin ja Mark Zuckerbergin julkisista
+lausunnoista, yhdistettynä itsenäisesti tarkistettuihin
+laitteistospesifikaatioihin, hinnoitteluun ja vertailutuloksiin, sekä
+kirjoittajan omaan aiemmin julkaistuun työhön tekoälyinfrastruktuurin
+omistuksesta ja osuustoiminnallisista malleista.</p>
+<p>Se ei ole toimittajaraportti, poliittinen ohjelma tai
+sijoitussuositus. Kuudelle lukijalinssille — Yksityishenkilö,
+PK-yritys/yrittäjä, Rahoitus-/infrastruktuurisijoittaja,
+Valtio/alue/yhteisö, Tekoälyrakentaja/-operaattori ja
+Kouluttaja/tutkija/toimittaja — annetaan <strong>yhtäläinen paino ja ei
+priorisointijärjestystä</strong>, tarkoituksellisella toimituksellisella
+päätöksellä.</p>
+<p>Joka olennainen väite on merkitty yhdellä viidestä näyttöluokasta
+(Havaittu fakta / Lähteeseen kohdistettu lausunto / Johdettu laskelma /
+Skenaario-oletus / Tulkinta), jotta lukija näkee yhdellä silmäyksellä,
+mikä on itsenäisesti vahvistettu, mikä on jonkun tallenteella oleva
+väite, mikä on laskutoimitus ja mikä on muokattavissa oleva
+havainnollistus.</p>
+<p><strong>Avaus:</strong> kirjoittajalla on kommersiaalisia ja
+edunajointiin liittyviä intresseja henkilökohtaiseen
+tekoälyinfrastruktuuriin ja osuustoiminnallisiin/omistusperustaisiin
+tekoälymalleihin Prifinan, Digiolen, ValtoAI:n ja PIOS- ja
+EIOS-viitekehyksien kautta. Katso alkutekstin
+(<code><a href="01-whitepaper.html">01-whitepaper.md</a></code>) Menetelmät §3.4 täydelle avaukselle ja
+ei-neuvonta-rajalle.</p>
+<h2 id="lukupolut-aloita-tästä-ei-koko-paketista-kerralla">Lukupolut —
+aloita tästä, ei koko paketista kerralla</h2>
+<p>Tämä paketti on rakennettu niin, että eri lukijat voivat saada
+yhteisen faktapohjan eri syvyyksillä, joutumatta kaikki läpikäymään
+samaa 89-sivuista asiakirjaa ensin:</p>
+<ul>
+<li><strong>Ensikertalainen lukija, mikä tahansa linssi:</strong> aloita
+tiedostosta <code><a href="00-how-to-use-this-research.html">00-how-to-use-this-research.md</a></code> (yksi sivu —
+mikä tämä on/ei ole, mitä se voi/ei voi vahvistaa), sitten
+<code><a href="12-executive-brief.html">12-executive-brief.md</a></code>.</li>
+<li><strong>Auktoritatiivinen kartta</strong> —
+<code><a href="01-whitepaper.html">01-whitepaper.md</a></code> (+ <code>01-whitepaper.pdf</code>). Täysi
+malli, kaikki näyttöluokkamerkinnät, kaikki varaukset. Tämä on totuuden
+lähde, jota joka muu resurssi tulisi jäljittää. <strong>PDF on
+itsenäinen</strong>: se upottaa neljä argumentin kannalta kantavinta
+kaaviota (päästä päähän -ketju, omistusrakenne, mittakaavaspektri ja
+uuden arvon silta) suoraan käyttökohtaansa, jotta lukija, jolla on vain
+ladattu PDF, näkee ne tarvitsematta tietovarastoa. Jäljelle jäävät
+kaaviot (2–5, 7, 9–10) sijaitsevat vain
+<code>assets/diagrams/</code>-kansiossa ja itsenäisessä
+diaesityksessä/briiffeissä — PDF on kertova raportti keskeisimmillä
+visuaaleillaan upotettuna, ei täysi visuaalinen toisinto koko
+11-kaavioisesta joukosta.</li>
+<li><strong>Aloituspiste</strong> — <code><a href="12-executive-brief.html">12-executive-brief.md</a></code>.
+Nopea, itsenäinen tiivistelmä lukijoille, jotka haluavat argumentin
+muodon syventymättä koko syvyyteen.</li>
+<li><strong>Tarkistus- ja tutkimuskerros</strong> — täydentävät
+työkirjat (<code>03</code>–<code>08</code>) ja
+<code>18-companion-data-model.xlsx</code>. Joka kaava on näkyvissä; joka
+oletus on muokattava solu. Tässä tarkistat raportin laskutoimitukset tai
+ajat sen uudelleen omilla luvuillasi.</li>
+<li><strong>Keskustelunavaaja</strong> — <code>19-slide-deck.pptx</code>
+/ <code><a href="13-slide-deck-outline.html">13-slide-deck-outline.md</a></code> ja lyhytmuotoiset kappaleet
+(<code>14</code>–<code>16</code>). Argumentin esittämiseen tai
+jakamiseen, ei sen tarkistamiseen.</li>
+<li><strong>Ennen mihinkään tiettyyn lukuun luottamista:</strong>
+tarkista <code><a href="20-appendix-known-limitations.html">20-appendix-known-limitations.md</a></code> — koottu lista
+siitä, mitä tämän mallin näyttö voi ja ei voi tällä hetkellä vahvistaa
+(mallin suorituskyky, käyttöaste, rahoitus, sähkön hinnoittelu,
+käyttöönoton ajoitus, ja Ammattimaisen tason näyttökuilu).</li>
+</ul>
+<h2 id="paketin-sisältö">Paketin sisältö</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Tiedosto</th>
+<th>Mikä se on</th>
+<th>Kenelle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code><a href="00-how-to-use-this-research.html">00-how-to-use-this-research.md</a></code></td>
+<td>Yhden sivun orientaatio: neutraalin mallin kehystys, mitä tämä
+voi/ei voi vahvistaa, miten sitä haastetaan tai laajennetaan</td>
+<td>Kaikille; lue tämä ensin</td>
+</tr>
+<tr>
+<td><code><a href="01-whitepaper.html">01-whitepaper.md</a></code></td>
+<td>Täysi alkuteksti — alkusanat, osat I–VII, loppusanat (45
+osiota)</td>
+<td>Kaikille; auktoritatiivinen kartta</td>
+</tr>
+<tr>
+<td><code><a href="02-source-register.html">02-source-register.md</a></code></td>
+<td>Raaka faktantarkistusloki tarkistuskierrokselta — joka väite
+tarkistettuna, sen näyttöluokka, ja miten se tarkistettiin</td>
+<td>Kaikille, joka tarkistaa tietyn luvun tai lainauksen</td>
+</tr>
+<tr>
+<td><code><a href="03-workbook-global-baseline.html">03-workbook-global-baseline.md</a></code></td>
+<td>Julkaisuresurssi #7 — täydet energiasta-tokeneihin-kustannuskäyrät
+Kotitalous-/Osuustoiminnallinen-/Ammattimainen-/Hyperskaalatasolle,
+globaali USD-perustaso</td>
+<td>Kaikille, joka mallintaa omaa tekoälytehdastaloutta</td>
+</tr>
+<tr>
+<td><code><a href="04-workbook-ai-working-capacity-conversion.html">04-workbook-ai-working-capacity-conversion.md</a></code></td>
+<td>Julkaisuresurssi #9 — käyttöintensiteettitikapuu (chat → kopilotti →
+delegoitu agentti → raskas orkestrointi) ja ihmistyön
+vertailutaulukot</td>
+<td>Kaikille, joka muuntaa $/tokenin $/tekoäly-työtunniksi</td>
+</tr>
+<tr>
+<td><code><a href="05-workbook-token-factory-scenarios.html">05-workbook-token-factory-scenarios.md</a></code></td>
+<td>Julkaisuresurssi #10 — token-/tekoälytehdasskenaariot, korjattu 42 €
+vs. 19,50–25 €/jäsen/kuukausi -osuustoiminnallinen kustannuserittely
+(kaksi eri laitteistotasoa, ei ristiriita), ja Bitcoin-louhinnan
+energian rahaksimuunto -vertailu</td>
+<td>Osuustoiminnalliset/yhteisöinfrastruktuurisuunnittelijat</td>
+</tr>
+<tr>
+<td><code><a href="06-investment-thesis-notes.html">06-investment-thesis-notes.md</a></code></td>
+<td>Julkaisuresurssi #12 — opetuksellisia, ei-neuvonnallisia
+sijoitusskenaariomuistiinpanoja mittakaavatasoittain</td>
+<td>Sijoittajat ja pääoman allokoijat (lue ei-neuvonta-raja ensin)</td>
+</tr>
+<tr>
+<td><code><a href="07-workbook-humanoid-working-capacity.html">07-workbook-humanoid-working-capacity.md</a></code></td>
+<td>Julkaisuresurssi #11 — humanoidirobotin ruumiillistuneen
+työkapasiteetin laajennus, havainnollinen 25 000 €:n esimerkki plus
+todellinen markkinahintavaihteluväli</td>
+<td>Kaikille, joka laajentaa mallin fyysiseen työhön</td>
+</tr>
+<tr>
+<td><code><a href="08-workbook-localized-scenario-eur-finland.html">08-workbook-localized-scenario-eur-finland.md</a></code></td>
+<td>Julkaisuresurssi #8 — laskettu EUR/Suomi-paikallistusmalli</td>
+<td>Kaikille, joka mukauttaa globaalin perustason omaan maahansa</td>
+</tr>
+<tr>
+<td><code><a href="09-appendix-glossary.html">09-appendix-glossary.md</a></code></td>
+<td>Määritelmät ja merkinnät — joka tekninen/taloudellinen termi
+käytettynä raportissa, selkokielisesti</td>
+<td>Uudet lukijat</td>
+</tr>
+<tr>
+<td><code><a href="10-appendix-source-register-formatted.html">10-appendix-source-register-formatted.md</a></code></td>
+<td>Julkaisumuotoiltu versio lähderekisteristä, järjestettynä lähteen
+mukaan tarkistusmenetelmineen</td>
+<td>Faktantarkistajat, toimittajat, tutkijat</td>
+</tr>
+<tr>
+<td><code><a href="11-appendix-assumption-register.html">11-appendix-assumption-register.md</a></code></td>
+<td>Joka muokattava skenaario-oletus kaikkien työkirjojen yli, koottuna
+yhteen taulukkoon ristikkäistyökirjajohdonmukaisuushuomautuksilla</td>
+<td>Kaikille, joka ajaa mallit uudelleen omilla luvuillaan</td>
+</tr>
+<tr>
+<td><code><a href="12-executive-brief.html">12-executive-brief.md</a></code></td>
+<td>Itsenäinen, itseriittävä koko raportin tiivistelmä</td>
+<td>Lukijat, jotka eivät lue koko raporttia</td>
+</tr>
+<tr>
+<td><code><a href="13-slide-deck-outline.html">13-slide-deck-outline.md</a></code></td>
+<td>Dia diaan-esityskäsikirjoitus, joka kattaa koko raportin</td>
+<td>Kaikille, joka esittää tätä materiaalia</td>
+</tr>
+<tr>
+<td><code><a href="14-shortform-general.html">14-shortform-general.md</a></code></td>
+<td>~300 sanan yleisyleisölle suunnattu selittäjä</td>
+<td>Sosiaalinen/lyhytmuotoinen jakaminen</td>
+</tr>
+<tr>
+<td><code><a href="15-shortform-ownership.html">15-shortform-ownership.md</a></code></td>
+<td>~300-400 sanan kappale omistuskysymyksestä (osa V)</td>
+<td>Sosiaalinen/lyhytmuotoinen jakaminen</td>
+</tr>
+<tr>
+<td><code><a href="16-shortform-value.html">16-shortform-value.md</a></code></td>
+<td>~300-400 sanan kappale siitä, miksi halvat tokenit ≠ halpa arvo (osa
+IV)</td>
+<td>Sosiaalinen/lyhytmuotoinen jakaminen</td>
+</tr>
+<tr>
+<td><code><a href="17-visual-asset-briefs.html">17-visual-asset-briefs.md</a></code></td>
+<td>Kaaviospesifikaatiot Kaavioille 1–11 (kaikki 11 nyt rakennettu —
+katso <code>assets/diagrams/</code>)</td>
+<td>Kuka tahansa, joka rakentaa/muokkaa lopulliset grafiikat</td>
+</tr>
+<tr>
+<td><code>18-companion-data-model.xlsx</code></td>
+<td>Reaaliaikaisilla kaavoilla toimiva Excel-työkirja (10 välilehteä:
+README,
+Kotitalous-/Osuustoiminnallinen-/Ammattimainen-/Hyperskaalatasot,
+Työkapasiteettimatriisi, Bitcoin-vertailu, Humanoidirobotti,
+EUR-Suomi-paikallistus, Oletusten hallinta) — rakennettu
+<code>03-04-05-07-08</code>:n taulukoista, muokkaa mitä tahansa
+keltaista oletussolua laskettaaksesi uudelleen kaiken sen
+alapuolella</td>
+<td>Kaikille, joka haluaa ajaa omat lukunsa kirjoittamatta kaavoja
+uudelleen</td>
+</tr>
+<tr>
+<td><code>19-slide-deck.pptx</code></td>
+<td>26-dian esitys rakennettu <code><a href="13-slide-deck-outline.html">13-slide-deck-outline.md</a></code>:stä,
+puhujan muistiinpanoineen</td>
+<td>Kaikille, joka esittää tätä materiaalia</td>
+</tr>
+<tr>
+<td><code><a href="20-appendix-known-limitations.html">20-appendix-known-limitations.md</a></code></td>
+<td>Koottu lista avoimista epävarmuustekijöistä (mallin suorituskyky,
+käyttöaste, rahoitus, sähkön hinnoittelu, käyttöönoton ajoitus,
+Ammattimaisen tason näyttökuilu)</td>
+<td>Kaikille, joka päättää, kuinka paljon painoarvoa antaa tietylle
+luvulle</td>
+</tr>
+<tr>
+<td><code>assets/diagrams/diagram-01…11-*.png</code></td>
+<td>11 valmista kaaviokuvaa, jotka on määritelty
+<code><a href="17-visual-asset-briefs.html">17-visual-asset-briefs.md</a></code>:ssä — Kaavio 11 on kirjoittajan
+oma ennalta olemassa oleva kehyskaavio, provenienssikehystetty
+(näyttöluokkatunniste, viittaus, foottei) vastaamaan muuta joukkoa;
+muokkaamaton alkuperäinen säilytetään sen vierellä tiedostona
+<code>diagram-11-*.jpg</code></td>
+<td>Raportti-/diaesitys-/verkkokäyttö</td>
+</tr>
+<tr>
+<td><code>data/canonical-cost-model.csv</code></td>
+<td>Yksittäinen kanoninen lähde joka tason $/M-token- ja
+$/tekoäly-työtunti-luvuille</td>
+<td>Kaikille, joka tarkistaa tai laajentaa mallia</td>
+</tr>
+<tr>
+<td><code>tools/check-canonical-consistency.py</code></td>
+<td>Automaattinen tarkistus, ettei alkuteksti, PDF, työkirjat, diaesitys
+ja xlsx ole ajautuneet pois
+<code>data/canonical-cost-model.csv</code>:stä</td>
+<td>Ylläpitäjät, ennen mitä tahansa julkaisua — katso asennus alla</td>
+</tr>
+<tr>
+<td><code>tools/requirements.txt</code></td>
+<td>Kiinnitetyt Python-riippuvuudet johdonmukaisuustarkistajalle</td>
+<td>Ylläpitäjät, jotka ajavat tarkistajaa</td>
+</tr>
+<tr>
+<td><code>CITATION.cff</code></td>
+<td>Koneluettava viittausmetadata (GitHub renderöi tämän “Cite this
+repository” -kehotteeksi)</td>
+<td>Kaikille, joka viittaa tähän työhön</td>
+</tr>
+<tr>
+<td><code>LICENSE</code></td>
+<td>Täysi CC BY 4.0 laillinen teksti, plus soveltamisalahuomautus siitä,
+mikä on (ja ei ole) tämän lisenssin kattamaa</td>
+<td>Kaikille, joka käyttää tätä materiaalia uudelleen</td>
+</tr>
+<tr>
+<td><code>CHECKSUMS.sha256</code></td>
+<td>SHA-256-manifesti joka tiedostolle tässä julkaisussa (vain
+datarivit, ei kommentteja — tavallinen
+<code>sha256sum</code>/<code>shasum</code>-tuotos alustojen väliselle
+yhteensopivuudelle), niin että julkinen kopio voidaan vahvistaa tätä
+täsmällistä committia vasten</td>
+<td>Kaikille, joka vahvistaa paketin eheyden</td>
+</tr>
+<tr>
+<td><code><a href="CHANGELOG.html">CHANGELOG.md</a></code></td>
+<td>Versiohistoria — mikä on muuttunut julkaisujen välillä, ja
+miksi</td>
+<td>Kaikille, joka seuraa revisioita</td>
+</tr>
+<tr>
+<td><code>index.html</code>, <code>*.html</code></td>
+<td>GitHub Pages -sivusto — joka yllä olevalla markdown-asiakirjalla on
+vastaava natiivi HTML-sivu (rakennettu siitä, ei kopio), niin että koko
+paketti voidaan lukea sivuston sisällä siirtymättä GitHubin
+markdown-katseluohjelmaan</td>
+<td>Kaikille, joka lukee elävää sivustoa osoitteessa <a
+href="https://valto.github.io/tekoalytyokapasiteetin-vallankumous/">valto.github.io/tekoalytyokapasiteetin-vallankumous</a></td>
+</tr>
+<tr>
+<td><code>diagrams.html</code></td>
+<td>Galleriasivu kaikille 11 kaaviolle, kuvateksteillä ja
+vaihtoehtoisella tekstillä, linkittyen
+<code>17-visual-asset-briefs.html</code>:ään täydelle
+spesifikaatiolle</td>
+<td>Lukijat, jotka selaavat visuaalista joukkoa poistumatta
+sivustolta</td>
+</tr>
+<tr>
+<td><code>perspectives.html</code>,
+<code>perspectives/*.yaml</code></td>
+<td>Näkökulmat/kirjoitukset-hakemisto — alkuperäiset, itsenäiset ja
+kriittiset julkaisut, jotka johdettu tästä tutkimuksesta tai haastavat
+sen, suodatettavissa tyypin/aiheen mukaan. Katso
+<code>perspectives/README.md</code> merkintäskeemalle</td>
+<td>Kaikille, joka seuraa laajempaa keskustelua tämän työn ympärillä,
+tai lähettää oman kirjoituksensa</td>
+</tr>
+<tr>
+<td><code>docs/backlink-discovery.md</code></td>
+<td>Suunnittelu (ei vielä toteutettu) automaattiselle takalinkkien
+tunnistus → luokittelu → Näkökulmat-putkelle</td>
+<td>Ylläpitäjät, jotka harkitsevat Ahrefs/Semrush-API-integraatiota</td>
+</tr>
+<tr>
+<td><code>tools/build-pages.py</code>,
+<code>tools/page-template.html</code></td>
+<td>Generoi joka markdown-lähteisen <code>*.html</code>-sivun
+<code>.md</code>-lähteestään, ristiviitteillä uudelleenkirjoitettuina
+pysymään sivuston sisällä</td>
+<td>Ylläpitäjät, minkä tahansa markdown-sisältömuutoksen jälkeen — katso
+alla</td>
+</tr>
+<tr>
+<td><code>tools/build-perspectives.py</code>,
+<code>tools/perspectives-template.html</code></td>
+<td>Generoi <code>perspectives.html</code>:n joka
+<code>perspectives/*.yaml</code>-merkinnästä</td>
+<td>Ylläpitäjät, näkökulman lisäämisen/muokkaamisen jälkeen</td>
+</tr>
+</tbody>
+</table>
+<h2
+id="pages-sivuston-uudelleenrakentaminen-sisältömuutoksen-jälkeen">Pages-sivuston
+uudelleenrakentaminen sisältömuutoksen jälkeen</h2>
+<p>Joka <code>*.html</code>-tiedosto tietovaraston juuressa paitsi
+<code>index.html</code> ja <code>diagrams.html</code> (käsin
+kirjoitetut) ja <code>perspectives.html</code> (generoitu erillisellä
+skriptillä, alla) generoidaan vastaavasta <code>.md</code>-tiedostostaan
+— <strong>ei käsin muokata generoitua
+<code>.html</code>-tiedostoa</strong>; muokkaa markdown-lähdettä ja
+rakenna uudelleen:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/build-pages.py</span></code></pre></div>
+<p>Tämä uudelleengeneroi kaikki sivut ja kirjoittaa uudelleen
+ristiviitteet niiden välillä (linkki toiseen seurattuun
+<code>.md</code>-tiedostoon muuttuu linkiksi kyseisen tiedoston
+<code>.html</code>-sivulle), niin että lukeminen pysyy Pages-sivuston
+sisällä sen sijaan, että siirryttäisiin GitHubin
+markdown-katseluohjelmaan. Vaatii <code>pandoc</code>:n
+<code>PATH</code>:issa.</p>
+<p><code>perspectives/*.yaml</code>-merkinnän lisäämisen tai
+muokkaamisen jälkeen, rakenna Näkökulmat-hakemisto uudelleen:</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/build-perspectives.py</span></code></pre></div>
+<p>Vaatii <code>pyyaml</code>:n (katso
+<code>tools/requirements.txt</code>).</p>
+<h2 id="johdonmukaisuustarkistajan-ajaminen">Johdonmukaisuustarkistajan
+ajaminen</h2>
+<p><code>tools/check-canonical-consistency.py</code> vahvistaa, että
+alkuteksti, rakennettu PDF, täydentävä Excel-työkirja ja diaesitys ovat
+kaikki yhtenäisiä <code>data/canonical-cost-model.csv</code>:n kanssa —
+yksittäinen totuuden lähde tasojen kustannusluvuille. Se epäonnistuu
+suljettuna: puuttuva riippuvuus, puuttuva tiedosto tai rikkinäinen
+Python-ympäristö raportoidaan epäonnistumisena, ei hiljaisesti
+ohitettuna, niin että <code>PASS</code>-tulokseen voi luottaa
+tarkoittavan, että joka tarkistus todella ajettiin.</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-m</span> venv .venv</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> .venv/bin/activate</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> tools/requirements.txt</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> tools/check-canonical-consistency.py</span></code></pre></div>
+<p><strong>Tunnettu ympäristöongelma joissakin
+macOS/Homebrew-asennuksissa:</strong> jos järjestelmäsi oletus
+<code>python3</code> raportoi <code>ImportError: ... pyexpat ...</code>
+tai <code>No module named expat</code>, kyseisen Python-käännöksen
+XML-tuki on rikki (Homebrew <code>libexpat</code>-versioristiriita), ja
+joka tarkistus, joka koskettaa xlsx:ää tai pptx:ää, epäonnistuu — tämä
+on todellinen ympäristöongelma, jota tarkistaja oikein kieltäytyy
+peittämästä, ei virhe tässä skriptissä. Käytä eri Python-asennusta
+(esim. <code>pyenv</code>-hallittua käännöstä, tai
+<code>python3.11</code> uudesta Homebrew
+<code>python@3.11</code>-asennuksesta) luodaksesi yllä olevan
+virtuaaliympäristön sen sijaan.</p>
+<h2 id="tarkistussummien-vahvistaminen">Tarkistussummien
+vahvistaminen</h2>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">shasum</span> <span class="at">-a</span> 256 <span class="at">-c</span> CHECKSUMS.sha256      <span class="co"># macOS</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sha256sum</span> <span class="at">-c</span> CHECKSUMS.sha256          <span class="co"># Linux/GNU coreutils</span></span></code></pre></div>
+<p><code>CHECKSUMS.sha256</code> sisältää vain tavallisia
+tiiviste/tiedostonimirivejä — ei kommentteja tai otsikkotekstiä — niin
+että molemmat yllä olevat työkalut hyväksyvät sen ilman varoituksia.</p>
+<h2 id="tila-ja-tunnetut-avoimet-kohteet">Tila ja tunnetut avoimet
+kohteet</h2>
+<p>Tämä on täydellinen v1.0-luonnos, tuotettu tekoälyavusteisella
+tutkimus- ja mallinnustyönkululla, itsenäisellä vahvistuskierroksella,
+osiokohtaisilla faktajohdonmukaisuustarkastuksilla, ja deterministisellä
+(ei tekoälyn uudelleengeneroimalla) lopullisella koontivaiheella, jotta
+voidaan varmistaa, ettei mitään sisältöä pudotettu tai katkaistu
+kokoamisen aikana.</p>
+<p>Tunnetut kohteet, merkitty läpinäkyvästi itse paketin sisällä:</p>
+<ul>
+<li><strong>Ratkaistu (2026-08-13):</strong> aiempi “42 € vs. 19,50–25
+€/jäsen/kuukausi” -osuustoiminnallinen kustannuskohta ei ollutkaan
+ristiriita — kaksi lukua kuvaavat kahta eri laitteistotasoa
+(havainnollinen 100 000 €:n jaettu työasemaluokan kone vs. 4 699
+dollarin NVIDIA DGX Spark -yksiköiden pooli), ei kilpailevia arvioita
+samasta osuuskunnasta. Katso
+<code><a href="05-workbook-token-factory-scenarios.html">05-workbook-token-factory-scenarios.md</a></code> §1a/§1b ja
+<code><a href="11-appendix-assumption-register.html">11-appendix-assumption-register.md</a></code> rivi 6a korjatulle,
+täysin tarkistettavalle erittelylle.</li>
+<li><strong>Ratkaistu (2026-08-13):</strong> “0,123 dollaria/M tokenia”
+GB300-luokan päättelyluku on nyt vahvistettu suoraan NVIDIAn omalla
+sivustolla (aiemmin merkitty VAHVISTAMATTOMAKSI). Se koskee erityisesti
+72-GPU:n GB300 NVL72 -räkkiä 116 tokenilla/sek/käyttäjä käyttäen NVIDIA
+Dynamoa ja TensorRT-LLM:ää — sitä ei saa käyttää minkään työaseman tai
+pöytätietokoneluokan laitteen hinnoitteluun. Katso
+<code><a href="03-workbook-global-baseline.html">03-workbook-global-baseline.md</a></code> §5.7.</li>
+<li>Useat laitteisto-/hintasyötteet (Ammattimaisen tason HGX B300
+-solmun hinnoittelu/teho, hyperskaalaräkin capex, havainnolliset 100 000
+€:n DGX-Station-luokan ja 25 000 €:n humanoidirobotin hinnat) ei ole
+julkista lähdettä ja on merkitty ⚠ läpi paikkamerkeiksi, ei
+vahvistetuiksi luvuiksi — NVIDIA ei julkaise vähittäishintoja DGX
+Stationille tai HGX B300:lle.</li>
+<li><strong>Ratkaistu (2026-08-13):</strong> diaesitys, kaaviot ja
+täydentävä työkirja ovat nyt valmiita binääritiedostoja
+(<code>19-slide-deck.pptx</code>, <code>assets/diagrams/*.png</code>,
+<code>18-companion-data-model.xlsx</code>) markdown-spesifikaatioiden
+sijaan — työkirjan kaavat ja kaaviot vahvistettiin itsenäisesti
+lähdemarkdownia vasten rakennuksen aikana (yksi
+hyperskaala-käyttöastekaavavirhe ja kaksi kaaviosuunnitteluvirhettä
+havaittiin ja korjattiin tällä tavalla).</li>
+<li><strong>Ratkaistu (2026-08-13):</strong> lopullinen
+yhteensovituskierros löysi ja korjasi klusterin vanhentuneita
+Kotitalous-/Osuustoiminnallisen tason lukuja, joita ei ollut päivitetty,
+kun tämän raportin kanoniset vaihteluvälit vahvistettiin — alkuteksti,
+<code><a href="05-workbook-token-factory-scenarios.html">05-workbook-token-factory-scenarios.md</a></code>,
+<code><a href="13-slide-deck-outline.html">13-slide-deck-outline.md</a></code>, <code>19-slide-deck.pptx</code>
+ja <code>assets/diagrams/diagram-08-scale-spectrum.png</code> lainaavat
+nyt kaikki yksittäistä kanonista Kotitalous (1,37–11,89 dollaria/M
+tokenia) ja Osuustoiminnallinen (1,99–7,62 dollaria/M tokenia)
+-vaihteluväliä ja niiden oikein johdettuja $/tekoäly-työtunti-lukuja.
+Samalla kierroksella korjattiin 1000-kertainen yksikkövirhe
+Bitcoin-louhinnan energian rahaksimuunto -vertailussa (raportin §14,
+Tokenitehtaan skenaariotyökirjan §5) — korjattu laskutoimitus kääntää
+tämän kohdan alkuperäisen havainnollisen johtopäätöksen: kanonisella
+Kotitaloustason tuotantokustannuksella arvotettuna, tekoälytokenien
+bruttotulo per MWh-vastine ylittää jopa tehokkaat
+Bitcoin-louhintakalustot, ei jää niiden alle kuten aiempi luonnos
+väitti. Kaksi tekstimerkintää
+<code>18-companion-data-model.xlsx</code>:ssä, jotka oli tallennettu
+rikkinäisinä kaavoina (olisivat näyttäneet <code>#NAME?</code>:n),
+muunnettiin myös tavalliseksi tekstiksi.</li>
+<li><strong>Ratkaistu (2026-08-14):</strong> tämä paketti on nyt
+julkaistu GitHub Pages -sivustona osoitteessa <a
+href="https://valto.github.io/ai-working-capacity-revolution/">valto.github.io/ai-working-capacity-revolution</a>
+(englanninkielinen alkuperäinen), seuraten <code>main</code>:ia — katso
+yllä oleva Tila-rivi siitä, miten elävä sivusto liittyy viimeksi
+tagattuun julkaisuun. Tämän suomenkielisen käännöksen omaa
+Pages-sivustoa koskeva tila päivitetään erikseen.</li>
+</ul>
+<p>Ennen mitä tahansa julkista julkaisua, ihmisen suorittama
+tarkistuskierros koko alkutekstistä ja työkirjoista suositellaan,
+erityisesti yllä oleville yhteensovitus- ja paikkamerkkikohteille.</p>
+</article>
+<div class="page-footer-nav">
+  <a href="index.html">← Takaisin etusivulle</a>
+  <a href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous/blob/main/README.md">Katso lähde / muokkaa GitHubissa →</a>
+</div>
+</main>
+<footer>
+  <p>© Valto Loikkanen. Lisensoitu CC BY 4.0 -lisenssillä ilmoitetuin osin. Opetuksellista tutkimusta ja skenaarioanalyysiä — ei sijoitus-, oikeudellista, vero-, hankinta- tai politiikkaneuvontaa. Tämä on suomenkielinen käännös alkuperäisestä englanninkielisestä julkaisusta.</p>
+  <p><a href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous">Katso tietovarasto GitHubissa</a></p>
+</footer>
+</body>
+</html>

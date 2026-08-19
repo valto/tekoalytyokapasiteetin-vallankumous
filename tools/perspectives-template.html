@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Näkökulmat ja kirjoitukset — Miksi tekoälyyn investoidaan biljoonia?</title>
+<meta name="description" content="Julkaisuja, jotka on johdettu Tekoälytyökapasiteetin vallankumouksen tutkimuspohjasta, keskustelevat siitä, soveltavat sitä tai haastavat sen.">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  .filter-bar { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0 2rem; font-family: 'Helvetica Neue', Arial, sans-serif; }
+  .filter-btn {
+    border: 1px solid var(--border); background: var(--light); color: var(--accent);
+    border-radius: 14px; padding: 0.3rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+  }
+  .filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .perspective-card {
+    border: 1px solid var(--border); border-radius: 8px; padding: 1.2rem 1.4rem;
+    margin-bottom: 1.2rem; background: var(--light);
+  }
+  .perspective-card h3 { margin: 0 0 0.3rem; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 1.05rem; }
+  .p-meta { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.85rem; color: var(--grey); margin: 0 0 0.6rem; }
+  .p-tags { margin: 0.6rem 0 0; }
+  .submit-box {
+    border: 2px dashed var(--accent); border-radius: 8px; padding: 1.4rem;
+    background: #f3f7fa; margin: 2rem 0;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1 style="font-size:1.5rem;"><a href="index.html" style="color:#fff; text-decoration:none;">Miksi tekoälyyn investoidaan biljoonia?</a></h1>
+  <p class="meta">Tutkimuspohja ja elävä viitekehys &nbsp;·&nbsp; CC BY 4.0</p>
+</header>
+<main>
+<nav class="crumbs"><a href="index.html">Etusivu</a> / Näkökulmat ja kirjoitukset</nav>
+<article class="doc-body">
+<h1>Näkökulmat ja kirjoitukset</h1>
+<p>Tämä ei ole kirjoittajan blogi — se on tallenne laajemmasta keskustelun kokonaisuudesta, joka kehittyy tämän tutkimuksen ympärillä: alkuperäisiä kirjoituksia, joihin alkuteksti nojaa, itsenäisiä kolmannen osapuolen sovelluksia ja tulkintoja, sekä kriittisiä haasteita sen oletuksille tai johtopäätöksille. <strong>Mukanaolo tässä ei tarkoita kannatusta</strong>, ja kirjoitusta ei suljeta pois vain siksi, että se on eri mieltä kehyksen kanssa — uskottavan viitepohjan tulisi tehdä erimielisyys tarkasteltavaksi, ei piilotetuksi.</p>
+
+<div class="submit-box">
+  <strong>Oletko kirjoittanut jotain, joka perustuu tähän työhön, viittaa siihen tai haastaa sen?</strong>
+  <p style="margin:0.6rem 0 0;">Avaa issue tai pull request <a href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous">GitHub-tietovarastossa</a> kirjoituksesi otsikolla, kirjoittajalla, päivämäärällä, julkaisualustalla, URL-osoitteella ja lyhyellä kuvauksella — katso <code>perspectives/README.md</code> merkintämuodolle. Tämä ottaa kiinni LinkedIn-julkaisut, uutiskirjeet, PDF:t, videot ja podcastit, joita automaattinen tunnistus ei välttämättä löydä luotettavasti.</p>
+</div>
+
+<p>{{COUNT}} merkintää.</p>
+
+<div class="filter-bar">
+  <button class="filter-btn active" data-type="all">Kaikki</button>
+  <button class="filter-btn" data-type="original">Alkuperäinen</button>
+  <button class="filter-btn" data-type="independent">Itsenäinen</button>
+  <button class="filter-btn" data-type="critical">Kriittinen</button>
+  {{TOPIC_BUTTONS}}
+</div>
+
+<div id="perspectives-list">
+{{CARDS}}
+</div>
+
+</article>
+<div class="page-footer-nav">
+  <a href="index.html">← Takaisin etusivulle</a>
+  <a href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous/tree/main/perspectives">Katso merkintätiedostot GitHubissa →</a>
+</div>
+</main>
+<footer>
+  <p>© Valto Loikkanen. Lisensoitu CC BY 4.0 -lisenssillä ilmoitetuin osin. Opetuksellista tutkimusta ja skenaarioanalyysiä — ei sijoitus-, oikeudellista, vero-, hankinta- tai politiikkaneuvontaa. Tämä on suomenkielinen käännös alkuperäisestä englanninkielisestä julkaisusta.</p>
+  <p><a href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous">Katso tietovarasto GitHubissa</a></p>
+</footer>
+<script>
+(function() {
+  var typeButtons = document.querySelectorAll('.filter-btn[data-type]');
+  var topicButtons = document.querySelectorAll('.filter-btn[data-topic]');
+  var cards = document.querySelectorAll('.perspective-card');
+  var activeType = 'all';
+  var activeTopic = null;
+
+  function applyFilter() {
+    cards.forEach(function(card) {
+      var typeMatch = activeType === 'all' || card.dataset.type === activeType;
+      var topicMatch = !activeTopic || (card.dataset.topics || '').split(',').indexOf(activeTopic) !== -1;
+      card.style.display = (typeMatch && topicMatch) ? '' : 'none';
+    });
+  }
+
+  typeButtons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      typeButtons.forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      activeType = btn.dataset.type;
+      applyFilter();
+    });
+  });
+
+  topicButtons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var wasActive = btn.classList.contains('active');
+      topicButtons.forEach(function(b) { b.classList.remove('active'); });
+      if (wasActive) {
+        activeTopic = null;
+      } else {
+        btn.classList.add('active');
+        activeTopic = btn.dataset.topic;
+      }
+      applyFilter();
+    });
+  });
+})();
+</script>
+</body>
+</html>
