@@ -115,8 +115,8 @@
 
 **Dia 18 — Tekoälytyökapasiteetista uuteen arvoon**
 - Käsitteellinen silta, ei numeerinen havainto [TULKINTA läpi]: luotu kapasiteetti (osat I–IV) ei ole automaattisesti kasvua, tuloa tai yhteiskunnallista hyötyä.
-- Kaksi erillistä kysymystä: (1) voidaanko kapasiteetti luoda — tämän raportin kustannus-/käyttöastemalli; (2) voiko tämä kapasiteetti luoda ja vallata uutta arvoa — keksintö, hyväksynta, luottamus, tulomalli, mitä mikään $/token-luku ei tarjoa.
-- Visuaali: "Kasvun luominen uuden arvon pohjalta" (Kaavio 11) — kaksi sarakkeitta, jotka lähentyvät yhteiseen "Uusi arvo" -vyöhykkeeseen: Idea/Keksintö → Innovaatio → Uuden arvon vahvistaminen laskeutuen vasemmalla; Tuottavuus → Tulomalli → Arvolupaus ja viestintä nousten oikealla.
+- Kaksi erillistä kysymystä: (1) voidaanko kapasiteetti luoda — tämän raportin kustannus-/käyttöastemalli; (2) voiko tämä kapasiteetti luoda ja kaapata uutta arvoa — keksintö, käyttäjien hyväksyntä, luottamus, tulomalli, mitä mikään $/token-luku ei tarjoa.
+- Visuaali: "Kasvun luominen uuden arvon pohjalta" (Kaavio 11) — kaksi saraketta, jotka lähentyvät yhteiseen "Uusi arvo" -vyöhykkeeseen: Idea/Keksintö → Innovaatio → Uuden arvon vahvistaminen laskeutuen vasemmalla; Tuottavuus → Tulomalli → Arvolupaus ja viestintä nousten oikealla.
 - Huomautus: sama raja koskee mitä tahansa tulevaa skenaariotyökalua, joka rakennetaan tämän raportin työkirjojen päälle — se mallintaa kustannusta ja kapasiteettia, ei sitä, luoko käyttöönotto arvoa.
 - Puhujan muistiinpano: Tämä dia on toinen sarana — se estää yleisöä lukemasta "halvemmat tokenit" "enemmäksi kasvua" ilman puuttuvaa keskivaihetta.
 

@@ -19,8 +19,7 @@
 tässä. Versiointi seuraa <a href="https://semver.org/">Semantic
 Versioningia</a> hengeltään — suuri versionumeron nosto tarkoittaa
 muutosta kanonisiin lukuihin tai johtopäätöksiin, ei vain tekstiin.</p>
-<h2 id="julkaisematon-tavoitteena-v1.0.2">[Julkaisematon] — tavoitteena
-v1.0.2</h2>
+<h2 id="section">[1.0.2] — 2026-08-20</h2>
 <h3 id="korjattu">Korjattu</h3>
 <ul>
 <li>Korjattu laskuvirhe delegoitu agentti -vyöhykkeen
@@ -124,7 +123,7 @@ luokittelu → Näkökulmat-hakemisto -arkkitehtuurin
 <code>status: pending-review</code>-ehdokasjonoa, ei koskaan
 automaattisesti julkaisematta) myöhempää toteutusta varten; ei vielä
 kytketty, koska se vaatii maksullisen API-tilauksen ja tunnistetiedot,
-joita tällä tietovarastolla ei ole.
+joita tällä repositoriolla ei ole.
 <code>perspectives/_pending/</code>-hakemisto ja luokitteluvaiheen
 datavirta ovat paikoillaan, jotta tämä voidaan lisätä ilman
 uudelleensuunnittelua.</li>
@@ -133,23 +132,57 @@ nimenomaisesti viimeisen tagatun mallin version (v1.0.1) ja toistaa
 kestävän kehyksen/muuttuvien lukujen periaatteen itse sivulla, ei vain
 alkutekstissä.</li>
 </ul>
-<p>Uudelleengeneroi <code>01-whitepaper.pdf</code> (89 sivua, aiemmin
-88), <code>19-slide-deck.pptx</code>, kaikki markdown-lähteiset
+<p>Uudelleengeneroi <code>01-whitepaper.pdf</code>,
+<code>19-slide-deck.pptx</code>, kaikki markdown-lähteiset
 <code>*.html</code>-sivut, ja <code>perspectives.html</code>; synkronoi
 työpöydän PDF-kopion; uudelleengeneroi
 <code>CHECKSUMS.sha256</code>.</p>
-<h2 id="section">[1.0.1] — 2026-08-14</h2>
+<h3
+id="korjattu-suomenkielinen-kielenhuolto-ja-julkaisumekaniikka-ulkoisen-tarkastuksen-vastauksena">Korjattu
+— suomenkielinen kielenhuolto ja julkaisumekaniikka (ulkoisen
+tarkastuksen vastauksena)</h3>
+<ul>
+<li>Natiivin kielenhuollon korjauskierros: <code>foottei</code> →
+<code>alatunniste</code>, <code>latata</code> → <code>ladata</code>,
+<code>kaksi sarakkeeta</code>/<code>sarakkeitta</code> →
+<code>kaksi saraketta</code>, <code>ei silotellaan pois</code> →
+<code>ei siloteltuna pois</code>, <code>hyväksynta</code> →
+<code>hyväksyntä</code>, <code>itseisännöinti</code> →
+<code>itsehostaus</code> (yhdenmukaistettu alkutekstin oman käytön
+kanssa), <code>järjestelydevice</code> → <code>järjestelyväline</code>,
+ja <code>tietovarasto</code> GitHub-repositorion merkityksessä →
+<code>repositorio</code> (säilytetty <code>tietovarasto</code> sen
+omassa, oikeassa merkityksessään tietoaineiston säilytyspaikkana
+lähderekisterin klusteri-D-merkinnässä). <code>Avaus</code>-lyhennelmä
+sidonnaisuusilmoituksesta README.md:ssä ja
+<code><a href="15-shortform-ownership.html">15-shortform-ownership.md</a></code>:ssä yhdenmukaistettu alkutekstin
+omaan, vakiintuneeseen termiin “Avoin ilmoitus”. Yhdenmukaistettu
+“kapasiteetti luo ja <em>vallata</em> uutta arvoa” -ilmaisu (johdon
+tiivistelmässä ja diaesityksen dialla 18) alkutekstin omaan
+sanavalintaan “kaapata uutta arvoa” (§25 jälkeisessä käsitteellisessä
+sillassa). Uudelleengeneroitu <code>01-whitepaper.pdf</code> ja
+<code>19-slide-deck.pptx</code> näiden korjausten
+sisällyttämiseksi.</li>
+<li>Lisätty puuttunut <code>/Author</code>-PDF-metatieto
+(<code>Valto Loikkanen</code>) <code>01-whitepaper.pdf</code>:ään.</li>
+<li>Poistettu kovakoodattu sivumäärän maininta README.md:n
+lukupolkuosiosta (aiempi “89-sivuinen asiakirja” -viittaus oli
+vanhentunut; PDF:n sivumäärä vaihtelee kielen ja generointiasetusten
+mukaan).</li>
+</ul>
+<h2 id="section-1">[1.0.1] — 2026-08-14</h2>
 <h3 id="lisätty-sisältö-1">Lisätty — sisältö</h3>
 <ul>
 <li>Korvattu alkusanojen “Kirjoittajasta ja menetelmästä” -osio
 laajennetulla “Kirjoittajasta, näkökulmasta ja menetelmästä” -osiolla —
 kattaa kirjoittajan laajemman yrittäjyys-/innovaatioekosysteemi- ja
 neuvonantajataustan (30+ ekosysteemiä, valtion/EU:n/yliopiston
-neuvonantajatyö) tekoälyinfrastruktuurikohtaisen avauksen rinnalla, ja
-nimeää ValtoAI:n ja EIOS-viitekehyksen (organisaatiot/hallitu
-tieto/agenttivalmis konteksti) aiemmin nimettyjen Prifinan, Digiolen ja
-PIOS:n rinnalla. Levitetty samaa hankeluetteloa Menetelmät §3.4:n
-avaukseen, <code><a href="12-executive-brief.html">12-executive-brief.md</a></code>:ään,
+neuvonantajatyö) tekoälyinfrastruktuurikohtaisen avoimen ilmoituksen
+rinnalla, ja nimeää ValtoAI:n ja EIOS-viitekehyksen
+(organisaatiot/hallitu tieto/agenttivalmis konteksti) aiemmin nimettyjen
+Prifinan, Digiolen ja PIOS:n rinnalla. Levitetty samaa hankeluetteloa
+Menetelmät §3.4:n avoimeen ilmoitukseen,
+<code><a href="12-executive-brief.html">12-executive-brief.md</a></code>:ään,
 <code><a href="15-shortform-ownership.html">15-shortform-ownership.md</a></code>:ään,
 <code><a href="13-slide-deck-outline.html">13-slide-deck-outline.md</a></code>/<code>19-slide-deck.pptx</code>:ään
 (dia 15), ja <code><a href="README.html">README.md</a></code>:ään, korvaten kaikki jäljelle
@@ -159,7 +192,7 @@ uuteen arvoon,” osan IV (§25) ja osan V väliin alkutekstissä — merkitty
 nimenomaisesti TULKINNAKSI läpi, ei tuo uusia kustannuslukuja. Erottaa
 “voidaanko kapasiteetti luoda” (tämän raportin
 kustannus-/kapasiteettimalli, osat I–IV) “voiko tämä kapasiteetti luoda
-ja vallata uutta arvoa” (keksintö-, innovaatio-, käyttöönotto- ja
+ja kaapata uutta arvoa” (keksintö-, innovaatio-, käyttöönotto- ja
 tulomallikysymykset, joihin tämän raportin kustannustaulukot eivät voi
 vastata), ja huomauttaa, että sama raja koskee mitä tahansa tulevaa
 skenaariotyökalua, joka rakennetaan tämän raportin työkirjojen päälle.
@@ -179,9 +212,9 @@ saraketta lähentyvät yhteiseen “Uusi arvo” -vyöhykkeeseen) toimittajille
 ja johdonmukaisuuden tarkistamiseen. Provenienssikehystetty
 PNG-johdannainen
 (<code>diagram-11-creating-growth-from-new-value.png</code>,
-näyttöluokkatunniste, viittaus, lähdehuomautus, vakiofoottei) lisättiin
-käytettäväksi PDF:ssä, diaesityksessä ja Pages-sivustolla; alkuperäinen
-JPG säilytetään raakalähteenä.</li>
+näyttöluokkatunniste, viittaus, lähdehuomautus, vakioalatunniste)
+lisättiin käytettäväksi PDF:ssä, diaesityksessä ja Pages-sivustolla;
+alkuperäinen JPG säilytetään raakalähteenä.</li>
 <li>Korjattu vanhentunut ristiviite <code><a href="README.html">README.md</a></code>:n
 avausrivissä (osoitti alkutekstin “§4:ään,” jota ei enää ole olemassa
 numeroituna osiona; korjattu “Menetelmät §3.4:ksi”).</li>
@@ -216,7 +249,7 @@ Pages-sivustolta.</li>
 <li><code>01-whitepaper.pdf</code> upottaa nyt neljä kantavinta
 kaaviotaan (päästä päähän -ketju, omistusrakenne, mittakaavaspektri,
 uuden arvon silta) suoraan käyttökohtaansa tekstissä, jotta lukija,
-jolla on vain PDF, näkee ne tarvitsematta tietovarastoa; korjattu
+jolla on vain PDF, näkee ne tarvitsematta repositoriota; korjattu
 <code>pdf-style.css</code>-puute (ei <code>img</code>-mitoitussääntöä
 ollut olemassa), joka aiheutti upotettujen kuvien ylivuotamisen sivun
 leveyden yli, ennen kuin tämä huomattiin ja korjattiin.</li>
@@ -244,7 +277,7 @@ tämän julkaisun edeltävästä commitista lähtien.</li>
 kaaviota” muotoon “Kaikki 11 kaaviota” kaavioiden välisissä
 johdonmukaisuushuomautuksissa.</li>
 </ul>
-<h2 id="section-1">[1.0.0] — 2026-08-13</h2>
+<h2 id="section-2">[1.0.0] — 2026-08-13</h2>
 <p>Ensimmäinen julkinen julkaisu.</p>
 <h3 id="paketti">Paketti</h3>
 <ul>
@@ -360,7 +393,7 @@ lausuntoja, ei itsenäisesti vahvistettuja ennusteita.</p>
 </main>
 <footer>
   <p>© Valto Loikkanen. Lisensoitu CC BY 4.0 -lisenssillä ilmoitetuin osin. Opetuksellista tutkimusta ja skenaarioanalyysiä — ei sijoitus-, oikeudellista, vero-, hankinta- tai politiikkaneuvontaa. Tämä on suomenkielinen käännös alkuperäisestä englanninkielisestä julkaisusta.</p>
-  <p><a href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous">Katso tietovarasto GitHubissa</a></p>
+  <p><a href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous">Katso repositorio GitHubissa</a></p>
 </footer>
 </body>
 </html>

@@ -8,8 +8,8 @@ type: report
 authors:
   - family-names: Loikkanen
     given-names: Valto
-version: 1.0.1
-date-released: "2026-08-14"
+version: 1.0.2
+date-released: "2026-08-20"
 license: CC-BY-4.0
 repository-code: "https://github.com/valto/tekoalytyokapasiteetin-vallankumous"
 abstract: >-
@@ -41,6 +41,6 @@ preferred-citation:
   authors:
     - family-names: Loikkanen
       given-names: Valto
-  version: 1.0.1
-  date-released: "2026-08-14"
+  version: 1.0.2
+  date-released: "2026-08-20"
   url: "https://github.com/valto/tekoalytyokapasiteetin-vallankumous"

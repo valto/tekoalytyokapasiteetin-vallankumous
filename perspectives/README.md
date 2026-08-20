@@ -18,7 +18,7 @@ discovery: "manual | submitted | backlink-auto"
 status: "published"                  # published | pending-review (automaattisesti löydetyille kohteille, jotka odottavat luokittelua)
 ```
 
-**Tyyppimääritelmät** (tietovaraston julkaisuohjeiden mukaisesti):
+**Tyyppimääritelmät** (repositorion julkaisuohjeiden mukaisesti):
 - **original** — kirjoitettu suoraan tämän tutkimuksen pohjalta Valto Loikkasen toimesta.
 - **independent** — kolmas osapuoli, joka viittaa työhön, tulkitsee sitä tai soveltaa sitä, ei välttämättä samaa tai eri mieltä.
 - **critical** — kolmas osapuoli, joka haastaa oletuksia, laskelmia tai johtopäätöksiä. Mukana, kun relevanttia — mukanaolo ei tarkoita kannatusta, eikä poissulkemista käytetä vain siksi, että kirjoitus on eri mieltä.

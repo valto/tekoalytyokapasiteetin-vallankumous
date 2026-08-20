@@ -1,6 +1,6 @@
 # Takalinkkien tunnistus → Näkökulmat-putki (suunnittelu)
 
-**Tila: suunniteltu, ei kytketty.** Osassa 2 kuvatut käsin- ja lähetyspolut ovat käytössä tänään (`perspectives/*.yaml`, rakennettu `tools/build-perspectives.py`:llä). Osan 1 automaattinen hakuohjelma vaatii maksullisen API-tilauksen ja tunnistetiedot, joita tällä tietovarastolla ei ole — se on dokumentoitu tässä, jotta se voidaan kytkeä myöhemmin uudelleensuunnittelematta datamallia sen ympärille.
+**Tila: suunniteltu, ei kytketty.** Osassa 2 kuvatut käsin- ja lähetyspolut ovat käytössä tänään (`perspectives/*.yaml`, rakennettu `tools/build-perspectives.py`:llä). Osan 1 automaattinen hakuohjelma vaatii maksullisen API-tilauksen ja tunnistetiedot, joita tällä repositoriolla ei ole — se on dokumentoitu tässä, jotta se voidaan kytkeä myöhemmin uudelleensuunnittelematta datamallia sen ympärille.
 
 ## Miksi ei julkaista suoraan hakuohjelmasta automaattisesti
 
@@ -31,7 +31,7 @@ Ajastettu työ (päivittäin/viikoittain)
 | Kustannus | Tilaus + API-lisäosa | Tilaus API-yksiköillä; yksiköitä kuluu per kutsu |
 | Soveltuvuus tähän käyttöön | Hyvä | Hieman paremmin sopiva — v4-päätepisteen per-takalinkki-metadata (otsikko, ankkuri, päivämäärät) kartoittuu suoraan `perspectives/*.yaml`-skeemaan vähemmällä jälkikäsittelyllä |
 
-**Ennen tämän osan rakentamista tarvittava päätös:** mikä tarjoaja (kustannus/kvoottikompromissi), kuka pitää API-avainta (tämän ei pitäisi asua git-tietovarastossa — käytä GitHub Actions -tietovaraston salaisuutta, jos ajetaan CI:n kautta, tai vain-paikallista tunnistetiedostoa, jos ajetaan käsin), ja kuinka usein kysellä (päivittäin on vakio git-seurattua ehdokasjonoa varten; viikoittain riittää todennäköisesti tutkimusviitesivuston todelliselle liikenteelle).
+**Ennen tämän osan rakentamista tarvittava päätös:** mikä tarjoaja (kustannus/kvoottikompromissi), kuka pitää API-avainta (tämän ei pitäisi asua git-repositoriossa — käytä GitHub Actions -repositorion salaisuutta, jos ajetaan CI:n kautta, tai vain-paikallista tunnistetiedostoa, jos ajetaan käsin), ja kuinka usein kysellä (päivittäin on vakio git-seurattua ehdokasjonoa varten; viikoittain riittää todennäköisesti tutkimusviitesivuston todelliselle liikenteelle).
 
 ## Osa 2 — Luokittelu (suunnittelu; voidaan toteuttaa ilman hakuohjelmaa)
 
@@ -48,7 +48,7 @@ ehdokas (pending-review)
     se ei palvele mitään tarkoitusta ja riskeeraa sen vahingossa julkaisemisen myöhemmin)
 ```
 
-Tämän voi tehdä ihmisylläpitäjä lukemalla joka `_pending/*.yaml`-tiedoston ja joko muokkaamalla sitä paikallaan (poistamalla edeltävän `_pending/`-polun, asettamalla `status: published`, siirtämällä sen `perspectives/`-hakemistoon) tai poistamalla sen. Tekoälyavusteinen ensimmäinen kierros (laadi luokittelutunniste, kuvaus ja tunnisteet) on kohtuullinen tapa nopeuttaa tätä, mutta **itse julkaisupäätöksen tulisi pysyä ihmisen "hyväksy"-toimintana**, kunnes luokittelijan väärä-positiivinen-osuus on tiedossa — tietovaraston oman näyttödisipliinin periaatteen mukaisesti (Menetelmät §3.1) tarkistamaton automaattinen luokittelu on juuri sitä LÄHTEESEEN-KOHDISTETTU-ei-vielä-VAHVISTETTU-väitettä, jonka erillään pitämiseen vahvistetusta faktasta tämän hankkeen metodologia on rakennettu.
+Tämän voi tehdä ihmisylläpitäjä lukemalla joka `_pending/*.yaml`-tiedoston ja joko muokkaamalla sitä paikallaan (poistamalla edeltävän `_pending/`-polun, asettamalla `status: published`, siirtämällä sen `perspectives/`-hakemistoon) tai poistamalla sen. Tekoälyavusteinen ensimmäinen kierros (laadi luokittelutunniste, kuvaus ja tunnisteet) on kohtuullinen tapa nopeuttaa tätä, mutta **itse julkaisupäätöksen tulisi pysyä ihmisen "hyväksy"-toimintana**, kunnes luokittelijan väärä-positiivinen-osuus on tiedossa — repositorion oman näyttödisipliinin periaatteen mukaisesti (Menetelmät §3.1) tarkistamaton automaattinen luokittelu on juuri sitä LÄHTEESEEN-KOHDISTETTU-ei-vielä-VAHVISTETTU-väitettä, jonka erillään pitämiseen vahvistetusta faktasta tämän hankkeen metodologia on rakennettu.
 
 Nimenomainen luottamuskynnys (esim. "julkaise automaattisesti vain ehdokkaat, jotka luokitellaan todelliseksi kirjoitukseksi yli 90 %:n luottamuksella, kaikki muu jonottaa käsin tarkistukseen") on kohtuullinen myöhempi parannus, kun luokittelija on olemassa — ei lähtöoletus.
 

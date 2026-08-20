@@ -20,9 +20,9 @@ investoidaan biljoonia?</h1>
 sähköstä ja infrastruktuurista tokeneihin, robotteihin, arvoon,
 omistukseen ja toimijuuteen.</em></p>
 <p><strong>Kirjoittaja:</strong> Valto Loikkanen <strong>Tila:</strong>
-<strong>v1.0.1</strong> tutkimuspaketti, julkaistu 2026-08-14. Katso
+<strong>v1.0.2</strong> tutkimuspaketti, julkaistu 2026-08-20. Katso
 <code><a href="CHANGELOG.html">CHANGELOG.md</a></code> mitä on muuttunut v1.0.0:sta lähtien, ja
-tietovaraston <a
+repositorion <a
 href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous/releases">Julkaisut-sivu</a>
 viitattavia, tarkistussummalla vahvistettuja tilannekuvia joka
 julkaisusta varten. <strong>Tämä on suomenkielinen käännös</strong>
@@ -67,18 +67,18 @@ Skenaario-oletus / Tulkinta), jotta lukija näkee yhdellä silmäyksellä,
 mikä on itsenäisesti vahvistettu, mikä on jonkun tallenteella oleva
 väite, mikä on laskutoimitus ja mikä on muokattavissa oleva
 havainnollistus.</p>
-<p><strong>Avaus:</strong> kirjoittajalla on kommersiaalisia ja
+<p><strong>Avoin ilmoitus:</strong> kirjoittajalla on kommersiaalisia ja
 edunajointiin liittyviä intresseja henkilökohtaiseen
 tekoälyinfrastruktuuriin ja osuustoiminnallisiin/omistusperustaisiin
 tekoälymalleihin Prifinan, Digiolen, ValtoAI:n ja PIOS- ja
 EIOS-viitekehyksien kautta. Katso alkutekstin
-(<code><a href="01-whitepaper.html">01-whitepaper.md</a></code>) Menetelmät §3.4 täydelle avaukselle ja
-ei-neuvonta-rajalle.</p>
+(<code><a href="01-whitepaper.html">01-whitepaper.md</a></code>) Menetelmät §3.4 täydelle avoimelle
+ilmoitukselle ja ei-neuvonta-rajalle.</p>
 <h2 id="lukupolut-aloita-tästä-ei-koko-paketista-kerralla">Lukupolut —
 aloita tästä, ei koko paketista kerralla</h2>
 <p>Tämä paketti on rakennettu niin, että eri lukijat voivat saada
 yhteisen faktapohjan eri syvyyksillä, joutumatta kaikki läpikäymään
-samaa 89-sivuista asiakirjaa ensin:</p>
+samaa pitkää asiakirjaa ensin:</p>
 <ul>
 <li><strong>Ensikertalainen lukija, mikä tahansa linssi:</strong> aloita
 tiedostosta <code><a href="00-how-to-use-this-research.html">00-how-to-use-this-research.md</a></code> (yksi sivu —
@@ -91,7 +91,7 @@ lähde, jota joka muu resurssi tulisi jäljittää. <strong>PDF on
 itsenäinen</strong>: se upottaa neljä argumentin kannalta kantavinta
 kaaviota (päästä päähän -ketju, omistusrakenne, mittakaavaspektri ja
 uuden arvon silta) suoraan käyttökohtaansa, jotta lukija, jolla on vain
-ladattu PDF, näkee ne tarvitsematta tietovarastoa. Jäljelle jäävät
+ladattu PDF, näkee ne tarvitsematta repositoriota. Jäljelle jäävät
 kaaviot (2–5, 7, 9–10) sijaitsevat vain
 <code>assets/diagrams/</code>-kansiossa ja itsenäisessä
 diaesityksessä/briiffeissä — PDF on kertova raportti keskeisimmillä
@@ -270,7 +270,7 @@ luvulle</td>
 <td>11 valmista kaaviokuvaa, jotka on määritelty
 <code><a href="17-visual-asset-briefs.html">17-visual-asset-briefs.md</a></code>:ssä — Kaavio 11 on kirjoittajan
 oma ennalta olemassa oleva kehyskaavio, provenienssikehystetty
-(näyttöluokkatunniste, viittaus, foottei) vastaamaan muuta joukkoa;
+(näyttöluokkatunniste, viittaus, alatunniste) vastaamaan muuta joukkoa;
 muokkaamaton alkuperäinen säilytetään sen vierellä tiedostona
 <code>diagram-11-*.jpg</code></td>
 <td>Raportti-/diaesitys-/verkkokäyttö</td>
@@ -375,7 +375,7 @@ alla</td>
 <h2
 id="pages-sivuston-uudelleenrakentaminen-sisältömuutoksen-jälkeen">Pages-sivuston
 uudelleenrakentaminen sisältömuutoksen jälkeen</h2>
-<p>Joka <code>*.html</code>-tiedosto tietovaraston juuressa paitsi
+<p>Joka <code>*.html</code>-tiedosto repositorion juuressa paitsi
 <code>index.html</code> ja <code>diagrams.html</code> (käsin
 kirjoitetut) ja <code>perspectives.html</code> (generoitu erillisellä
 skriptillä, alla) generoidaan vastaavasta <code>.md</code>-tiedostostaan
@@ -498,8 +498,21 @@ julkaistu GitHub Pages -sivustona osoitteessa <a
 href="https://valto.github.io/ai-working-capacity-revolution/">valto.github.io/ai-working-capacity-revolution</a>
 (englanninkielinen alkuperäinen), seuraten <code>main</code>:ia — katso
 yllä oleva Tila-rivi siitä, miten elävä sivusto liittyy viimeksi
-tagattuun julkaisuun. Tämän suomenkielisen käännöksen omaa
-Pages-sivustoa koskeva tila päivitetään erikseen.</li>
+tagattuun julkaisuun. Tämä suomenkielinen käännös on julkaistu
+vastaavasti omana Pages-sivustonaan osoitteessa <a
+href="https://valto.github.io/tekoalytyokapasiteetin-vallankumous/">valto.github.io/tekoalytyokapasiteetin-vallankumous</a>.</li>
+<li><strong>Ratkaistu (2026-08-20):</strong> version/tagin/julkaisun
+ristiriita korjattu — repositoriolla oli aiemmin vain
+<code>v1.0.0</code>-tagi ilman GitHub-julkaisua, vaikka README ja
+<code>CITATION.cff</code> väittivät <code>v1.0.1</code>:tä. Koska
+sisältö sisälsi jo kaikki <code>v1.0.2</code>-tavoitteelliset muutokset
+(elävän viitekehyksen §3.6, korjatut työnantaja-/laskutettava-luvut,
+koko Pages-sivustoarkkitehtuurin), versio nostettiin suoraan
+<code>v1.0.2</code>:een kaikessa metadatassa (README,
+<code>CITATION.cff</code>, <code>index.html</code>), tagattiin ja
+julkaistiin GitHub-julkaisuna tarkistussummalla vahvistetun tilannekuvan
+kanssa. Samassa kierroksessa tehtiin natiivi suomen kielenhuollon
+korjauspassi — katso yllä oleva Muutosloki-viittaus.</li>
 </ul>
 <p>Ennen mitä tahansa julkista julkaisua, ihmisen suorittama
 tarkistuskierros koko alkutekstistä ja työkirjoista suositellaan,
@@ -512,7 +525,7 @@ erityisesti yllä oleville yhteensovitus- ja paikkamerkkikohteille.</p>
 </main>
 <footer>
   <p>© Valto Loikkanen. Lisensoitu CC BY 4.0 -lisenssillä ilmoitetuin osin. Opetuksellista tutkimusta ja skenaarioanalyysiä — ei sijoitus-, oikeudellista, vero-, hankinta- tai politiikkaneuvontaa. Tämä on suomenkielinen käännös alkuperäisestä englanninkielisestä julkaisusta.</p>
-  <p><a href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous">Katso tietovarasto GitHubissa</a></p>
+  <p><a href="https://github.com/valto/tekoalytyokapasiteetin-vallankumous">Katso repositorio GitHubissa</a></p>
 </footer>
 </body>
 </html>
